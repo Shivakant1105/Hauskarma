@@ -1,0 +1,37 @@
+.payment-invoice .progress {
+  width: 80px;
+  height: 80px;
+}
+.payment-invoice .progress .track,
+.payment-invoice .progress .fill {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 8;
+  transform: rotate(90deg) translate(0px, -80px);
+}
+.payment-invoice .progress .track {
+  stroke: #e3eaee;
+}
+.payment-invoice .progress .fill {
+  stroke: rgb(255, 255, 255);
+  stroke-dasharray: 219.99078369140625;
+  stroke-dashoffset: -219.99078369140625;
+  transition: stroke-dashoffset 1s;
+}
+.payment-invoice .progress.blue .fillstroke1 {
+  stroke: #89c33d;
+}
+
+.payment-invoice .progress.blue .fillstroke2 {
+  stroke: #21d3a0;
+}
+.payment-invoice .progress.blue .fillstroke3 {
+  stroke: #f53d6b;
+}
+.payment-invoice .progress .value,
+.payment-invoice .progress .text {
+  fill: #2b4a60;
+  text-anchor: middle;
+}
+.payment-invoice .progress .text {
+  font-size: 12px;
+}

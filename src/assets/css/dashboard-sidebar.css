@@ -1,0 +1,3845 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  background-color: #e6e6e6 !important;
+}
+
+.CustomToogle {
+  cursor: pointer;
+}
+.dashboard_content_bg {
+  background-color: #e6e6e6 !important;
+}
+
+.font-weight-1000 {
+  font-weight: 1000 !important;
+}
+
+.grey-bg {
+  background-color: #e1dbdd !important;
+}
+
+.second-grey-bg {
+  background-color: #bdbdbd !important;
+}
+
+.dark-black {
+  color: #000 !important;
+}
+
+.dark-black-bg {
+  background-color: #000 !important;
+}
+
+.opacity-0-4 {
+  opacity: 0.4 !important;
+}
+
+.dashboard-color {
+  color: #0e5f99 !important;
+}
+
+.dashboard-one-color {
+  color: #bb0303 !important;
+}
+
+.font-family-sans-serif {
+  font-family: sans-serif !important;
+}
+
+.star-color {
+  color: #ff0000 !important;
+}
+
+.text-decoration-line {
+  text-decoration: underline !important;
+  text-decoration-color: #55555538 !important;
+}
+
+.some-btn-bg {
+  background-color: #003252 !important;
+}
+
+.theme-border-first {
+  border: 1px solid #f0f0f0;
+}
+
+.theme-second-border {
+  border: 0.5px solid #dedbdb !important;
+}
+
+.theme-third-border {
+  border: 2px solid #0e5f99;
+}
+
+.dashboard-btn-bg {
+  background-color: #0e5f99 !important;
+}
+
+.dashboard-second-btn-bg {
+  background-color: #e1dbdd !important;
+}
+
+.dashboard-third-btn-bg {
+  background-color: #dee9fd !important;
+}
+
+.dashboard-four-btn-bg {
+  background-color: #003252 !important;
+}
+
+.textarea-resize-none {
+  resize: none;
+}
+
+.dashboard-seven-btn-bg {
+  background-color: #f05333 !important;
+}
+
+.dashboard-six-btn-bg {
+  background-color: #f5f5f5 !important;
+}
+
+.dashboard-border-radius-second {
+  border-radius: 100px !important;
+}
+
+.dashboard-brand {
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.form-control:focus {
+  box-shadow: unset !important;
+}
+
+.vertical-align-middle {
+  vertical-align: middle !important;
+}
+
+.dashboard-border-radius {
+  border-radius: 10px 10px 10px 10px !important;
+}
+
+.highest-bid-btn {
+  background-color: #0097f5;
+  border: unset;
+  border-radius: 9px;
+  display: grid;
+}
+
+.bid-now-btn {
+  background-color: #f05333;
+  border: unset;
+  border-radius: 9px;
+  display: grid;
+}
+
+.font-menu {
+  font: menu;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+/* ============================================
+===== Radio Slider Common Css Start =========*/
+
+.radio-btn .switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 20px;
+}
+
+.radio-btn .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.notification-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.notification-slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:focus + .notification-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .notification-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* ============================================
+============ Top Search Bar Start ===========*/
+
+.has-search .form-control {
+  padding-left: 60px;
+  padding-top: 9px;
+  border-radius: 100px;
+  border: 1px solid rgba(18, 18, 18, 0.7);
+  padding-bottom: 9px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 4.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.has-search .form-control-feedback::placeholder {
+  color: #657987;
+  opacity: 0.7;
+}
+.top-search-bar {
+  list-style: none;
+}
+/* ============================================
+============ Top Notification Bell ===========*/
+
+.top-notification-bell .dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  left: unset;
+  width: 300px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding-bottom: 0px;
+  padding: 0px;
+  height: 230px;
+  overflow-y: scroll;
+}
+
+.top-notification-bell .dropdown-menu::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.top-notification-bell .dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    color-stop(1.5, rgba(253, 255, 255, 0.2)),
+    color-stop(0.5, #c4c4c4),
+    to(#c4c4c4)
+  );
+}
+
+.top-notification-bell .dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+}
+
+.top-notification-bell .dropdown-item.active,
+.top-notification-bell .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.top-notification-bell .dropdown-item:focus,
+.top-notification-bell .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.top-notification-bell .dropdown-menu .dropdown-item span.img-span img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.top-notification-bell .dropdown-menu .dropdown-item span.img-span {
+  float: left;
+  width: 65px;
+}
+
+.top-notification-bell .dropdown-menu .dropdown-item span.content-span {
+  float: left;
+  width: calc(100% - 40px);
+}
+
+.top-notification-bell .dropdown-toggle::after {
+  display: none;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.navbar-nav .dropdown.top-notification-bell span.indicator {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 9px;
+  background-color: #ff5186;
+  width: 5px;
+  height: 5px;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.user-thumb a img.user_img {
+  height: 33px;
+  width: 33px;
+  border-radius: 100%;
+}
+/* ============================================
+=========== Dashboard Sidebar Start =========*/
+
+/* .dashboard-sidebar ul li a {
+    background-color: #000;
+} */
+
+body.fixed-nav {
+  padding-top: 56px;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.profile-content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding-top: 1rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 3px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.smaller {
+  font-size: 0.7rem;
+}
+
+.o-hidden {
+  overflow: hidden !important;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.top-bar.navbar {
+  padding: 10px 1rem;
+}
+
+#mainNav.fixed-top .sidenav-toggler {
+  display: none;
+}
+
+#mainNav.fixed-top.navbar-dark .sidenav-toggler {
+  background-color: #212529;
+}
+
+#mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
+  color: #adb5bd;
+}
+
+#mainNav.fixed-top.navbar-light .sidenav-toggler {
+  background-color: #dee2e6;
+}
+
+#mainNav.fixed-top.navbar-light .sidenav-toggler a i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
+  overflow-x: hidden;
+  width: 55px;
+}
+
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-item,
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
+  width: 55px !important;
+}
+
+body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#mainNav.static-top .sidenav-toggler {
+  display: none;
+}
+
+body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.content-wrapper,
+.profile-content-wrapper {
+  overflow: hidden;
+}
+
+.content-wrapper {
+  transition: all 1s;
+}
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+  width: 250px;
+  background: #ffffff;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  min-height: 100vh;
+  margin-left: 20px;
+  border-right: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+
+.navbar-nav.dashboard-sidebar li.active a {
+  color: #0e5f99 !important;
+}
+.navbar-nav.dashboard-sidebar li a {
+  color: #657987 !important;
+}
+
+.navbar-nav.dashboard-sidebar
+  li.active
+  .dashboard-custom-dropdown
+  .dropdown-menu {
+  display: block;
+}
+.dashboard-sidebar .nav-item.active .nav-link img.active {
+  display: inline;
+}
+
+.dashboard-sidebar .nav-item.active .nav-link img.inactive {
+  display: none;
+}
+
+.dashboard-sidebar .nav-item .nav-link img.active {
+  display: none;
+}
+
+.dashboard-sidebar .nav-item .nav-link img.inactive {
+  display: inline;
+}
+
+.navbar-nav.dashboard-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  .dropdown-menu {
+  position: relative;
+  border: 0;
+  margin-left: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar-nav.dashboard-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  ul.dropdown-menu.show:before {
+  content: "";
+  height: 100%;
+  opacity: 1;
+  width: 1.5px;
+  background: #89c33d;
+  position: absolute;
+  left: -37px;
+  top: 0;
+  border-radius: 100px;
+}
+
+@keyframes dropdownMenuAnimation {
+  from {
+    opacity: 0;
+    display: block;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+.navbar-nav.dashboard-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  ul.dropdown-menu.show {
+  display: block;
+  animation: dropdownMenuAnimation 350ms ease-in-out both;
+}
+.dashboard-sidebar-logut-btn {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+/* ================================
+========= bids-offers Start ==== */
+
+.bids-offers .card.dashboard-border-radius .bids-image {
+  height: 100%;
+}
+
+.bids-offers .card.dashboard-border-radius .bids-content {
+  border: 1px solid #f0f0f0;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+}
+
+.bids-offers .card.dashboard-border-radius .bids-content .bids-time {
+  opacity: unset;
+  font-weight: 700;
+}
+
+.dashboard-pagination .pagination .page-item.disabled .page-link {
+  color: #fff;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #0e5f99;
+  border-color: unset;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-pagination .pagination .page-link {
+  background-color: #7c7c7c;
+  color: #fff;
+  border-color: unset;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.start-bid,
+.end-bid {
+  display: grid;
+}
+
+.dashboard-pagination .pagination .page-item:last-child .page-link {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.dashboard-pagination .pagination .page-link {
+  margin-left: 10px;
+}
+
+/* =======================================
+=========== Wishlist Section Start ==== */
+
+.wishlist-section .wishlist-box {
+  position: relative;
+}
+
+.wishlist-section .wishlist-box .card {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.wishlist-section
+  .wishlist-box
+  .wishlist-content
+  .bid-time-div
+  span.content-span {
+  display: grid;
+}
+
+.wishlist-section .wishlist-box .wishlist-content .address span.img-span {
+  float: left;
+  width: 13px;
+}
+
+.wishlist-section .wishlist-box .wishlist-content .address span.content-span {
+  float: left;
+  width: calc(100% - 14px);
+}
+
+.wishlist-section .wishlist-box .wishlist-content .entire_house {
+  display: grid;
+}
+/* =======================================
+=========== Chat Section Start ======== */
+
+.chat-section .top-online-user .user-img,
+.chat-section .bottom-online-user .user-img,
+.chat-section .offline-users .user-img {
+  position: relative;
+}
+
+.chat-section .top-online-user .online-icon,
+.chat-section .bottom-online-user .online-icon {
+  position: absolute;
+  top: 75%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -7px;
+  color: #16c784;
+}
+.chat-section .top-online-user .online-icon i,
+.chat-section .bottom-online-user .online-icon i {
+  font-size: 12px;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+}
+
+.chat-section .chat-panel .message-box {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-section .offline-users .offline-icon {
+  position: absolute;
+  top: 75%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -7px;
+  color: #cfd7dc;
+}
+
+.chat-section .offline-users .offline-icon i {
+  font-size: 12px;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+}
+
+/* .chat-section .bottom-online-user .count,
+.chat-section .offline-users .count {
+    height: 20px;
+    width: 20px;
+    background-color: #0E5F99;
+    border-radius: 50%;
+} */
+
+.chat-section .user-list {
+  overflow-y: scroll;
+  height: 100vh !important;
+}
+
+.chat-section .user-list::-webkit-scrollbar,
+.profile-left-sidebar::-webkit-scrollbar,
+.chat-section .chat-panel .message-box::-webkit-scrollbar,
+.dashboard-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-section .user-list::-webkit-scrollbar-track,
+.profile-left-sidebar::-webkit-scrollbar-track,
+.chat-section .chat-panel .message-box::-webkit-scrollbar-track,
+.dashboard-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+.chat-section .user-list::-webkit-scrollbar-thumb,
+.profile-left-sidebar::-webkit-scrollbar-thumb,
+.chat-section .chat-panel .message-box::-webkit-scrollbar-thumb,
+.dashboard-sidebar::-webkit-scrollbar-thumb {
+  background: #88888852;
+  border-radius: 10px;
+}
+
+.chat-section .user-list::-webkit-scrollbar-thumb:hover,
+.profile-left-sidebar::-webkit-scrollbar-thumb:hover,
+.chat-section .chat-panel .message-box::-webkit-scrollbar-thumb:hover,
+.dashboard-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-section .profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.chat-section .chat-input-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-section .chat-input-box input.chat-input {
+  border-radius: 14px;
+}
+
+.chat-section .chat-input-box .chat-submit-btn {
+  background: #0e5f99;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-section .chat-input-box .Emoji {
+  position: absolute;
+  top: 50%;
+  right: 130px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-section .chat-input-box .media-attch {
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-section .chat-input-box .voice {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-section .chat-input-box .gallery-upload {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-section .chat-input-box input.chat-input {
+  padding-left: 150px;
+  padding-right: 160px;
+}
+
+.chat-section .chat-input-box input.chat-input::placeholder {
+  color: #afc0cb;
+  font-weight: 600;
+  font-size: 11px;
+  height: 50px;
+  line-height: 50px;
+  border-left: 1px solid #e2e7ec;
+  padding-left: 10px;
+}
+
+.chat-section .chat-input-box input.chat-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.chat-section .chat-bubble {
+  margin: 10px 30px;
+  position: relative;
+  animation: fadeIn 1s ease-in;
+}
+
+/* ============================================
+=========== Settings Section Start ======== */
+/* account setting start */
+
+.setting-section .setting-btn .nav-link.active {
+  background-color: #0e5f99;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+}
+
+.setting-section .setting-btn .nav-item {
+  margin-right: 30px;
+}
+
+.setting-section .setting-btn .nav-link:focus,
+.setting-section .setting-btn .nav-link:hover,
+.setting-section .setting-btn .nav-link {
+  border: none;
+}
+
+.setting-section .setting-btn .nav-tabs .nav-link {
+  border-radius: 100px;
+  background: #e1dbdd;
+}
+
+.setting-section .setting-btn .nav-link {
+  background: #e1dbdd;
+  border-radius: 100px;
+  color: #939090;
+}
+
+#account-settings .card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px 20px 0px 20px;
+}
+
+#account-settings .card .card-body span.img-span {
+  float: left;
+  width: 37px;
+}
+
+#account-settings .card .card-body span.content-span {
+  float: left;
+  width: calc(100% - 38px);
+}
+/* notification start */
+
+/* .notification-card .card {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+} */
+
+/* .notification-card .card .card-body {
+    padding-top: 12px;
+    padding-bottom: 12px;
+} */
+/* 
+.notification-card .card .card-body .radio-btn .switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 20px;
+} */
+
+/* .notification-card .card .card-body .radio-btn .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+} */
+
+/* .notification-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+} */
+
+.notification-slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .notification-slider {
+  background-color: #0e5f99;
+}
+
+input:focus + .notification-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .notification-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.notification-slider.round {
+  border-radius: 34px;
+}
+
+.notification-slider.round:before {
+  border-radius: 50%;
+}
+/* ================================================
+=========== Billing Address Section Start ======== */
+
+/* ======================================================
+=========== Add Billing Address Section Start ======== */
+
+/* ==============================================
+============== Change Phone Number Start ===== */
+
+.cuatom-dropdown-sapn {
+  height: 56px;
+  border: 0.5px solid #dedbdb;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.cuatom-input-sapn {
+  height: 53px;
+  border: 0.5px solid #dedbdb;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.cuatom-input-sapn i {
+  color: #555;
+  opacity: 0.5;
+}
+
+.cuatom-dropdown-input {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+/* ==============================================
+============== Change Password Start ========= */
+
+.changes-password-input .input-group-prepend span {
+  height: 53px;
+  border: 0.5px solid #dedbdb;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+.changes-password-input input {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+/* ==============================================
+================== Support Start ============= */
+
+.support-section .support-email {
+  text-decoration: underline;
+}
+
+.chat-with-us {
+  background: #e1dbdd !important;
+  color: #939090 !important;
+}
+/* ====================================================
+================== Delete Account Start ============= */
+
+.delete-form-content .input-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #858585;
+}
+
+.delete-form-content .card .card-body .content textarea {
+  resize: none;
+}
+
+.delete-form-content
+  .card
+  .card-body
+  .content
+  textarea::-webkit-input-placeholder {
+  color: #858585;
+  opacity: 0.5;
+}
+/* Firefox 18- */
+
+.delete-form-content .card .card-body .content textarea:-moz-placeholder {
+  color: #858585;
+  opacity: 0.5;
+}
+/* Firefox 19+ */
+
+.delete-form-content .card .card-body .content textarea::-moz-placeholder {
+  color: #858585;
+  opacity: 0.5;
+}
+
+.delete-form-content .card .card-body .content textarea:-ms-input-placeholder {
+  color: #858585;
+  opacity: 0.5;
+}
+
+.delete-radio-btn .radio-button {
+  margin-bottom: 1rem;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__label-wrapper,
+.delete-radio-btn .radio-button__label-wrapper {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  top: 0.25rem;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__label-wrapper
+  b,
+.delete-radio-btn .radio-button__label-wrapper b {
+  color: #657987;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__custom-indicator,
+.delete-radio-btn .radio-button__custom-indicator {
+  background-color: #ffffff;
+  border: 2px solid #cfd7dc;
+  border-radius: 50%;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  input[type="radio"]:checked
+  ~ .radio-button__custom-indicator,
+.delete-radio-btn
+  input[type="radio"]:checked
+  ~ .radio-button__custom-indicator {
+  border: 2px solid #1761a0;
+  transition: all 0.7s;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__custom-indicator::after,
+.delete-radio-btn .radio-button__custom-indicator::after {
+  background-color: #0e5f99;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 10px;
+}
+
+#RoommateInfoModalCenter .modal-content .modal-body .radio-button__input,
+.delete-radio-btn .radio-button__input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after,
+.delete-radio-btn
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after {
+  display: block;
+}
+
+#RoommateInfoModalCenter
+  .modal-content
+  .modal-body
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator,
+.delete-radio-btn
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#RoommateInfoModalCenter .modal-content .modal-body .form-group .radio-label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #858585;
+}
+
+.delete-form-content .skip-btn {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+#deleteConfirmModalCenter .modal-content .modal-body {
+  text-align: -webkit-center;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 50px;
+}
+
+/* ====================================================
+================== Verification in seeting Start ====== */
+
+.form-group .verification-doc-upload-input {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1.5px solid #cfd7dc !important;
+  border-radius: 6px !important;
+  height: 52px !important;
+}
+
+.form-group .verification-doc-upload-input span small {
+  color: #afc0cb;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.form-group .verification-doc-upload-input input[type="file"] {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-group .verification-doc-upload-input .use-profile-id-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+  padding-right: 17px;
+}
+/* ====================================================
+================== Preferences Start =============== */
+
+/* #preferences .notification-card .card .card-body {
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 32px 32px 0px 32px;
+} */
+/* 
+#preferences .notification-card .card {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+} */
+/* 
+#preferences .notification-card .card .radio-toolbar input[type="radio"] {
+    display: none;
+} */
+
+/* #preferences .notification-card .card .btn-group input[type="radio"]:checked+label {
+    background-color: #0E5F99;
+    color: #fff;
+    padding: 7px 0px 7px 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    width: 100px;
+} */
+
+/* #preferences .notification-card .card .radio-toolbar label {
+    display: inline-block;
+    cursor: pointer;
+    background: #E1DBDD;
+    font-size: 8px;
+    padding: 7px 0px 7px 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    width: 100px;
+    transition: all .4s linear;
+} */
+
+/* #preferences .notification-card .card .radio-toolbar label:nth-of-type(1) {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+} */
+
+/* #preferences .notification-card .card .radio-toolbar label:nth-of-type(2) {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#preferences .privacy-setting-card .card .card-body {
+    height: 83px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 57.5px 57.5px 0px 57.5px;
+}
+
+#preferences .privacy-setting-card .card .title-section {
+    display: grid;
+}
+
+#preferences .privacy-setting-card .card {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+} */
+/* ====================================================
+================== Sign Contract Start ============= */
+
+.breadcrumb-sign-contract .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.1px;
+  padding-left: 0.5rem;
+  color: #000;
+  content: ">";
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.breadcrumb-sign-contract .breadcrumb-item a {
+  font-weight: 600;
+  color: #000;
+  font-size: 11px;
+}
+
+.facilities-section span.content-span .title small {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.facilities-section .card {
+  height: 100%;
+}
+/* ==================================================== 
+================= Profile Sidebar Start =============*/
+
+.profile-sidebar .nav-item.active .nav-link img.active {
+  display: inline;
+}
+
+.profile-sidebar .nav-item.active .nav-link img.inactive {
+  display: none;
+}
+
+.profile-sidebar .nav-item .nav-link img.active {
+  display: none;
+}
+
+.profile-sidebar .nav-item .nav-link img.inactive {
+  display: inline;
+}
+
+.navbar-sidenav.profile-sidebar li.active a {
+  color: #0e5f99 !important;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(137, 195, 61, 0.7) 0%,
+    rgba(235, 249, 217, 0) 100%
+  );
+}
+
+.navbar-sidenav.profile-sidebar li.active .dashboard-custom-dropdown ul li a {
+  background: transparent;
+  color: #657987 !important;
+}
+
+.navbar-nav.profile-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  ul.dropdown-menu.show {
+  display: block;
+  animation: dropdownMenuAnimation 350ms ease-in-out both;
+}
+.navbar-nav.profile-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  .dropdown-menu {
+  position: relative;
+  border: 0;
+  margin-left: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-nav.profile-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  ul.dropdown-menu:before {
+  content: "";
+  height: 100%;
+  opacity: 1;
+  width: 1.5px;
+  background: #e3eaee;
+  position: absolute;
+  left: -37px;
+  top: 0;
+  border-radius: 100px;
+}
+
+.navbar-nav.profile-sidebar
+  .dropdown
+  .dashboard-custom-dropdown
+  ul.dropdown-menu.show:before {
+  background: #89c33d;
+}
+
+.navbar-nav.profile-sidebar li a {
+  color: #657987 !important;
+}
+
+.profile-sidebar > .nav-item > .nav-link {
+  color: #657987;
+}
+
+.profile-sidebar > .nav-item > .nav-link {
+  color: #657985;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px !important;
+}
+
+.profile-left-sidebar.card {
+  /* height: calc(100vh - 18px); */
+  /*  width: 305px;
+    margin-left: 284px;
+    margin-top: 18px;
+    position: fixed;
+    overflow: auto; */
+}
+.update-profile {
+  width: 185px;
+}
+.update-profile .card.user-card {
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.update-profile .card .profile-card-img {
+  width: 108px;
+  height: 108px;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+.update-profile .card .profile-card-img .overlay-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #89c33d;
+  border-radius: 100px;
+  bottom: 0;
+  right: 0;
+  line-height: 30px;
+  text-align: center;
+}
+.update-profile .card img.user-id-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+select.profile-option:not([size]):not([multiple]) {
+  height: calc(2.25rem + 6px);
+  border: 0.5px solid #dedbdb8c;
+}
+
+select.profile-option {
+  background-image: url(../img/icons/drowpdown-icon.png);
+  background-position: calc(100% - 76px) 20px, calc(100% - 20px) 14px, 100% 0;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #8e8e8e;
+}
+
+.profile-option {
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+.card.profile-id-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+}
+
+.use-profile-id-input {
+  border: 0.5px solid #dedbdb8c;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.use-profile-id-input::placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.profile-id-icon-input .input-group-prepend span {
+  height: 53px;
+  border: 0.5px solid #dedbdb;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+.profile-id-icon-input input::placeholder {
+  color: #e3e3e3;
+}
+
+/* =============================================
+=========== Basic Profile Info Start ==========*/
+
+select.basic-profile-info-option:not([size]):not([multiple]) {
+  height: calc(2.25rem + 17px);
+  border: 0.5px solid #dedbdb8c;
+}
+
+select.basic-profile-info-option {
+  background-image: url(../img/icons/drowpdown-icon.png);
+  background-position: calc(100% - 31px) 25px, calc(100% - 20px) 14px, 100% 0;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #8e8e8e;
+}
+
+.basic-profil-info-textarea {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 45px;
+  resize: none;
+}
+
+.basic-profile-info-btn {
+  padding: 13px 80px 13px 80px;
+}
+
+#petaddModalCenter .card {
+  position: relative;
+  overflow: hidden;
+  width: 397px;
+  height: 226px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+}
+
+#petaddModalCenter .card .addpetimage input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0;
+}
+/* ==========================================
+=========== View Profile  Start ==========*/
+
+.view-profile .card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+/* ==========================================
+=========== Financial Details  Start ==========*/
+
+#FinancialDetailsFillModalCenter .modal-content {
+  padding: 70px;
+}
+
+#FinancialDetailsFillModalCenter .modal-content .modal-body .card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+#FinancialDetailsFillModalCenter .modal-content .modal-body .card .card-body {
+  padding: 70px;
+}
+
+#FinancialDetailsFillModalCenter
+  .modal-content
+  .modal-body
+  .card
+  .card-body
+  .upload-doc,
+#HomeInsuranceModalCenter .modal-content .modal-body .upload-doc,
+#VechileAndParkingInformationModalCenter
+  .modal-content
+  .modal-body
+  .upload-doc {
+  overflow: hidden;
+  position: relative;
+}
+
+#FinancialDetailsFillModalCenter
+  .modal-content
+  .modal-body
+  .card
+  .card-body
+  .upload-doc
+  input[type="file"],
+#HomeInsuranceModalCenter
+  .modal-content
+  .modal-body
+  .upload-doc
+  input[type="file"],
+#VechileAndParkingInformationModalCenter
+  .modal-content
+  .modal-body
+  .upload-doc
+  input[type="file"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  opacity: 0;
+}
+/* ============================================
+=========== Blog Details Page Start ==========*/
+/* .blog-comment-section .media img.blog-commit-user{
+    width: 65px;
+    height: 64px;
+    border-radius: 10px;
+} */
+/* ==============================================
+============ Extra Info Page Start =============*/
+
+.extra-info-switch.card {
+  border: 1px solid #f0f0f0;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+.extra-info-card .card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.extra-info-card .text-muted {
+  color: #6c757d6e !important;
+}
+/* ============================================
+============= Bid Details Page Start ========*/
+
+.bid-details-table table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.bid-details-table table td {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f000;
+  border-right: 1px solid #f0f0f000;
+}
+
+.bid-details-table table tr td:first-child {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-left: 1px solid #f0f0f0;
+}
+
+.bid-details-table table tr td:last-child {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.bid-details-table table tr {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%;
+}
+
+.bid-details-table .table td,
+.bid-details-table .table th {
+  width: 125px;
+  padding: 15px;
+}
+
+.bid-details-table table tr td .btn {
+  width: 94px !important;
+}
+
+.single-satar-rating {
+  border: none;
+  float: left;
+}
+
+.single-satar-rating > input {
+  display: none;
+}
+
+.single-satar-rating > label:before {
+  font-size: 18px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.single-satar-rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.single-satar-rating > label {
+  color: #89c33d;
+  float: right;
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.single-satar-rating>input:checked~label,
+/* show gold star when clicked */
+
+.single-satar-rating:not(:checked)>label:hover,
+/* hover current star */
+/* .single-satar-rating:not(:checked)>label:hover~label {
+color: #FFD700;
+} */
+/* hover previous stars in list */
+
+.single-satar-rating>input:checked+label:hover,
+/* hover current star when changing rating */
+
+.single-satar-rating>input:checked~label:hover,
+.single-satar-rating>label:hover~input:checked~label,
+/* lighten current selection */
+
+.single-satar-rating>input:checked~label:hover~label {
+  color: hsl(206.04, 25.6%, 40.59%);
+}
+/* ===========================================
+======== Create New Listing Start ==========*/
+
+/* .create-listing-section-landloard #create-listing fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.create-listing-section-landloard #create-listing .progress {
+    border-radius: 0px;
+    height: 3px;
+    background-color: #F0F0F0;
+}
+
+.create-listing-section-landloard #create-listing fieldset .next,
+.create-listing-section-landloard #create-listing fieldset .save,
+.create-listing-section-landloard #create-listing fieldset .previous {
+    padding: 12px 30px 11px 30px;
+}
+
+.create-listing-section-landloard #create-listing .progress .progress-bar {
+    height: 3px;
+    background: #455A64;
+} */
+/* Kind Place Start */
+
+/* .create-listing-section-landloard .kind-place label {
+    position: relative;
+    overflow: hidden;
+}
+
+.create-listing-section-landloard .kind-place label input {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+} */
+/* 
+.create-listing-section-landloard .kind-place label .card .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.create-listing-section-landloard .kind-place input[type="radio"]:checked+.card {
+    background-color: #0E5F99;
+    color: #fff;
+}
+
+.create-listing-section-landloard .kind-place input[type="radio"]:checked+.card .card-horizontal .card-title {
+    letter-spacing: 0.375px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.create-listing-section-landloard .kind-place label .card {
+    cursor: pointer;
+    background: #E1DBDD;
+    transition: all .4s linear;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.create-listing-section-landloard .kind-place label .card .card-horizontal .card-title {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #939090;
+} */
+/* Tell About Home Start */
+
+/* .create-listing-section-landloard .lease-terms .lease-setting .form-group label,
+.create-listing-section-landloard .tell-about-home .form-group label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.create-listing-section-landloard .tell-about-home .form-group input {
+    background: #ffffff;
+    border: 1px solid #E9F0FF;
+    border-radius: 3px;
+    height: 54px;
+}
+
+.create-listing-section-landloard .tell-about-home .custom-radio-btn .form-group label input {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+} */
+
+/* .create-listing-section-landloard .tell-about-home .custom-radio-btn .form-group label {
+    position: relative;
+    overflow: hidden;
+}
+
+.create-listing-section-landloard .tell-about-home .custom-radio-btn .form-group .card {
+    background: #E1DBDD;
+    border-radius: 3px;
+    height: 54px;
+}
+
+.create-listing-section-landloard .tell-about-home .custom-radio-btn .form-group label input[type="radio"]:checked+.card {
+    background-color: #0E5F99;
+    color: #fff;
+    transition: all .4s linear;
+} */
+
+/* .create-listing-section-landloard .rules-and-utilities .property-role .form-group label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.42);
+} */
+/* 
+.create-listing-section-landloard .rules-and-utilities .property-role .section-title,
+.create-listing-section-landloard .rules-and-utilities .utilities .section-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.create-listing-section-landloard .lease-terms .lease-setting .switch,
+.create-listing-section-landloard .additional-rental-terms .switch,
+.create-listing-section-landloard .parking-and-storage .switch,
+.create-listing-section-landloard .rules-and-utilities .property-role .switch,
+.create-listing-section-landloard .rules-and-utilities .utilities .switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 20px;
+} */
+
+/* .create-listing-section-landloard .lease-terms .lease-setting .switch input,
+.create-listing-section-landloard .additional-rental-terms .switch input,
+.create-listing-section-landloard .parking-and-storage .switch input,
+.create-listing-section-landloard .rules-and-utilities .property-role .switch input,
+.create-listing-section-landloard .rules-and-utilities .utilities .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.create-listing-section-landloard .lease-terms .lease-setting .form-group label,
+.create-listing-section-landloard .additional-rental-terms .form-group label,
+.create-listing-section-landloard .describe-your-property .form-group label,
+.create-listing-section-landloard .parking-and-storage .form-group label,
+.create-listing-section-landloard .rules-and-utilities .property-role .form-group label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.42);
+} */
+
+/* .create-listing-section-landloard .rules-and-utilities .utilities .card {
+    background-color: #FFFFFF;
+    border: 1px solid #F3F6FC;
+    border-radius: 5px;
+}
+
+.create-listing-section-landloard .rules-and-utilities .utilities .card .card-body {
+    padding: 12px;
+}
+
+.create-listing-section-landloard .rules-and-utilities .utilities .card .card-body .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.create-listing-section-landloard .rules-and-utilities .utilities .card .card-body .input-group input {
+    background-color: #FFFFFF;
+    border: 1px solid #F3F6FC;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    padding-bottom: 11px;
+    padding-top: 12px;
+} */
+
+.custom-date-input {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-date-input img {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 12px;
+  opacity: 0.3;
+}
+
+.lease-terms .lease-setting select.lease-option {
+  background-image: url(../img/icons/drowpdown-icon.png) !important;
+  background-position: calc(100% - 30px) 24px, calc(100% - 20px) 14px, 100% 0 !important;
+  background-repeat: no-repeat !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.lease-setting .ui-widget-header {
+  height: 6px !important;
+}
+
+.lease-setting .ui-state-default,
+.lease-setting .ui-widget-content .ui-state-default,
+.lease-setting .ui-widget-header .ui-state-default {
+  border: 1px solid #c3c3c3;
+  border-radius: 13px;
+  background: #fff;
+}
+
+.lease-setting .ui-widget-content {
+  height: 2px !important;
+  border: 0;
+  background: unset !important;
+}
+
+.lease-setting .ui-slider-handle {
+  outline: none;
+}
+
+.lease-setting .ui-slider-handle .amount {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin-left: -55px;
+  font-weight: 300;
+  font-size: 10px;
+  color: #000000;
+  opacity: 0.6;
+}
+.filter-popover.lease-setting .ui-slider-handle .amount {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin-left: -55px;
+  font-size: 13px;
+  color: #2b4a60;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.lease-setting .slider-range-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(0deg, #e1dbdd, #e1dbdd), #e1dbdd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.lease-setting .ui-widget.ui-widget-content {
+  border: unset !important;
+}
+
+.lease-setting .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  height: 6px;
+  background: #0e5f99;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.lease-setting .ui-state-default,
+.lease-setting .ui-widget-content .ui-state-default,
+.lease-setting .ui-widget-header .ui-state-default,
+.lease-setting .ui-button,
+.lease-setting html .ui-button.ui-state-disabled:hover,
+.lease-setting html .ui-button.ui-state-disabled:active {
+  border: unset !important;
+  background: #ffffff !important;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lease-setting .ui-slider .ui-slider-handle {
+  width: 13px !important;
+  height: 13px !important;
+  z-index: 2;
+}
+
+#MediaUpoadModalCenter .tab-content {
+  position: relative;
+  overflow: hidden;
+}
+
+#MediaUpoadModalCenter .tab-content.is-animating {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  width: auto;
+}
+
+#MediaUpoadModalCenter .content-pane {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%) translateY(-50%);
+}
+
+#MediaUpoadModalCenter .content-pane.is-active {
+  position: relative;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+#MediaUpoadModalCenter .content-pane.is-exiting {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#MediaUpoadModalCenter .content-pane.is-animating {
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+
+#MediaUpoadModalCenter .nav-tabs li a.active img.inactive {
+  display: none;
+}
+
+#MediaUpoadModalCenter .nav-tabs li a:not(.active) img.active {
+  display: none;
+}
+
+#MediaUpoadModalCenter .nav-tabs li:hover a img.inactive {
+  display: none;
+}
+
+#MediaUpoadModalCenter .nav-tabs li:hover a img.active {
+  display: inline-block;
+}
+
+#MediaUpoadModalCenter .ui-progressbar {
+  position: relative;
+}
+
+#MediaUpoadModalCenter .ui-progressbar .ui-progressbar-value {
+  height: 5px !important;
+  background: #89c33d;
+  border-radius: 100px;
+  border: none !important;
+}
+
+#MediaUpoadModalCenter .ui-widget.ui-widget-content {
+  height: 5px !important;
+  background: #e3eaee;
+  border-radius: 100px;
+  border: none !important;
+}
+
+#MediaUpoadModalCenter .save-form-data-btn {
+  width: 110px;
+}
+
+#MediaUpoadModalCenter .file-Drag-drop {
+  outline: 2px dashed #219fff;
+  text-align: center !important;
+  margin: 0;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+#MediaUpoadModalCenter .file-Drag-drop input:focus {
+  outline: 2px dashed #219fff;
+}
+
+#MediaUpoadModalCenter .file-Drag-drop input {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.chat-tabbable-line > .nav-tabs,
+#MediaUpoadModalCenter .tabbable-line > .nav-tabs {
+  border-bottom: 2px solid #e3eaee;
+  margin: 0px;
+}
+
+.chat-tabbable-line .nav-tabs li a:not(.active),
+#MediaUpoadModalCenter .nav-tabs li a:not(.active) {
+  color: #cfd7dc;
+  padding-bottom: 12px;
+  display: block;
+}
+.chat-tabbable-line > .nav-tabs li > a.active,
+.chat-tabbable-line > .nav-tabs > li:hover > a,
+#MediaUpoadModalCenter .tabbable-line .nav-tabs li > a.active,
+#MediaUpoadModalCenter .tabbable-line > .nav-tabs > li:hover > a {
+  display: block;
+  color: #89c33d !important;
+  position: relative;
+}
+.chat-tabbable-line
+  .nav-tabs
+  li
+  > a::before
+  #MediaUpoadModalCenter
+  .tabbable-line
+  .nav-tabs
+  li
+  > a::before {
+  width: 0px;
+}
+.chat-tabbable-line .nav-tabs li > a.active::before,
+.chat-tabbable-line .tabbable-line > .nav-tabs > li:hover > a::before,
+#MediaUpoadModalCenter .tabbable-line .nav-tabs li > a.active::before,
+#MediaUpoadModalCenter .tabbable-line > .nav-tabs > li:hover > a::before {
+  background-color: #89c33d;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  display: block;
+  z-index: 1024;
+  content: "";
+  margin-top: 32px;
+  animation: reveal 1s forwards;
+}
+@keyframes reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.chat-tabbable-line > .nav-tabs li,
+#MediaUpoadModalCenter .tabbable-line > .nav-tabs li {
+  width: 33.33%;
+}
+
+/* ==================================== 
+======== Bidder Details Start =======*/
+#BidderDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+  border: none;
+}
+
+#BidderDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+}
+
+#BidderDetailsModalCenter .modal-content .modal-body .bidder-profile-btn a {
+  width: 140px;
+  height: 40px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+#BidderDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a:last-child {
+  margin-bottom: 0px;
+  background-color: #d0c9c8;
+}
+
+#BidderDetailsModalCenter .modal-content .modal-body .card.details-card {
+  border: 1px solid #cfd7dc;
+  border-radius: 10px;
+}
+
+#BidderDetailsModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  .text-muted {
+  color: #6c757d69 !important;
+}
+/*======================================
+======== Make Payment Page Start ====*/
+
+.makepayment.star-rating {
+  direction: rtl;
+}
+
+.makepayment.star-rating input[type="radio"] {
+  display: none;
+}
+
+.makepayment.star-rating label {
+  color: #89c33d;
+  font-size: 15px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.makepayment.star-rating label:hover,
+.makepayment.star-rating label:hover ~ label,
+.makepayment.star-rating input[type="radio"]:checked ~ label {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+#BookVisitModalCenter
+  .modal-content
+  .modal-body
+  .form-group
+  .custom-date-input {
+  position: relative;
+  overflow: hidden;
+}
+
+#BookVisitModalCenter
+  .modal-content
+  .modal-body
+  .form-group
+  .custom-date-input
+  input {
+  height: 50px;
+  border: 1.5px solid #cfd7dc;
+  border-radius: 6px;
+}
+
+#BookVisitModalCenter .modal-content .modal-body .form-group label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2b4a60;
+}
+
+#BookVisitModalCenter
+  .modal-content
+  .modal-body
+  .form-group
+  .custom-date-input
+  img {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+#BookVisitModalCenter .modal-content .modal-body .book-btn {
+  width: 110px;
+  height: 50px;
+}
+
+#MBookVisitModalCenter .ui-progressbar {
+  position: relative;
+}
+
+#BookVisitModalCenter .ui-progressbar .ui-progressbar-value {
+  height: 6px !important;
+  background: #89c33d;
+  /* border-radius: 10px; */
+  border-radius: 100px;
+  border: none !important;
+}
+
+#BookVisitModalCenter .ui-widget.ui-widget-content {
+  height: 6px !important;
+  background: #ececea;
+  border-radius: 100px;
+  border: none !important;
+}
+/* ====================================================
+============= Tenents Details Modal Start ===========*/
+
+#TenentsDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+  border: none;
+}
+
+#TenentsDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+}
+
+#TenentsDetailsModalCenter .modal-content .modal-body .bidder-profile-btn a {
+  width: 167px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+
+#TenentsDetailsModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a:last-child {
+  margin-bottom: 0px;
+  background-color: #d0c9c8;
+}
+
+#TenentsDetailsModalCenter .modal-content .modal-body .card.details-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+#TenentsDetailsModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  .text-muted {
+  color: #6c757d69 !important;
+}
+
+/* ====================================================
+============= Counter Offer Modal Start ===========*/
+
+#CounterOfferModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+  border: none;
+  position: relative;
+}
+
+#CounterOfferModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+}
+#CounterOfferModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img.verify-account {
+  position: absolute;
+  width: unset;
+  height: unset;
+  background: transparent;
+  bottom: 0;
+  right: 20px;
+}
+#CounterOfferModalCenter .modal-content .modal-body .bidder-profile-btn a {
+  width: 167px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+#CounterOfferModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a:last-child {
+  margin-bottom: 0px;
+  background-color: #d0c9c8;
+}
+
+#CounterOfferModalCenter .modal-content .modal-body .card.details-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+#CounterOfferModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  .text-muted {
+  color: #6c757d69 !important;
+}
+
+#CounterOfferModalCenter.fade.show {
+  opacity: 1;
+  overflow: auto;
+}
+
+#CounterOfferModalCenter.fade.show::-webkit-scrollbar {
+  display: none;
+}
+/*=========================================================
+============== Bidder Details Select Modal Start ========*/
+
+#BidderDetailsSelectModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+  border: none;
+}
+
+#BidderDetailsSelectModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+}
+
+#BidderDetailsSelectModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a {
+  width: 167px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+
+#BidderDetailsSelectModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a:last-child {
+  margin-bottom: 0px;
+  background-color: #d0c9c8;
+}
+
+#BidderDetailsSelectModalCenter .modal-content .modal-body .card.details-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+#BidderDetailsSelectModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  .text-muted {
+  color: #6c757d69 !important;
+}
+/*=========================================================
+============== Bidder Details Answe Modal Start ========*/
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+  border: none;
+  position: relative;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img {
+  height: 176px;
+  width: 176px;
+  border-radius: 100px;
+  background-color: #c4c4c4;
+}
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-section
+  .card
+  img.verify-account {
+  position: absolute;
+  width: unset;
+  height: unset;
+  background: transparent;
+  bottom: 0;
+  right: 20px;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a {
+  width: 140px;
+  height: 40px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .bidder-profile-btn
+  a:last-child {
+  margin-bottom: 0px;
+  background-color: #d0c9c8;
+}
+
+#BidderDetailsAnswerModalCenter .modal-content .modal-body .card.details-card {
+  border: 1px solid #f0f0f0;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  .text-muted {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #858585;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  b {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
+#BidderDetailsAnswerModalCenter
+  .modal-content
+  .modal-body
+  .card.details-card
+  .card-body
+  a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #003252;
+  text-decoration-color: #317eaf;
+}
+
+#BidderDetailsAnswerModalCenter.fade.show {
+  opacity: 1;
+  overflow: auto;
+}
+
+#BidderDetailsAnswerModalCenter.fade.show::-webkit-scrollbar {
+  display: none;
+}
+/* ============================================
+============ Landlord View Profile ==========*/
+
+.card.landlord-view-profile {
+  border-radius: 25px;
+  padding: 70px;
+  border: 1px solid #f0f0f0;
+}
+
+.card.landlord-view-profile .card.profile-details {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.card.landlord-view-profile h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.landlord-view-profile-thumb .user-profile-card {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.landlord-view-profile-thumb .user-profile-card .user-img {
+  width: 270px;
+  position: relative;
+  overflow: hidden;
+}
+
+.landlord-view-profile-thumb .user-profile-card .user-img #thing {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  border: 18px solid #f0f0f0;
+  border-left-color: #ccbcee;
+  border-radius: 100%;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(125deg);
+  /* right: 95px; */
+}
+
+.landlord-view-profile-thumb .user-profile-card .user-img .user-profile-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+}
+/* =============================================
+================ Create page Start =============
+============================================= */
+
+/* =============================================
+================ Create Profile Start ==========
+============================================= */
+
+.create-profile-section .card:nth-child(1) {
+  border-radius: 8px;
+  /* min-height: 100vh; */
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+}
+
+.create-profile-section .card #create-profile fieldset:not(:first-of-type) {
+  display: none;
+}
+
+.create-profile-section .card #create-profile .card-body .progress {
+  border-radius: 0px;
+  height: 3px;
+  background-color: #f0f0f0;
+}
+
+.create-profile-section .CustomStepDesign .bullet {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #cfd7dc;
+  border-radius: 100px;
+  background: #ffffff;
+  line-height: 28px;
+}
+.create-profile-section .CustomStepDesign .CustomStep.active .bullet {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #0e5f99;
+  border-radius: 100px;
+  background: #ffffff;
+  line-height: 28px;
+}
+
+.create-profile-section .CustomStepDesign .CustomStep.finish .bullet {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #0e5f99;
+  border-radius: 100px;
+  background: #0e5f99;
+  line-height: 28px;
+}
+
+.create-profile-section .CustomStepDesign .CustomStep {
+  width: 22%;
+  position: relative;
+  overflow: hidden;
+}
+.create-profile-section .CustomStepDesign .CustomStep span {
+  color: #657987;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.create-profile-section .CustomStepDesign .CustomStep.active span::before,
+.create-profile-section .CustomStepDesign .CustomStep.finish span::before {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background: #0e5f99;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  opacity: 0.7;
+  border-radius: 100px;
+}
+
+.create-profile-section .CustomStepDesign .CustomStep span::before {
+  background: #e3eaee;
+  content: "";
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  opacity: 0.7;
+  border-radius: 100px;
+}
+.create-profile-section .CustomStepDesign .CustomStep:last-child span::before {
+  background: unset;
+  content: "";
+  height: unset;
+  opacity: unset;
+  width: unset;
+  position: unset;
+  right: unset;
+  top: unset;
+  opacity: unset;
+  border-radius: unset;
+}
+.create-profile-section .CustomStepDesign .CustomStep.active span,
+.create-profile-section .CustomStepDesign .CustomStep.finish span {
+  color: #0e5f99;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep.active
+  .bullet
+  img.finish {
+  display: none;
+}
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep.active
+  .bullet
+  img.inactive {
+  display: none;
+}
+
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep.finish
+  .bullet
+  img.active {
+  display: none;
+}
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep.finish
+  .bullet
+  img.inactive {
+  display: none;
+}
+
+.create-profile-section .CustomStepDesign .CustomStep .bullet img.inactive {
+  display: inline-block;
+}
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep:not(.active)
+  .bullet
+  img.active {
+  display: none;
+}
+
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep:not(.active)
+  .bullet
+  img.finish {
+  display: none;
+}
+
+.create-profile-section
+  .CustomStepDesign
+  .CustomStep.finish
+  .bullet
+  img.finish {
+  display: inline-block;
+}
+
+.create-profile-section .card .card-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.create-profile-section .card #create-profile fieldset .next,
+.create-profile-section .card #create-profile fieldset .save,
+.create-profile-section .card #create-profile fieldset .previous {
+  padding: 12px 35px 13px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .progress
+  .progress-bar {
+  height: 3px;
+  background: #455a64;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .personal-details
+  .card-body
+  .card.profile-img-preview {
+  width: 380px;
+  height: 190px;
+  background: #f9fbff;
+  border: 1px solid #e9f0ff;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.CustomUploadComponent .profile-image-upload-btn,
+.create-profile-section
+  .card
+  #create-profile
+  .personal-details
+  .card-body
+  .profile-image-upload-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  border: 1px dashed #0e5f99;
+  border-radius: 6px;
+  padding: 13px;
+  background: rgba(230, 244, 255, 0.4);
+}
+
+.CustomUploadComponent .profile-image-upload-btn input[type="file"],
+.create-profile-section
+  .card
+  #create-profile
+  .personal-details
+  .card-body
+  .profile-image-upload-btn
+  input[type="file"] {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+.add-payment-method .form-group label,
+.create-profile-section .card #create-profile .card-body .form-group label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2b4a60;
+}
+
+.add-payment-method .form-group input[type="text"],
+.add-payment-method .form-group input[type="email"],
+.add-payment-method .form-group input[type="password"],
+.add-payment-method .form-group select,
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  input[type="text"],
+.create-profile-section .card #create-profile .card-body .form-group select,
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  input[type="email"],
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  input[type="number"],
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  input[type="date"] {
+  background: #fff;
+  border: 1.5px solid #cfd7dc;
+  border-radius: 6px !important;
+  height: 52px !important;
+}
+.add-payment-method .form-group textarea,
+.create-profile-section .card #create-profile .card-body .form-group textarea {
+  background: #fff;
+  border: 1.5px solid #cfd7dc;
+  border-radius: 6px;
+}
+.add-payment-method .form-group select option,
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  select
+  option {
+  color: #000 !important;
+}
+
+.add-payment-method .form-group textarea::placeholder,
+.add-payment-method .form-group input::placeholder,
+.add-payment-method .form-group select,
+.create-profile-section .card #create-profile .card-body .form-group select,
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  input::placeholder,
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .form-group
+  textarea::placeholder {
+  color: #afc0cb;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .card-body
+  .profile-img-preview-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.42);
+  margin: 16px 0px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .contact-information
+  .card-body
+  select.profile-language-select:not([size]):not([multiple]) {
+  height: calc(2.25rem + 16px);
+  border: 1px solid #e9f0ff;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .contact-information
+  .card-body
+  select.profile-language-select {
+  background-image: url(../img/icons/drowpdown-icon.png);
+  background-position: calc(100% - 30px) 24px, calc(100% - 20px) 14px, 100% 0;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.42);
+}
+
+/* .create-profile-section .card #create-profile .contact-information .card-body .input-group.id-pdf-upload {
+    position: relative;
+    overflow: hidden;
+} */
+
+/* .create-profile-section .card #create-profile .contact-information .card-body .input-group.id-pdf-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+} */
+
+/* .create-profile-section .card #create-profile .contact-information .card-body .input-group.id-pdf-upload span {
+    background: #f9fbff;
+    font-style: normal;
+    padding: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.42);
+    border: 1px solid #E9F0FF;
+} */
+
+/* .create-profile-section .card #create-profile .contact-information .card-body .input-group.id-pdf-upload .input-group-append {
+    background: #0E5F99 !important;
+    border: 1px solid #E9F0FF;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+} */
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  padding-left: 2.5rem;
+  position: relative;
+  top: 0.25rem;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__custom-indicator::after {
+  background-color: #0e5f99;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 10px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:checked
+  ~ .radio-button__custom-indicator::after {
+  display: block;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  .radio-button__input:disabled
+  ~ .radio-button__custom-indicator {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .radio-button__label-wrapper
+  b,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .radio-button__label-wrapper
+  b,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .radio-button__label-wrapper
+  b,
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information
+  .card-body
+  .radio-button__label-wrapper
+  b {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .card.profile-img-preview {
+  width: 150px;
+  height: 150px;
+  background: #f9fbff;
+  border: 1px solid #e9f0ff;
+  border-radius: 10px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .profile-image-upload-btn,
+.create-profile-section
+  .card
+  #create-profile
+  .income-details
+  .card-body
+  .profile-image-upload-btn,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .card-body
+  .profile-image-upload-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 12px 30px 11px 30px;
+  margin-top: 15px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .basic-details-first
+  .card-body
+  .profile-image-upload-btn
+  input[type="file"],
+.create-profile-section
+  .card
+  #create-profile
+  .income-details
+  .card-body
+  .profile-image-upload-btn
+  input[type="file"],
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .card-body
+  .profile-image-upload-btn
+  input[type="file"] {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+.CheckBoxComponent .switch,
+.filter-model-switch-btn .switch,
+.create-profile-section .card #create-profile .employement-details .switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 20px;
+}
+
+.CheckBoxComponent .switch input,
+.filter-model-switch-btn .switch input,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.CheckBoxComponent .switch input:checked + .notification-slider,
+.filter-model-switch-btn .switch input:checked + .notification-slider,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  input:checked
+  + .notification-slider {
+  background-color: #0e5f99;
+}
+
+.CheckBoxComponent .switch .notification-slider,
+.filter-model-switch-btn .switch .notification-slider,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  .notification-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+
+.CheckBoxComponent .switch input:checked + .notification-slider:before,
+.filter-model-switch-btn .switch input:checked + .notification-slider:before,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  input:checked
+  + .notification-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.CheckBoxComponent .switch .notification-slider.round:before,
+.filter-model-switch-btn .switch .notification-slider.round:before,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  .notification-slider.round:before {
+  border-radius: 50%;
+}
+
+.CheckBoxComponent .switch .notification-slider:before,
+.filter-model-switch-btn .switch .notification-slider:before,
+.create-profile-section
+  .card
+  #create-profile
+  .employement-details
+  .switch
+  .notification-slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+
+#createprofileModalCenter .modal-content {
+  border-radius: 16px;
+}
+#createprofileModalCenter .modal-content .modal-body {
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .form-group
+  .upload-doc-input,
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .form-group
+  .upload-doc-input {
+  overflow: hidden;
+  position: relative;
+}
+
+.create-profile-section
+  .card
+  #create-profile
+  .home-insurance-details
+  .card-body
+  .form-group
+  .upload-doc-input
+  input[type="file"],
+.create-profile-section
+  .card
+  #create-profile
+  .extra-information-two
+  .card-body
+  .form-group
+  .upload-doc-input
+  input[type="file"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* =========================================
+========= Calendar Page Code Start =======*/
+/* 
+.card.calendar {
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+}
+
+.card.calendar .card-header:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card.calendar .table-calendar {
+    border-collapse: separate;
+    border-spacing: 25px 25px;
+    width: 100%;
+}
+
+.card.calendar .table-calendar td,
+.card.calendar .table-calendar th {
+    text-align: center;
+    vertical-align: top;
+}
+
+.card.calendar .table-calendar #thead-month tr th {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.card.calendar .table-calendar #calendar-body td {
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    overflow: auto;
+    word-wrap: break-word;
+    min-width: 80px;
+    max-width: 90px;
+    height: 90px;
+}
+
+.card.calendar .date-picker.selected {
+    background: #F0A5A5 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+ 
+.card.calendar .date-picker:nth-child(7) {
+    color: #B40707;
+}
+ 
+
+.card.calendar .date-picker:nth-child(4) {
+    background: #F0A5A5 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card.calendar #monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card.calendar select {
+    color: #003252;
+    font-size: 16px !important;
+    font-weight: 600;
+    width: 70px;
+} */
+
+/* =============================================
+================ Custom Tooltip Css Start ======
+============================================= */
+.CustomTooltip.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.CustomTooltip.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 203px;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #2b4a60;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  bottom: -160%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.CustomTooltip.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  -ms-transform: translate(-0%, -50%);
+  transform: translate(-0%, -50%);
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+.CustomTooltip.tooltip {
+  opacity: 1 !important;
+}
+
+.CustomTooltip.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1 !important;
+}
+
+/* =============================================
+================ Custom Tooltip Css End ========
+============================================= */
+
+/* =============================================
+================ Explore Filter Css Start ======
+============================================= */
+.SelectArrowChange {
+  background: url("../img/icons/arrow-down.png") no-repeat;
+  background-position: calc(97% - 1rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 52px !important;
+}
+
+.exploresearchbar.input-group span.input-group-append button {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 1.5px solid #657987 !important;
+  border-top: 1.5px solid #657987 !important;
+  border-bottom: 1.5px solid #657987 !important;
+  height: 52px;
+}
+
+.exploresearchbar.input-group input {
+  border: 1.5px solid #657987 !important;
+  border-left: 0 !important;
+  height: 52px;
+}
+.exploresearchbar.input-group input::placeholder {
+  color: #afc0cb;
+}
+
+.SmallCheckBoxComponent {
+  width: 30px;
+  height: 15px;
+}
+
+.SmallCheckBoxComponent .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+}
+.SmallCheckBoxComponent .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.SmallCheckBoxComponent .switch input:checked + .notification-slider {
+  background-color: #0e5f99;
+}
+.SmallCheckBoxComponent .switch .notification-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+.SmallCheckBoxComponent .switch input:checked + .notification-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(12px);
+}
+.SmallCheckBoxComponent .switch .notification-slider.round:before {
+  border-radius: 50%;
+}
+
+.SmallCheckBoxComponent .switch .notification-slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+
+.CustomRadioBtn .custom-control-input:checked ~ .custom-control-label {
+  color: #0e5f99;
+}
+.CustomRadioBtn .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: transparent;
+}
+.CustomRadioBtn .custom-control-label::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #afc0cb;
+  border-radius: 4px;
+}
+.CustomRadioBtn .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../img/icons/checkbox-icon.png);
+  margin-top: -3px;
+}
+.CustomRadioBtn .custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.CustomRadioBtn .custom-control-label {
+  color: #657987;
+}
+
+.popover {
+  min-width: 350px;
+}
+/* =============================================
+================ Explore Filter Css End ========
+============================================= */
+
+/* =============================================
+================ Payment Invoice Start =========
+============================================= */
+.payment-invoice-table .table thead th {
+  background: #e3eaee;
+}
+
+.payment-invoice-table table td,
+.payment-invoice-table table th {
+  width: 25%;
+}
+.payment-invoice-table table {
+  border-collapse: separate;
+  border-spacing: 0px 6px;
+}
+.payment-invoice-table .table thead th:first-child {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.payment-invoice-table .table thead th:last-child {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.payment-invoice-table .table tbody tr td {
+  border-top: 1.5px solid #e3eaee;
+  border-bottom: 1.5px solid #e3eaee;
+}
+
+.payment-invoice-table .table.table-striped tbody tr:nth-of-type(odd) {
+  background: #ffffff;
+}
+.payment-invoice-table .table.table-striped tbody tr:nth-of-type(even) {
+  background: #f4f9fc;
+}
+
+.payment-invoice-table .table tbody tr td:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 1.5px solid #e3eaee;
+}
+.payment-invoice-table .table tbody tr td:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-right: 1.5px solid #e3eaee;
+}
+
+.payment-invoice-table .table tbody tr td img.pet-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+/* =============================================
+================ Payment Invoice End ===========
+============================================= */

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Results Listing</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="x">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" /> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+
+</head>
+
+<body>
+
+    <!-- ================================================
+    ============== Header section  Start =============-->
+    <header class="header-section shadow-none clearfix bg-transparent">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+                    <a href="index.html" class="site-logo">
+                        <img src="../img/logos/Hauskarma-header-logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- This Code Hidde On extera large and large Screen Start  -->
+                <div class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+
+                <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+                    <ul class="menu-list">
+                        <li><a href="index.html">Rentals</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing-renter.html">Pricing</a></li>
+                        <li><a href="#">Rentals Resources</a></li>
+                    </ul>
+                </nav>
+                <!-- This Code Hidde On extera large and large Screen End  -->
+
+                <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+                    <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+                    <!-- This Code Show On extera large and large Screen Start  -->
+                    <nav class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Rentals</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                    <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="pricing-renter.html">Pricing</a></li>
+                            <li><a href="#">Rentals Resources</a></li>
+                        </ul>
+                    </nav>
+                    <!-- This Code Show On extera large and large Screen End  -->
+                </div>
+
+                <!-- This Code Show On extera large and large Screen Start  -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+                <!-- This Code Show On extera large and large Screen End  -->
+            </div>
+
+        </div>
+    </header> 
+    <!-- ================================================
+    ============== Header section  End ===============-->
+
+    <section class="dark-bg-color-six pb-4 pt-4">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 mb-sm-3 mb-xs-3 text-lg-left text-md-center text-sm-center text-xl-left text-xs-center">
+                    <h5 class=""><strong class="font-13">Results: </strong>
+                        <p class="d-inline font-14 ml-1 dark-color-second"> Listing lowest to highest asking price</p>
+                    </h5>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="search-from">
+                        <form class="form-inline justify-content-lg-end justify-content-md-center justify-content-xl-end">
+                            <div class="form-group ">
+                                <input type="hidden" name="query" value="noida">
+                                <select name="order" class="search-select bg-transparent font-13 form-control search-results-listing-filter">
+                                    <option>Sort by</option>
+                                    <option value="desc">High to Low</option>
+                                    <option value="asc">Low to High</option>
+                                </select>
+                            </div>
+                            <button type="button" data-toggle="modal" data-target="#filterModalLong" class="align-items-center bg-transparent border btn d-flex font-12 justify-content-between ml-3 pb-2 pt-2 search-btn">
+                                <span class="dark-color-second">Filters</span>
+                                <i class="fa fa-sliders ml-5" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="toggle-btn-section pb-4 pt-4">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-md-4 col-sm-4 text-xs-center">
+                    <div class="btn-group custom-toggle-btn p-2">
+                        <a href="#" class="btn border-0 font-12 font-weight-600 dark-color-second">Map View</a>
+                        <a href="#" class="border-0 btn font-12 font-weight-600 pl-3 pr-3 primary-bg-color-first rounded text-white">List View</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb-xs-3 order-xs-first">
+                    <span class="d-block dark-color-second font-14 font-weight-600 text-center">Listing lowest to highest asking price </span>
+                </div>
+                <div class="col-md-4 col-sm-4 mt-xs-3">
+                    <div class="search-bar-on-map search-input">
+                        <div class="from-group">
+                            <form autocomplete="off" action="search-results-listing.html">
+                                <input type="text" placeholder="Search here" class="form-control font-13">
+                                <button type="submit" class="border-0 border-radius-6 hero-serach-btn icon primary-bg-color-first">
+                                     <img src="../img/icons/search-icon.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="autocom-box m-sm-auto m-xs-auto ml-md-0">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="search-results-listing-show">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-xs-3 right-content pl-4 pr-4">
+                                <div class="row bid-status-button">
+                                    <div class="col-12 col-md-4">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <div class="bid-status-button-left pb-3  pt-3 status-bg-color-four text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-22 theme-color-one">$1,130</span>
+                                                </div>
+                                                <div class="bid-status-button-right status-bg-color-six pb-3  pt-3 text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-22 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row mt-3">
+                                            <div class="col-9 col-md-9">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/listing-clock.png"> </span>
+                                                    <span class="font-12 ml-1 text-span"><strong>DOM:</strong> 2 Days 5 Hours</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3 col-md-3 text-right">
+                                                <img src="../img/icons/wishlist-yellow-icon.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-14 mb-0">
+                                                    <a href="#" class="dark-color-second font-weight-600">Private, emotional lodging cabin in Yeongwol</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                                    <span class="font-12 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row mb-2">
+
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                            </div>
+            
+                                            
+                                        </div>
+            
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-4 col-md-4 col-sm-4">
+                                                <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-second primary-color-first pt-1">
+                                                    Bid Now <img src="../img/icons/primary-arrow.png" width="6" class="ml-1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-sm-6">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                            </div>
+                                            <div class="col-2 col-md-2 col-sm-2 text-right">
+                                                <img src="../img/icons/touch.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 left-content order-md-first order-sm-first order-xs-first order-lg-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-xs-3 right-content pl-4 pr-4">
+                                <div class="row bid-status-button">
+                                    <div class="col-12 col-md-4">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <div class="bid-status-button-left pb-3  pt-3 status-bg-color-four text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-22 theme-color-one">$1,130</span>
+                                                </div>
+                                                <div class="bid-status-button-right status-bg-color-six pb-3  pt-3 text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-22 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row mt-3">
+                                            <div class="col-9 col-md-9">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/listing-clock.png"> </span>
+                                                    <span class="font-12 ml-1 text-span"><strong>DOM:</strong> 2 Days 5 Hours</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3 col-md-3 text-right">
+                                                <img src="../img/icons/wishlist-yellow-icon.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-14 mb-0">
+                                                    <a href="#" class="dark-color-second font-weight-600">Private, emotional lodging cabin in Yeongwol</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                                    <span class="font-12 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row mb-2">
+
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                            </div>
+            
+                                            
+                                        </div>
+            
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-4 col-md-4 col-sm-4">
+                                                <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-second primary-color-first pt-1">
+                                                    Bid Now <img src="../img/icons/primary-arrow.png" width="6" class="ml-1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-sm-6">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                            </div>
+                                            <div class="col-2 col-md-2 col-sm-2 text-right">
+                                                <img src="../img/icons/touch.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 left-content order-md-first order-sm-first order-xs-first order-lg-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-xs-3 right-content pl-4 pr-4">
+                                <div class="row bid-status-button">
+                                    <div class="col-12 col-md-4">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <div class="bid-status-button-left pb-3  pt-3 status-bg-color-four text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-22 theme-color-one">$1,130</span>
+                                                </div>
+                                                <div class="bid-status-button-right status-bg-color-six pb-3  pt-3 text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-22 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row mt-3">
+                                            <div class="col-9 col-md-9">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/listing-clock.png"> </span>
+                                                    <span class="font-12 ml-1 text-span"><strong>DOM:</strong> 2 Days 5 Hours</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3 col-md-3 text-right">
+                                                <img src="../img/icons/wishlist-yellow-icon.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-14 mb-0">
+                                                    <a href="#" class="dark-color-second font-weight-600">Private, emotional lodging cabin in Yeongwol</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                                    <span class="font-12 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row mb-2">
+
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                            </div>
+            
+                                            
+                                        </div>
+            
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-4 col-md-4 col-sm-4">
+                                                <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-second primary-color-first pt-1">
+                                                    Bid Now <img src="../img/icons/primary-arrow.png" width="6" class="ml-1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-sm-6">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                            </div>
+                                            <div class="col-2 col-md-2 col-sm-2 text-right">
+                                                <img src="../img/icons/touch.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 left-content order-md-first order-sm-first order-xs-first order-lg-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-xs-3 right-content pl-4 pr-4">
+                                <div class="row bid-status-button">
+                                    <div class="col-12 col-md-4">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <div class="bid-status-button-left pb-3  pt-3 status-bg-color-four text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-22 theme-color-one">$1,130</span>
+                                                </div>
+                                                <div class="bid-status-button-right status-bg-color-six pb-3  pt-3 text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-22 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row mt-3">
+                                            <div class="col-9 col-md-9">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/listing-clock.png"> </span>
+                                                    <span class="font-12 ml-1 text-span"><strong>DOM:</strong> 2 Days 5 Hours</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3 col-md-3 text-right">
+                                                <img src="../img/icons/wishlist-yellow-icon.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-14 mb-0">
+                                                    <a href="#" class="dark-color-second font-weight-600">Private, emotional lodging cabin in Yeongwol</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                                    <span class="font-12 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row mb-2">
+
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                            </div>
+            
+                                            
+                                        </div>
+            
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-4 col-md-4 col-sm-4">
+                                                <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-second primary-color-first pt-1">
+                                                    Bid Now <img src="../img/icons/primary-arrow.png" width="6" class="ml-1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-sm-6">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                            </div>
+                                            <div class="col-2 col-md-2 col-sm-2 text-right">
+                                                <img src="../img/icons/touch.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 left-content order-md-first order-sm-first order-xs-first order-lg-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-xs-3 right-content pl-4 pr-4">
+                                <div class="row bid-status-button">
+                                    <div class="col-12 col-md-4">
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <div class="bid-status-button-left pb-3  pt-3 status-bg-color-four text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-22 theme-color-one">$1,130</span>
+                                                </div>
+                                                <div class="bid-status-button-right status-bg-color-six pb-3  pt-3 text-center">
+                                                    <span class="mb-1 d-block font-12 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-22 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="row mt-3">
+                                            <div class="col-9 col-md-9">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/listing-clock.png"> </span>
+                                                    <span class="font-12 ml-1 text-span"><strong>DOM:</strong> 2 Days 5 Hours</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3 col-md-3 text-right">
+                                                <img src="../img/icons/wishlist-yellow-icon.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-14 mb-0">
+                                                    <a href="#" class="dark-color-second font-weight-600">Private, emotional lodging cabin in Yeongwol</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <p class="font-11 mb-0">
+                                                    <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                                    <span class="font-12 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row mb-2">
+
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                            </div>
+            
+                                            
+                                        </div>
+            
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-4 col-md-4 col-sm-4">
+                                                <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-second primary-color-first pt-1">
+                                                    Bid Now <img src="../img/icons/primary-arrow.png" width="6" class="ml-1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-sm-6">
+                                                <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                            </div>
+                                            <div class="col-2 col-md-2 col-sm-2 text-right">
+                                                <img src="../img/icons/touch.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 left-content order-md-first order-sm-first order-xs-first order-lg-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer section Start -->
+    <footer class="pb-5 pt-5 footer-section primary-bg-color-first" style="background-image: url('../img/footer-bg-desktop.png');background-repeat: no-repeat, repeat;background-position: bottom;">
+        <!-- <div class="footer-bg"></div> -->
+        <div class="container">
+            <div class="pb-5 pt-5 row">
+
+                <div class="col-lg-5 col-md-5 col-sm-12 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <img class="mb-4" src="../img/logos/Hauskarma-footer-logo.png" alt="">
+                    <p>Never over pay for rent! We are the premium location for rentals. Using our patented HusKarma rating system we connect landlords and tenants. We ensure tenants never over pay for rent while making sure the landlords properties are
+                        taken care of and that rent is always paid on time.</p>
+                    <div class="footer-social">
+                        <a href=""><i class="fa fa-instagram mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-dribbble mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-play mt-2" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 colo-lg-3 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <h5 class="widget-title ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5 font-21 font-menu font-weight-bold">Quick Links</h5>
+                    <ul class="ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5">
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="policy.html">Privacy</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 footer-widget pl-lg-5 pl-3 mt-sm-5 mt-xs-5 mt-md-0">
+                    <h5 class="font-21 font-menu font-weight-bold widget-title">Get in Touch</h5>
+
+                    <ul class="mb-3">
+
+                        <li class="mb-3">
+                            <img src="../img/footer-sms-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">info@leasimple.com</a>
+                        </li>
+                        <li class="mb-3">
+                           <img src="../img/footer-location-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">Toronto, Canada</a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#" class="appicon mr-4"><img src="../img/icons/appstore.png" alt=""></a>
+                            <a href="#" class="appicon"><img src="../img/icons/playstore.png" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="footer-nav">
+                        <span class="font-15 font-weight-normal">
+                            Copyright 2021 - All Rights Reserved <a href="#" target="_blank">Huskarma.</a>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

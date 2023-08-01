@@ -1,0 +1,112 @@
+<header class="header-section shadow-none clearfix bg-transparent">
+  <div class="container">
+    <div class="align-items-center row">
+      <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+        <a routerLink="/frontend/homepage" class="site-logo">
+          <img src="assets/img/logos/Hauskarma-header-logo.png" alt="" />
+        </a>
+      </div>
+      <!-- This Code Hidde On extera large and large Screen Start  -->
+      <div
+        class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none"
+      >
+        <a
+          [routerLink]="['/auth/login']"
+          class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+          >LOGIN</a
+        >
+      </div>
+      <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+        <ul class="menu-list">
+          <li><a [routerLink]="['frontend/homepage']">Rentals</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="/"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Features</a
+            >
+            <ul
+              class="dropdown-menu text-center"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="/frontend/features-landlord"
+                  >Landlord</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/frontend/features-renter"
+                  >Renter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a routerLink="/frontend/pricing-renter">Pricing</a></li>
+          <li><a routerLink="/">Rentals Resources</a></li>
+        </ul>
+      </nav>
+      <!-- This Code Hidde On extera large and large Screen End  -->
+      <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+        <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+        <!-- This Code Show On extera large and large Screen Start  -->
+        <nav
+          class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block"
+        >
+          <ul class="menu-list">
+            <li><a routerLink="/frontend/homepage">Rentals</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                routerLink="/"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Features</a
+              >
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/frontend/features-landlord"
+                    >Landlord</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/frontend/features-renter"
+                    >Renter</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a routerLink="/frontend/pricing-renter">Pricing</a></li>
+            <li><a routerLink="/">Rentals Resources</a></li>
+          </ul>
+        </nav>
+        <!-- This Code Show On extera large and large Screen End  -->
+      </div>
+      <!-- This Code Show On extera large and large Screen Start  -->
+      <div
+        class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block"
+      >
+        <a
+          [routerLink]="['/auth/login']"
+          class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+          >LOGIN</a
+        >
+      </div>
+      <!-- This Code Show On extera large and large Screen End  -->
+    </div>
+  </div>
+</header>

@@ -1,0 +1,105 @@
+<body>
+  <section class="dark-bg-color-six pb-4 pt-4">
+    <div class="container">
+      <div class="align-items-center row">
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 col-xl-6 mb-sm-3 mb-xs-3 text-lg-left text-md-center text-sm-center text-xl-left text-xs-center"
+        >
+          <h5 class="">
+            <strong class="font-13">results: </strong>
+            <p class="d-inline font-14 ml-1 dark-color-second">
+              Listing lowest to highest asking price
+            </p>
+          </h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="search-from">
+            <form
+              class="form-inline justify-content-lg-end justify-content-md-center justify-content-xl-end"
+            >
+              <div class="form-group">
+                <input type="hidden" name="query" value="noida" />
+                <select
+                  name="order"
+                  class="search-select bg-transparent font-13 form-control search-results-listing-filter"
+                >
+                  <option>Sort by</option>
+                  <option value="desc">High to Low</option>
+                  <option value="asc">Low to High</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#filterModalLong"
+                class="align-items-center bg-transparent border btn d-flex font-12 justify-content-between ml-3 pb-2 pt-2 search-btn"
+              >
+                <span class="dark-color-second">Filters</span>
+                <i class="fa fa-sliders ml-5" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="toggle-btn-section pb-4 pt-4">
+    <div class="container">
+      <div class="align-items-center row">
+        <div class="col-md-4 col-sm-4 text-xs-center">
+          <div class="btn-group custom-toggle-btn p-2">
+            <a
+              href="frontend/search-result-map"
+              class="btn border-0 font-12 font-weight-600 dark-color-second"
+              >Map View</a
+            >
+            <a
+              href="frontend/search-results-listing"
+              class="border-0 btn font-12 font-weight-600 pl-3 pr-3 primary-bg-color-first rounded text-white"
+              >List View</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mb-xs-3 order-xs-first">
+          <span
+            class="d-block dark-color-second font-14 font-weight-600 text-center"
+            >Listing lowest to highest asking price
+          </span>
+        </div>
+        <div class="col-md-4 col-sm-4 mt-xs-3">
+          <div class="search-bar-on-map search-input">
+            <div class="from-group">
+              <form autocomplete="off" action="search-results-listing">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="form-control font-13"
+                />
+                <button
+                  type="submit"
+                  class="border-0 border-radius-6 hero-serach-btn icon primary-bg-color-first"
+                >
+                  <img src="assets/img/icons/search-icon.png" alt="" />
+                </button>
+              </form>
+            </div>
+            <div class="autocom-box m-sm-auto m-xs-auto ml-md-0">
+              <!-- here list are inserted from javascript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="search-results-listing-show">
+    <div class="container">
+      <div class="row">
+        <app-list-card></app-list-card>
+        <app-list-card></app-list-card>
+        <app-list-card></app-list-card>
+        <app-list-card></app-list-card>
+        <app-list-card></app-list-card>
+      </div>
+    </div>
+  </section>
+</body>

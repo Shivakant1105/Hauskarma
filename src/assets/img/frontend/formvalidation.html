@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <script>
+      // Function to save form data
+      function saveData() {
+        // Get form values
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+
+        // Save data to local storage or send it to the server
+        // For this example, we'll just display the data on the page
+        var data =
+          "Name: " +
+          name +
+          "<br>Age: " +
+          age +
+          "<br>Email: " +
+          email +
+          "<br>Phone: " +
+          phone;
+        document.getElementById("data").innerHTML = data;
+      }
+
+      // Function to delete form data
+      function deleteData() {
+        // Clear the form fields and display empty data on the page
+        document.getElementById("name").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("data").innerHTML = "";
+      }
+
+      // Function to update form data
+      function updateData() {
+        // Get form values
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+
+        // Update data on the page
+        var data =
+          "Name: " +
+          name +
+          "<br>Age: " +
+          age +
+          "<br>Email: " +
+          email +
+          "<br>Phone: " +
+          phone;
+        document.getElementById("data").innerHTML = data;
+      }
+
+      // Function to validate form data
+      function validateForm() {
+        // Get form values
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+
+        // Perform validation
+        if (name === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+
+        if (age === "") {
+          alert("Please enter your age.");
+          return false;
+        }
+
+        if (email === "") {
+          alert("Please enter your email.");
+          return false;
+        }
+
+        if (phone === "") {
+          alert("Please enter your phone number.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Form Example</h1>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required /><br /><br />
+
+      <input type="button" value="Save" onclick="saveData()" />
+      <input type="button" value="Delete" onclick="deleteData()" />
+      <input type="button" value="Update" onclick="updateData()" />
+    </form>
+
+    <div id="data"></div>
+  </body>
+</html>

@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Results Listing</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="x">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" /> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+</head>
+
+<body>
+
+
+    <!-- ===============================================
+    ============ Bid confirm Modal  Start ===========-->
+    <div class="modal fade" id="BidconfirmModalLong" tabindex="-1" role="dialog" aria-labelledby="BidconfirmModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="justify-content-center modal-header border-bottom-0">
+                    <h5 class="font-20 font-weight-600 modal-title mt-3">REVIEW AND CONFIRM YOUR BID</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="m-sm-0 m-xs-auto row">
+                        <div class="col-sm-12 col-md-11 col-lg-10 m-auto">
+
+                            <div class="row facilities-section-frontend">
+                                <div class="col-md-12">
+                                    <div class="mb-4 row">
+                                        <div class="col-md-12">
+                                            <h5 class="font-16 font-weight-600 text-center">Property Details</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4 row box-shadow-one">
+                                        <div class="col-6 col-lg-3 col-md-4 col-sm-3 pl-0 pr-0">
+                                            <div class="align-items-center card flex-row p-3 rounded-0">
+                                                <span class="content-span">
+                                                    <div class="title mb-2">
+                                                        <small class="ddark-color-second font-12 font-weight-600">Address</small>
+                                                    </div>
+                                                    <small class="font-10 d-block">
+                                                        <img class="mr-1" src="../img/icons/location-vector.png" width="16"> 542 Main St, Toronto.
+                                                    </small>
+                                                </span>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-2 pr-0 pl-0">
+                                            <div class="card rounded-0 p-3">
+                                                <span class="content-span">
+                                                    <div class="title mb-2">
+                                                        <small class="ddark-color-second font-12 font-weight-600">Bedrooms</small>
+                                                    </div>
+                                                    <small class="font-10 d-block">
+                                                        <img class="mr-1" src="../img/icons/large-bed.png" width="16">4 BEDROOMS
+                                                    </small>
+                                                </span>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                            <div class="card rounded-0 p-3">
+                                                <span class="content-span">
+                                                    <div class="title mb-2">
+                                                        <small class="ddark-color-second font-12 font-weight-600">Bathrooms</small>
+                                                    </div>
+                                                    <small class="font-10 d-block">
+                                                        <img class="mr-1" src="../img/icons/bathroom-large.png" width="16">2 BATHROOMS
+                                                    </small>
+                                                </span> 
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                            <div class="card  rounded-0 p-3">
+                                                <span class="content-span">
+                                                    <div class="title mb-2">
+                                                        <small class="ddark-color-second font-12 font-weight-600">Area</small>
+                                                    </div>
+                                                    <small class="font-10 d-block">
+                                                        <img class="mr-1" src="../img/icons/area-large-icon.png" width="16">1200 Sqft
+                                                    </small>
+                                                </span> 
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-6 col-sm-4 col-md-4  col-lg-3 pr-0 pl-0">
+                                            <div class="card rounded-0 p-3">
+                                                <span class="content-span">
+                                                    <div class="title mb-2">
+                                                        <small class="ddark-color-second font-12 font-weight-600">Decoration</small>
+                                                    </div>
+                                                    <small class="font-10 d-block">
+                                                        <img class="mr-1" src="../img/icons/chair-icon.png" width="16">Unfurnished
+                                                    </small>
+                                                </span>  
+                                            </div>
+                                        </div> 
+                
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 p-0">
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="box-shadow-one card h-100">
+                                                <div class="bid-status-button row">
+                                                    <div class="col-6 col-md-6 pr-0">
+                                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                            <span class="mb-1 d-block font-11 dark-color-second">Highest bid</span>
+                                                            <span class="d-block font-weight-600 font-20 theme-color-one">$1,130</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6 pl-0">
+                                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                            <span class="mb-1 d-block font-11 dark-color-second">Asking price</span>
+                                                            <span class="d-block font-weight-600 font-20 status-color-five">$5,110</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="card-body pb-0 pl-lg-5 pl-md-5">
+                                                    <small class="d-block dark-color-second"><img src="../img/icons/listing-clock.png" height="15"> Expires in: 2 Days and 9 Hours</small>
+                                                </div>
+                                                <hr>
+                                                <div class="card-body pt-0 pl-lg-5 pl-md-5">
+                                                    <small class="d-block dark-color-second"><img src="../img/icons/mega.png" height="15"> Total bidders:  25</small>
+                                                </div>
+                                            </div> 
+                                        </div>
+        
+                                        <div class="col-md-6 col-sm-6 col-xs-12 mt-xs-3 text-center">
+                                            <div class="box-shadow-one card h-100">
+                                                <div class="card-body">
+                                                    <h6 class="dark-color-second font-weight-1000">Your Bid Amount</h6>
+                                                </div>
+                                                <hr>
+                                                <div class="card-body">
+                                                    <h5 class="font-weight-600">$3,550</h5>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="border-top-0 mb-5 modal-footer mt-2">
+                    <div class="col-lg-10 col-md-11 col-sm-12 m-auto p-0">
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn dashboard-border-radius-second font-14 font-weight-bold pl-4 pr-4 primary-bg-color-second primary-color-first" data-dismiss="modal">Cancel</button>
+
+                            <button type="button" data-toggle="modal" data-target="#BidsuccessfulModalLong" onclick="modalclose();" class="btn dashboard-border-radius-second font-14 font-weight-bold pl-4 pr-4 primary-bg-color-first text-white">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================================
+    ============= Bid confirm Modal  End ============-->
+
+
+    <!-- ===============================================
+    ============ Bid successful Modal  Start ===========-->
+    <div class="modal fade" id="BidsuccessfulModalLong" tabindex="-1" role="dialog" aria-labelledby="BidsuccessfulModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" >
+            <div class="modal-content" style="background-image: url(../img/bid-successful-model-bg.png);background-position: bottom;background-repeat: no-repeat; background-size: contain;">
+                <div class="border-0 modal-header pb-0 pt-1">
+                    <button type="button" class="close opacity-1" data-dismiss="modal" aria-label="Close">
+                        <img src="../img/icons/model-close-btn.png" height="40">
+                    </button>
+                </div>
+                
+                <div class="modal-body text-center pt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 m-auto">
+                                    <img src="../img/bid-successful-model-img.png">
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 m-auto text-center">
+                            <h5 class="font-weight-600 modal-title mt-3 line-height-2">YOUR OFFER WAS PLACED SUCESSFULLY </h5>
+                        </div>
+                    </div>
+                    <p class="dark-color-second mb-0 mb-1 mt-4 mb-2">The bid is listed for 48 Hours.</p>
+                    <p class="dark-color-second mb-0 mb-1">You can also modify your bid later.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================================
+    ============= Bid successful Modal  End ============-->
+
+    <!-- ===============================================
+    =========== Price histroy Modal  Start ==========-->
+    <div class="modal fade" id="priceHistroyModalLong" tabindex="-1" role="dialog" aria-labelledby="priceHistroyModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="justify-content-center modal-header">
+                    <h5 class="font-weight-600 modal-title">PRICE HISTROY</h5>
+                </div>
+                <img src="../img/banner-carousel.png" class="img-fluid">
+                <div class="modal-body">
+
+                    <div class="row facilities-section-frontend">
+                        <div class="col-md-12">
+                            <div class="row m-0">
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-2 pr-0 pl-0">
+                                    <div class="align-items-center card flex-row p-2 rounded-0">
+                                        <span class="content-span">
+                                            <div class="title mb-2">
+                                                <small class="ddark-color-second font-12 font-weight-600">Address</small>
+                                            </div>
+                                            <small class="font-10 d-block">
+                                                <img class="mr-1" src="../img/icons/location-vector.png" width="16"> 542 Main St, Toronto.
+                                            </small>
+                                        </span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-2 pr-0 pl-0">
+                                    <div class="card rounded-0 p-3">
+                                        <span class="content-span">
+                                            <div class="title mb-2">
+                                                <small class="ddark-color-second font-12 font-weight-600">Bedrooms</small>
+                                            </div>
+                                            <small class="font-10 d-block">
+                                                <img class="mr-1" src="../img/icons/large-bed.png" width="16">4 BEDROOMS
+                                            </small>
+                                        </span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                    <div class="card rounded-0 p-3">
+                                        <span class="content-span">
+                                            <div class="title mb-2">
+                                                <small class="ddark-color-second font-12 font-weight-600">Bathrooms</small>
+                                            </div>
+                                            <small class="font-10 d-block">
+                                                <img class="mr-1" src="../img/icons/bathroom-large.png" width="16">2 BATHROOMS
+                                            </small>
+                                        </span> 
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                    <div class="card  rounded-0 p-3">
+                                        <span class="content-span">
+                                            <div class="title mb-2">
+                                                <small class="ddark-color-second font-12 font-weight-600">Area</small>
+                                            </div>
+                                            <small class="font-10 d-block">
+                                                <img class="mr-1" src="../img/icons/area-large-icon.png" width="16">1200 Sqft
+                                            </small>
+                                        </span> 
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                    <div class="card rounded-0 p-3">
+                                        <span class="content-span">
+                                            <div class="title mb-2">
+                                                <small class="ddark-color-second font-12 font-weight-600">Decoration</small>
+                                            </div>
+                                            <small class="font-10 d-block">
+                                                <img class="mr-1" src="../img/icons/chair-icon.png" width="16">Unfurnished
+                                            </small>
+                                        </span>  
+                                    </div>
+                                </div>
+        
+                                <div class="col-6  col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                                    <div class="card rounded-0">
+                                        <div class="d-flex h-100 justify-content-center w-100">
+                                            <button type="button" class="border-0 btn font-12 font-weight-600 p-0 primary-bg-color-second primary-color-first w-100">
+                                                <img src="../img/icons/wishlist-yellow-icon.png" alt=""> Add to Wishlist
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-xl-6 text-lg-left text-md-center text-sm-center text-xl-center text-xs-center">
+                                            <h5 class="d-block font-14 font-weight-600 mb-3">Recently rented similar properties within a 1 KM radius</h5> 
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6">
+                                            <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end justify-content-xs-center">
+                                                <select name="" id="" class="border dashboard-border-radius font-12 form-control graph_filter_option">
+                                                    <option value="">Year 2018</option>
+                                                    <option value="">Year 2019</option>
+                                                    <option value="">Year 2020</option>
+                                                    <option value="">Year 2021</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 mt-3">
+                                            <div id="filter-model-graph" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class=" table-responsive">
+                                <table class="border table">
+                                    <thead>
+                                        <tr class="primary-bg-color-second">
+                                            <th class="border-0 dark-black pb-4 pt-4 text-center font-15">#</th>
+                                            <th class="border-0 dark-black pb-4 pt-4 text-center font-15">Month</th>
+                                            <th class="border-0 dark-black pb-4 pt-4 text-center font-15">
+                                                <select class="bg-transparent border-0 dark-black font-weight-1000 text-center font-15">
+                                                <option value="Year">Year</option>
+                                                <option value="Year">Year</option>
+                                            </select>
+                                            </th>
+                                            <th class="border-0 dark-black pb-4 pt-4 text-center font-15">Rent</th>
+                                            <th class="border-0 dark-black pb-4 pt-4 text-center font-15">Tenet's Name</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">1</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">3</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">4</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">5</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">6</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">7</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">8</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">9</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">10</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">11</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">12</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">January</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">2021</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">$4500</td>
+                                            <td class="dark-color-second font-14 font-weight-600 pb-4 pt-4">Sam</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="border-top-0 mb-3 modal-footer mt-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 m-auto p-0">
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="align-items-center btn d-flex dashboard-border-radius-second font-14 font-weight-bold pl-4 pr-4 primary-bg-color-second primary-color-first" data-dismiss="modal">
+                                <img src="../img/icons/primary-arrow.png" style="transform: rotate(180deg);" class="mr-2"> Get Back
+                               </button>
+
+                               <button type="button" data-dismiss="modal" class="align-items-center btn d-flex dashboard-border-radius-second font-14 font-weight-bold pl-4 pr-4 primary-bg-color-first text-white">
+                                Get Next  <img src="../img/icons/white-arrow.png" class="ml-2">
+                                </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="border-top-0 justify-content-between modal-footer pb-5 pt-0">
+                    <button type="button" class="font-menu bg-transparent border-0 btn btn-primary dark-black font-29 font-weight-1000" data-dismiss="modal">   
+                        <img src="../img/icons/price-histroymodal-back.png" alt=""> Get Next</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- ===============================================
+    =========== Price histroy Modal  End ==========-->
+
+    <!-- ================================================
+    ============== Header section  Start =============-->
+    <header class="header-section shadow-none clearfix bg-transparent">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+                    <a href="index.html" class="site-logo">
+                        <img src="../img/logos/Hauskarma-header-logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- This Code Hidde On extera large and large Screen Start  -->
+                <div class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+
+                <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+                    <ul class="menu-list">
+                        <li><a href="index.html">Rentals</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing-renter.html">Pricing</a></li>
+                        <li><a href="#">Rentals Resources</a></li>
+                    </ul>
+                </nav>
+                <!-- This Code Hidde On extera large and large Screen End  -->
+
+                <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+                    <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+                    <!-- This Code Show On extera large and large Screen Start  -->
+                    <nav class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Rentals</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                    <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="pricing-renter.html">Pricing</a></li>
+                            <li><a href="#">Rentals Resources</a></li>
+                        </ul>
+                    </nav>
+                    <!-- This Code Show On extera large and large Screen End  -->
+                </div>
+
+                <!-- This Code Show On extera large and large Screen Start  -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+                <!-- This Code Show On extera large and large Screen End  -->
+            </div>
+
+        </div>
+    </header> 
+    <!-- ================================================
+    ============== Header section  End ===============-->
+
+    <section class="dark-bg-color-six pb-4 pt-4">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 mb-sm-3 mb-xs-3 text-lg-left text-md-center text-sm-center text-xl-left text-xs-center">
+                    <h5 class=""><strong class="font-13">Results: </strong>
+                        <p class="d-inline font-14 ml-1 dark-color-second"> 299 listings found for your map search</p>
+                    </h5>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="search-from">
+                        <form class="form-inline justify-content-lg-end justify-content-md-center justify-content-xl-end">
+                            <div class="form-group ">
+                                <input type="hidden" name="query" value="noida">
+                                <select name="order" class="search-select bg-transparent font-13 form-control search-results-listing-filter">
+                                    <option>Sort by</option>
+                                    <option value="desc">High to Low</option>
+                                    <option value="asc">Low to High</option>
+                                </select>
+                            </div>
+                            <button type="button" data-toggle="modal" data-target="#filterModalLong" class="align-items-center bg-transparent border btn d-flex font-12 justify-content-between ml-3 pb-2 pt-2 search-btn">
+                                <span class="dark-color-second">Filters</span>
+                                <i class="fa fa-sliders ml-5" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+    =========== Banner Carousel Start ========== -->
+    <section>
+        <div class="container">
+           <div class="col-sm-12 col-md-5 col-lg-3 ml-auto">
+               <div class="listing-search-bar">
+                   <div class="search-bar-on-map search-input">
+                       <div class="from-group">
+                           <form autocomplete="off" action="search-results-listing.html">
+                               <input type="text" placeholder="Search here" class="form-control font-13">
+                               <button type="submit" class="border-0 border-radius-6 hero-serach-btn icon primary-bg-color-first">
+                                   <img src="../img/icons/search-icon.png" alt="">
+                               </button>
+                           </form>
+                       </div>
+                       <div class="autocom-box m-sm-auto m-xs-auto ml-md-0">
+                           <!-- here list are inserted from javascript -->
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="banner-carousel owl-carousel owl-drag owl-loaded">
+            <div class="item">
+                <img src="../img/banner-carousel.png" class="img-fluid">
+            </div>
+            <div class="item">
+                <img src="../img/banner-carousel.png" class="img-fluid">
+            </div>
+            <div class="item">
+                <img src="../img/banner-carousel.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================
+    =========== Banner Carousel End ============ -->
+
+
+    <!-- =====================================================
+    ========== Facilities Section Frontend Start ==========-->
+    <section class="facilities-section-frontend">
+        <div class="container">
+            <div class="row mt-3 ">
+                <div class="col-md-12">
+                    <div class="row m-0">
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2 pr-0 pl-0">
+                            <div class="align-items-center card flex-row p-2 rounded-0">
+                                <span class="content-span">
+                                    <div class="title mb-2">
+                                        <small class="ddark-color-second font-12 font-weight-600">Address</small>
+                                    </div>
+                                    <small class="font-10 d-block">
+                                        <img class="mr-1" src="../img/icons/location-vector.png" width="16"> 542 Main St, Toronto.
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2 pr-0 pl-0">
+                            <div class="card rounded-0 p-3">
+                                <span class="content-span">
+                                    <div class="title mb-2">
+                                        <small class="ddark-color-second font-12 font-weight-600">Bedrooms</small>
+                                    </div>
+                                    <small class="font-10 d-block">
+                                        <img class="mr-1" src="../img/icons/large-bed.png" width="16">4 BEDROOMS
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                            <div class="card rounded-0 p-3">
+                                <span class="content-span">
+                                    <div class="title mb-2">
+                                        <small class="ddark-color-second font-12 font-weight-600">Bathrooms</small>
+                                    </div>
+                                    <small class="font-10 d-block">
+                                        <img class="mr-1" src="../img/icons/bathroom-large.png" width="16">2 BATHROOMS
+                                    </small>
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                            <div class="card  rounded-0 p-3">
+                                <span class="content-span">
+                                    <div class="title mb-2">
+                                        <small class="ddark-color-second font-12 font-weight-600">Area</small>
+                                    </div>
+                                    <small class="font-10 d-block">
+                                        <img class="mr-1" src="../img/icons/area-large-icon.png" width="16">1200 Sqft
+                                    </small>
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                            <div class="card rounded-0 p-3">
+                                <span class="content-span">
+                                    <div class="title mb-2">
+                                        <small class="ddark-color-second font-12 font-weight-600">Decoration</small>
+                                    </div>
+                                    <small class="font-10 d-block">
+                                        <img class="mr-1" src="../img/icons/chair-icon.png" width="16">Unfurnished
+                                    </small>
+                                </span>  
+                            </div>
+                        </div>
+
+                        <div class="col-6  col-sm-4 col-md-4  col-lg-2 pr-0 pl-0">
+                            <div class="card dashboard-four-btn-bg rounded-0">
+                                <div class="d-flex h-100 justify-content-center w-100">
+                                    <button type="button" class="bg-transparent border-0 btn font-12 font-weight-600 p-0 primary-color-first w-100">
+                                        <img src="../img/icons/wishlist-yellow-icon.png" alt=""> Add to Wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+    ========== Facilities Section Frontend End ============-->
+
+    <!-- =====================================================
+    ========== Other Details of Listings Start ============-->
+    <section class="mb-3 other_Details_of_Listings">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="d-block font-14 font-weight-600 mb-3">Lease Details</h5>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">Move-in</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>Available now</b></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">Lease type</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>Fixed term</b></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">Max. occupancy</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>4 people</b></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">Minimum lease</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>1 year</b></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">Parking available</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>$90 / Month</b></div>
+
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2"><small class="dark-color-second font-13">DOM</small></div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 font-13"><b>12 days</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="d-block font-13 font-weight-600 mb-3">About this property</h5>
+                                    <div class="row">
+
+                                        <div class="col-md-12 mt-2">
+                                            <small class="dark-color-second font-13 font-weight-bold mt-4 mb-2">NO pets, NO smoking</small>
+                                            <p class="dark-black mb-0 mt-3"><small class="dark-color-second font-13"> South East corner, 15" Vaulted ceilings, Large Pantry and Large walk in Laundry room with shelving Residences at The Heights is a beautiful new rental development planned for the Austin Heights neighbourhood of Coquitlam. It is the first stand alone market
+                                                rental property development to be built in Coquitlam in four decades!</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="d-block font-14 font-weight-600 mb-3">Amenities</h5>
+                                    <h5 class="dark-color-second font-13 font-weight-bold mt-4 mb-2">Features included</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/Bathtub.png">
+                                            <small class="dark-color-second font-13">Bathtub</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/microwave-icon.png">
+                                            <small class="dark-color-second font-13">Microwave</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/fridge.png">
+                                            <small class="dark-color-second font-13">Fridge</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/in-suite-dryer.png">
+                                            <small class="dark-color-second font-13">In Suite Dryer</small>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="dark-color-second font-13 font-weight-bold mt-4 mb-2">Utilities included</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/cable-icon.png">
+                                            <small class="dark-color-second font-13">Cable</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/electricity-icon.png">
+                                            <small class="dark-color-second font-13">Electricity</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/heat-icon.png">
+                                            <small class="dark-color-second font-13">Heat</small>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="dark-color-second font-13 font-weight-bold mt-4 mb-2">Property rules</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/smoking.png">
+                                            <small class="dark-color-second font-13">Smoking</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <small class="dark-color-second font-13 font-weight-600">Not Allowed</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <img class="mr-2" src="../img/icons/pets.png">
+                                            <small class="dark-color-second font-13">Pets</small>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+                                            <small class="dark-color-second font-13 font-weight-600">Not Allowed</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="d-block font-14 font-weight-600 mb-3">Location</h5>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30703867.071679905!2d64.40183608457193!3d20.04915895569306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1622869495775!5m2!1sen!2sin"
+                                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-xl-6 text-lg-left text-md-center text-sm-center text-xl-center text-xs-center">
+                                            <h5 class="d-block font-14 font-weight-600 mb-3">Recently rented similer properties</h5> 
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6">
+                                            <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end justify-content-xs-center">
+                                                <select name="" id="" class="border dashboard-border-radius font-12 form-control graph_filter_option">
+                                                    <option value="">Year 2018</option>
+                                                    <option value="">Year 2019</option>
+                                                    <option value="">Year 2020</option>
+                                                    <option value="">Year 2021</option>
+                                                </select>
+                                                <a href="#" data-toggle="modal" data-target="#priceHistroyModalLong" class="align-self-center border-radius-6 btn font-13 font-weight-600 ml-2 pb-1 primary-bg-color-first pt-1 text-white">View histroy <img src="../img/icons/white-arrow.png" class="ml-1"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 mt-3">
+                                            <div id="similer-graph" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body pb-0">
+                                    <h5 class="d-block font-14 font-weight-600 mb-3">Bid</h5> 
+                                </div>
+                                <div class="bid-status-button row">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-11 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-20 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-11 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-20 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <small class="d-block mb-3 dark-color-second"><strong>Expires in:</strong>  2 Days and 9 Hours</small>
+                                    <hr>
+
+                                    <div class="align-items-center d-flex justify-content-between mb-3">
+                                        <small class="dark-color-second"><strong>Your Bid:</strong></small>
+                                        <small class="font-16"><strong>$2200.00</strong></small>
+                                    </div>
+
+                                    <small class="d-block mb-3 dark-color-second">You've been outbid</small>
+
+                                    <div class="input-group mb-2 bid-amount-input">
+                                        <input type="text" class="font-14 form-control pl-4" placeholder="Enter amount" aria-label="Enter amount" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <span data-toggle="modal" data-target="#BidconfirmModalLong" class="align-items-center border-0 font-14 font-weight-600 input-group-text justify-content-center pb-2 pt-2 text-white" id="basic-addon2">Bid Now</span>
+                                        </div>
+                                    </div>
+                                    <small class="dark-color-second">Minimum bid amount is $100 for you</small>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+    ========== Other Details of Listings End ==============-->
+
+
+    <!-- ===========================================
+    ====== Similer Listing Carousel Start ======= -->
+    <section class="similer-listing-carousel spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="d-inline font-16 font-weight-600 mb-3">Similar listings</h5>
+                    <div class="row">
+                        <div id="HomePageCarousel" class="owl-carousel">
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right">
+                                                <img class="d-inline-block mr-2" src="../img/icons/touch.png" style="width:16px;">
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right">
+                                                <img class="d-inline-block mr-2" src="../img/icons/touch.png" style="width:16px;">
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right"> 
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right">
+                                                <img class="d-inline-block mr-2" src="../img/icons/touch.png" style="width:16px;">
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right">
+                                                <img class="d-inline-block mr-2" src="../img/icons/touch.png" style="width:16px;">
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="HomePageCarouselslide">
+                                <div class="card">
+                                    <div class="p-2">
+                                        <img class="img-fluid" src="../img/wishlist-box-img.png" width="100%">
+                                    </div>
+
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <p class="font-11 mb-0">
+                                                    <img class="d-inline" src="../img/icons/listing-clock.png" style="width:16px;">
+                                                    <strong>DOM:</strong> 2 Days 5 Hours
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6 col-md-6 text-right">
+                                                <img class="d-inline-block mr-2" src="../img/icons/touch.png" style="width:16px;">
+                                                <img class="d-inline" src="../img/icons/wishlist-yellow-icon.png" style="width:16px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-3 mt-3">
+                                            <div class="col-md-12">
+                                                <h5 class="card-title font-16 font-weight-600">
+                                                    <a href="#" class="text-dark line-height-1-4">Private, emotional lodging cabin in Yeongwol, Gangwon Province</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-11"><img class="d-inline" src="../img/icons/location-vector.png" style="width: unset !important;"> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 mt-2 ">
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f1.png" style="width: unset !important;"> 2 Bed</p>
+                                            </div>
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/f2.png" style="width: unset !important;"> 2 Bathroom</p>
+                                            </div>
+
+                                            <div class="">
+                                                <p class="font-10 font-weight-600 text-dark"><img class="d-inline mr-1" src="../img/icons/car-parking-icon.png" style="width: unset !important;"> 2 Parking</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bid-status-button">
+                                            <div class="col-6 col-md-6 pr-0">
+                                                <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                                    <span class="d-block font-weight-600 font-18 theme-color-one">$1,130</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6 pl-0">
+                                                <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                                    <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                                    <span class="d-block font-weight-600 font-18 status-color-five">$5,110</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <a href="#" class="border-radius-6 btn btn-block font-13 font-weight-600 pb-2 primary-bg-color-second primary-color-first pt-2">
+                                                    Bid Now <img src="../img/icons/primary-arrow-two.png" class="d-inline ml-2" style="width: unset !important;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================
+    ====== Similer Listing Carousel End ======== -->
+
+
+    <!-- Footer section Start -->
+    <footer class="pb-5 pt-5 footer-section primary-bg-color-first" style="background-image: url('../img/footer-bg-desktop.png');background-repeat: no-repeat, repeat;background-position: bottom;">
+        <!-- <div class="footer-bg"></div> -->
+        <div class="container">
+            <div class="pb-5 pt-5 row">
+
+                <div class="col-lg-5 col-md-5 col-sm-12 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <img class="mb-4" src="../img/logos/Hauskarma-footer-logo.png" alt="">
+                    <p>Never over pay for rent! We are the premium location for rentals. Using our patented HusKarma rating system we connect landlords and tenants. We ensure tenants never over pay for rent while making sure the landlords properties are
+                        taken care of and that rent is always paid on time.</p>
+                    <div class="footer-social">
+                        <a href=""><i class="fa fa-instagram mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-dribbble mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-play mt-2" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 colo-lg-3 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <h5 class="widget-title ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5 font-21 font-menu font-weight-bold">Quick Links</h5>
+                    <ul class="ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5">
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="policy.html">Privacy</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 footer-widget pl-lg-5 pl-3 mt-sm-5 mt-xs-5 mt-md-0">
+                    <h5 class="font-21 font-menu font-weight-bold widget-title">Get in Touch</h5>
+
+                    <ul class="mb-3">
+
+                        <li class="mb-3">
+                            <img src="../img/footer-sms-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">info@leasimple.com</a>
+                        </li>
+                        <li class="mb-3">
+                           <img src="../img/footer-location-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">Toronto, Canada</a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#" class="appicon mr-4"><img src="../img/icons/appstore.png" alt=""></a>
+                            <a href="#" class="appicon"><img src="../img/icons/playstore.png" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="footer-nav">
+                        <span class="font-15 font-weight-normal">
+                            Copyright 2021 - All Rights Reserved <a href="#" target="_blank">Huskarma.</a>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script>
+        let suggestions = [
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "CodingLab",
+            "CodingNepal",
+            "YouTube",
+            "YouTuber",
+            "YouTube",
+            "Tobermory Terrace",
+            "Bollywood",
+            "Vlogger",
+            "Vechiles",
+            "Facebook",
+            "Freelancer",
+            "Facebook",
+            "Designer",
+            "Developer",
+            "Web Designer",
+            "Meerut",
+            "Lucnknow",
+            "Noida",
+        ];
+
+        // getting all required elements
+        const searchWrapper = document.querySelector(".search-input");
+        const inputBox = searchWrapper.querySelector("input");
+        const suggBox = searchWrapper.querySelector(".autocom-box");
+        const icon = searchWrapper.querySelector(".icon");
+        let linkTag = searchWrapper.querySelector("a");
+        let webLink;
+
+        // if user press any key and release
+        inputBox.onkeyup = (e) => {
+            let userData = e.target.value; //user enetered data
+            let emptyArray = [];
+            if (userData) {
+                icon.onclick = () => {
+                    webLink = "https://www.google.com/search?q=" + userData;
+                    linkTag.setAttribute("href", webLink);
+                    console.log(webLink);
+                    linkTag.click();
+                }
+                emptyArray = suggestions.filter((data) => {
+                    //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+                    return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+                });
+                emptyArray = emptyArray.map((data) => {
+                    // passing return data inside li tag
+                    return data = '<li>' + data + '</li>';
+                });
+                searchWrapper.classList.add("active"); //show autocomplete box
+                showSuggestions(emptyArray);
+                let allList = suggBox.querySelectorAll("li");
+                for (let i = 0; i < allList.length; i++) {
+                    //adding onclick attribute in all li tag
+                    allList[i].setAttribute("onclick", "select(this)");
+                }
+            } else {
+                searchWrapper.classList.remove("active"); //hide autocomplete box
+            }
+        }
+
+        function select(element) {
+            let selectData = element.textContent;
+            inputBox.value = selectData;
+            icon.onclick = () => {
+                webLink = "https://www.google.com/search?q=" + selectData;
+                linkTag.setAttribute("href", webLink);
+                linkTag.click();
+            }
+            searchWrapper.classList.remove("active");
+        }
+
+        function showSuggestions(list) {
+            let listData;
+            if (!list.length) {
+                userValue = inputBox.value;
+                listData = '<li>' + userValue + '</li>';
+            } else {
+                listData = list.join('');
+            }
+            suggBox.innerHTML = '<div class="card">' +
+                '<div class="bg-transparent card-header p-0"><div class="input-group"><div class="input-group-prepend"><span class="bg-transparent border-0 input-group-text" id="basic-addon1"><img src="../img/icons/current-location-icon.png"></span></div><input type="text" class="current-location-input border-0 font-13 form-control pb-3 pt-3 rounded-circle" placeholder="Current location" aria-label="Current location" aria-describedby="basic-addon1"></div></div>' +
+                '<div class="bg-white card-header p-0 pb-3 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="../img/icons/city-location-icon.png"></span></div><strong class="ml-2">Cities</strong></div><ul class="list-style-none pl-5 pr-5 pt-2 text-left"> <li onclick="select(this)">Toronto, ON</li><li onclick="select(this)">Toronto, ON</li> </ul></div>' +
+                '<div class="card-body p-0 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="../img/icons/building-location-icon.png"></span></div><strong class="ml-2">Buildings</strong></div><ul class="list-style-none pl-5 text-left">' + listData + '</ul></div></div>';
+        }
+    </script>
+    
+</body>
+
+</html>

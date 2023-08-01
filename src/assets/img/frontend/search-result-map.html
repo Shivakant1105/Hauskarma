@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Results Map</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="x">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" /> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+
+
+</head>
+
+<body>
+    <!--Filter Result Show Modal Start -->
+    <div class="modal fade" id="filterModalLong" tabindex="-1" role="dialog" aria-labelledby="filterModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="col-md-12">
+                    <div class="justify-content-center modal-header p-2">
+                        <h5 class="font-23 mt-3 font-menu font-weight-bold modal-title text-uppercase" id="filterModalLongTitle">Filters</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-7">
+                                <h5 class="font-15 font-weight-600 text-uppercase">ROOMS & BEDS</h5>
+
+                                <div class="row mt-3">
+                                    <div class="align-items-center col-md-12 d-flex justify-content-between">
+                                        <h4 class="d-inline-block dark-color-second font-14 opacity-1 text-uppercase"> BEDS</h4>
+                                        <div class="incre-decre-input float-right incre-decre-input">
+                                            <input type="number" value="0" min="0" max="1000" step="10" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="align-items-center col-md-12 d-flex justify-content-between">
+                                        <h4 class="d-inline-block dark-color-second font-14 opacity-1 text-uppercase"> BEDS</h4>
+                                        <div class="incre-decre-input float-right incre-decre-input">
+                                            <input type="number" value="0" min="0" max="1000" step="10" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="align-items-center col-md-12 d-flex justify-content-between">
+                                        <h4 class="d-inline-block dark-color-second font-14 opacity-1 text-uppercase"> BEDS</h4>
+                                        <div class="incre-decre-input float-right incre-decre-input">
+                                            <input type="number" value="0" min="0" max="1000" step="10" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-5 col-sm-6 mt-sm-0 mt-xs-5 pb-sm-0 pb-xs-4">
+                                <h5 class="font-15 font-weight-600 text-uppercase">Price</h5>
+                                <div class="mb-xs-5 mt-xs-4 slider-range-wrap-filter-model">
+                                    <div id="set-bid-price-range-slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-6 col-md-6">
+                                <h5 class="font-15 font-weight-600 text-uppercase">Instant Rent</h5>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="filter-model-switch-btn">
+                                    <label class="switch mb-0 pull-right">
+                                        <input type="checkbox">
+                                        <span class="notification-slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <h4 class="d-inline-block dark-color-second font-13 opacity-1 text-uppercase mt-3"> Only show listings that are available instantly</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <h5 class="font-15 font-weight-600 text-uppercase">Occupancy</h5>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="custom-control custom-radio custom-control-inline m-0">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline1">WITHIN 30 DAYS</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="custom-control custom-radio custom-control-inline m-0">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline2">WITHIN 60 DAYS</label>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="custom-control custom-radio custom-control-inline m-0">
+                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline3">61 DAYS +</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <h5 class="font-15 font-weight-600 text-uppercase">Property Type</h5>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="custom-control custom-radio custom-control-inline m-0">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline1">HOUSE</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="custom-control custom-radio custom-control-inline m-0">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline2">CONDO/APARTMENT</label>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+
+
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-6 col-md-6">
+                                <h5 class="font-15 font-weight-600 text-uppercase">Pets Allowed</h5>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="filter-model-switch-btn">
+                                    <label class="switch mb-0 pull-right">
+                                        <input type="checkbox">
+                                        <span class="notification-slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 class="d-inline-block dark-color-second font-13 opacity-1 text-uppercase mt-3">Only show listing that allow pets</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-6 col-md-6">
+                                <h5 class="font-15 font-weight-600 text-uppercase">Parking</h5>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="filter-model-switch-btn">
+                                    <label class="switch mb-0 pull-right">
+                                        <input type="checkbox">
+                                        <span class="notification-slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 class="d-inline-block dark-color-second font-13 opacity-1 text-uppercase mt-3">Only show listing that allow parking</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <hr class="clearfix">
+                    <div class="col-md-12">
+                        <h5 class="font-15 font-weight-600 text-uppercase">Amenities</h5>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class=" mb-3 p-0">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline1">IN-SUITE WASHER/DRYER</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline2">ON-SITE LAUNDRY</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline3">ON-SITE GYM</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline4">FREE PARKING IN THE PREMISES</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline5">HOT TUB</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <div class="custom-control custom-radio custom-control-inline m-0">
+                                        <input type="radio" id="customRadioInline6" name="customRadioInline2" class="custom-control-input">
+                                        <label class="custom-control-label dark-color-second font-14 form-check-label" for="customRadioInline6">POOL</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn dashboard-border-radius-second font-11 font-14 font-weight-600 pb-2 pl-5 pr-5 primary-bg-color-second primary-color-first pt-2" data-dismiss="modal">
+                            Clear <img class="ml-1" src="../img/icons/primary-arrow-two.png" alt="">
+                        </button>
+                        <button type="button" class="btn dashboard-border-radius-second font-11 font-14 font-weight-600 pb-2 pl-5 pr-5 primary-bg-color-first pt-2 text-white">
+                            Show Result <img class="ml-1" src="../img/icons/white-arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Filter Result Show Modal End -->
+
+    <!-- Header section -->
+    <header class="header-section shadow-none clearfix bg-transparent">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+                    <a href="index.html" class="site-logo">
+                        <img src="../img/logos/Hauskarma-header-logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- This Code Hidde On extera large and large Screen Start  -->
+                <div class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+
+                <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+                    <ul class="menu-list">
+                        <li><a href="index.html">Rentals</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing-renter.html">Pricing</a></li>
+                        <li><a href="#">Rentals Resources</a></li>
+                    </ul>
+                </nav>
+                <!-- This Code Hidde On extera large and large Screen End  -->
+
+                <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+                    <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+                    <!-- This Code Show On extera large and large Screen Start  -->
+                    <nav class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block">
+                        <ul class="menu-list">
+                            <li><a href="index.html">Rentals</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="features-landlord.html">Landlord</a></li>
+                                    <li><a class="dropdown-item" href="features-renter.html">Renter</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="pricing-renter.html">Pricing</a></li>
+                            <li><a href="#">Rentals Resources</a></li>
+                        </ul>
+                    </nav>
+                    <!-- This Code Show On extera large and large Screen End  -->
+                </div>
+
+                <!-- This Code Show On extera large and large Screen Start  -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block">
+                    <a href="../renter-login/login.html" class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn">LOGIN</a>
+                </div>
+                <!-- This Code Show On extera large and large Screen End  -->
+            </div>
+
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <section class="dark-bg-color-six pb-4 pt-4">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 mb-sm-3 mb-xs-3 text-lg-left text-md-center text-sm-center text-xl-left text-xs-center">
+                    <h5 class=""><strong class="font-13">Results: </strong>
+                        <p class="d-inline font-14 ml-1 dark-color-second"> 299 listings found for your map search</p>
+                    </h5>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="search-from">
+                        <form class="form-inline justify-content-lg-end justify-content-md-center justify-content-xl-end">
+                            <div class="form-group ">
+                                <input type="hidden" name="query" value="noida">
+                                <select name="order" class="search-select bg-transparent font-13 form-control search-results-listing-filter">
+                                    <option>Sort by</option>
+                                    <option value="desc">High to Low</option>
+                                    <option value="asc">Low to High</option>
+                                </select>
+                            </div>
+                            <button type="button" data-toggle="modal" data-target="#filterModalLong" class="align-items-center bg-transparent border btn d-flex font-12 justify-content-between ml-3 pb-2 pt-2 search-btn">
+                                <span class="dark-color-second">Filters</span>
+                                <i class="fa fa-sliders ml-5" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="toggle-btn-section pb-4 pt-4">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-md-4 col-sm-4 text-xs-center">
+                    <div class="btn-group custom-toggle-btn p-2">
+                        <a href="#" class="border-0 btn font-12 font-weight-600 pl-3 pr-3 primary-bg-color-first rounded text-white">Map View</a>
+                        <a href="#" class="btn border-0 font-12 font-weight-600 dark-color-second">List View</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb-xs-3 order-xs-first">
+                    <span class="d-block dark-color-second font-14 font-weight-600 text-center">All Listing</span>
+                </div>
+                <div class="col-md-4 col-sm-4 mt-xs-3">
+                    <div class="search-bar-on-map search-input">
+                        <div class="from-group">
+                            <form autocomplete="off" action="search-results-listing.html">
+                                <input type="text" placeholder="Search here" class="form-control font-13">
+                                <button type="submit" class="border-0 border-radius-6 hero-serach-btn icon primary-bg-color-first">
+                                     <img src="../img/icons/search-icon.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="autocom-box m-sm-auto m-xs-auto ml-md-0">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- left Sidebar Start -->
+    <div class="search-left-sidebar">
+        <div class="search-result-show">
+            <div class="row">
+
+                <div class="col-12 col-lg-12 col-md-6 col-sm-12 col-xl-12 pl-4 pr-4">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-sm-5 left-content pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7 mt-xs-3 right-content">
+                                <div class="row bid-status-button">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-15 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-15 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3">
+                                    <div class="col-9 col-md-9 pr-0">
+                                        <p class="font-11">
+                                            <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                            <span class="font-9 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-md-3 text-right pl-0">
+                                        <img src="../img/icons/wishlist-yellow-icon.png">
+                                    </div>
+    
+                                </div>
+     
+    
+                                <div class="d-flex justify-content-between mb-2 mt-3 ">
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                    </div>
+    
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3 align-items-center">
+                                    <div class="col-4 col-sm-4 col-md-4 pr-0">
+                                        <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-first pt-1 text-white">
+                                            Bid Now <img src="../img/icons/white-arrow.png" width="6">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 pl-2 pr-0">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/calendar-tick.png"> <strong>Move-in:</strong> July 1 2022</p>
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 pl-0 text-right">
+                                        <img src="../img/icons/touch.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-12 col-lg-12 col-md-6 col-sm-12 col-xl-12 pl-4 pr-4">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-sm-5 left-content pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7 mt-xs-3 right-content">
+                                <div class="row bid-status-button">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-15 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-15 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3">
+                                    <div class="col-9 col-md-9 pr-0">
+                                        <p class="font-11">
+                                            <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                            <span class="font-9 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-md-3 text-right pl-0">
+                                        <img src="../img/icons/wishlist-yellow-icon.png">
+                                    </div>
+    
+                                </div>
+     
+    
+                                <div class="d-flex justify-content-between mb-2 mt-3 ">
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                    </div>
+    
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3 align-items-center">
+                                    <div class="col-4 col-sm-4 col-md-4 pr-0">
+                                        <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-first pt-1 text-white">
+                                            Bid Now <img src="../img/icons/white-arrow.png" width="6">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 pl-2 pr-0">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/calendar-tick.png"> <strong>Move-in:</strong> July 1 2022</p>
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 pl-0 text-right">
+                                        <img src="../img/icons/touch.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-12 col-lg-12 col-md-6 col-sm-12 col-xl-12 pl-4 pr-4">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-sm-5 left-content pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7 mt-xs-3 right-content">
+                                <div class="row bid-status-button">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-15 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-15 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3">
+                                    <div class="col-9 col-md-9 pr-0">
+                                        <p class="font-11">
+                                            <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                            <span class="font-9 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-md-3 text-right pl-0">
+                                        <img src="../img/icons/wishlist-yellow-icon.png">
+                                    </div>
+    
+                                </div>
+     
+    
+                                <div class="d-flex justify-content-between mb-2 mt-3 ">
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                    </div>
+    
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3 align-items-center">
+                                    <div class="col-4 col-sm-4 col-md-4 pr-0">
+                                        <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-first pt-1 text-white">
+                                            Bid Now <img src="../img/icons/white-arrow.png" width="6">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 pl-2 pr-0">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/calendar-tick.png"> <strong>Move-in:</strong> July 1 2022</p>
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 pl-0 text-right">
+                                        <img src="../img/icons/touch.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+                <div class="col-12 col-lg-12 col-md-6 col-sm-12 col-xl-12 pl-4 pr-4">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-sm-5 left-content pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7 mt-xs-3 right-content">
+                                <div class="row bid-status-button">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-15 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-15 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3">
+                                    <div class="col-9 col-md-9 pr-0">
+                                        <p class="font-11">
+                                            <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                            <span class="font-9 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-md-3 text-right pl-0">
+                                        <img src="../img/icons/wishlist-yellow-icon.png">
+                                    </div>
+    
+                                </div>
+     
+    
+                                <div class="d-flex justify-content-between mb-2 mt-3 ">
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                    </div>
+    
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3 align-items-center">
+                                    <div class="col-4 col-sm-4 col-md-4 pr-0">
+                                        <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-first pt-1 text-white">
+                                            Bid Now <img src="../img/icons/white-arrow.png" width="6">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 pl-2 pr-0">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/calendar-tick.png"> <strong>Move-in:</strong> July 1 2022</p>
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 pl-0 text-right">
+                                        <img src="../img/icons/touch.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+                <div class="col-12 col-lg-12 col-md-6 col-sm-12 col-xl-12 pl-4 pr-4">
+                    <div class="card box p-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-sm-5 left-content pr-lg-0 pr-md-0 pr-sm-0 pr-xl-0">
+                                <img class="img-fluid img-fluid rounded" src="../img/listing.png" width="100%" style="height: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7 mt-xs-3 right-content">
+                                <div class="row bid-status-button">
+                                    <div class="col-6 col-md-6 pr-0">
+                                        <div class="bid-status-button-left status-bg-color-four pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Highest bid</span>
+                                            <span class="d-block font-weight-600 font-15 theme-color-one">$1,130</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 pl-0">
+                                        <div class="bid-status-button-right status-bg-color-six pb-2 pt-2 text-center">
+                                            <span class="mb-1 d-block font-10 dark-color-second">Asking price</span>
+                                            <span class="d-block font-weight-600 font-15 status-color-five">$5,110</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3">
+                                    <div class="col-9 col-md-9 pr-0">
+                                        <p class="font-11">
+                                            <span class="icon-span"><img class="d-inline" src="../img/icons/location-vector.png"> </span>
+                                            <span class="font-9 font-weight-600 ml-1 text-span">4140 Parker Rd. Allentown, New Mexico 31134</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-md-3 text-right pl-0">
+                                        <img src="../img/icons/wishlist-yellow-icon.png">
+                                    </div>
+    
+                                </div>
+     
+    
+                                <div class="d-flex justify-content-between mb-2 mt-3 ">
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f1.png"> 2 Bed</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/f2.png"> 2 Bathroom</p>
+                                    </div>
+    
+                                    <div class="">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/car-parking-icon.png"> 2 Parking</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-3 align-items-center">
+                                    <div class="col-4 col-sm-4 col-md-4 pr-0">
+                                        <a href="#" class="border-radius-6 btn btn-block font-9 font-weight-600 pb-1 pl-0 pr-0 primary-bg-color-first pt-1 text-white">
+                                            Bid Now <img src="../img/icons/white-arrow.png" width="6">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 pl-2 pr-0">
+                                        <p class="font-9 text-dark mb-0"><img width="15" class="mr-1" src="../img/icons/calendar-tick.png"> <strong>Move-in:</strong> July 1 2022</p>
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 pl-0 text-right">
+                                        <img src="../img/icons/touch.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>      
+        </div>
+    </div>
+    <!-- left Sidebar End -->
+
+    <!-- Search Result Map Section Code Start -->
+    <section class="search-result-map-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 pr-lg-0 pr-md-0">
+                    <div class="search-on-map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Result Map Section Code End -->
+
+
+    <!-- Footer section Start -->
+    <footer class="pb-5 pt-5 footer-section primary-bg-color-first" style="background-image: url('../img/footer-bg-desktop.png');background-repeat: no-repeat, repeat;background-position: bottom;">
+        <!-- <div class="footer-bg"></div> -->
+        <div class="container">
+            <div class="pb-5 pt-5 row">
+
+                <div class="col-lg-5 col-md-5 col-sm-12 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <img class="mb-4" src="../img/logos/Hauskarma-footer-logo.png" alt="">
+                    <p>Never over pay for rent! We are the premium location for rentals. Using our patented HusKarma rating system we connect landlords and tenants. We ensure tenants never over pay for rent while making sure the landlords properties are
+                        taken care of and that rent is always paid on time.</p>
+                    <div class="footer-social">
+                        <a href=""><i class="fa fa-instagram mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-dribbble mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter mt-2" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-play mt-2" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 colo-lg-3 footer-widget mt-md-0 mt-sm-5 mt-xs-5">
+                    <h5 class="widget-title ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5 font-21 font-menu font-weight-bold">Quick Links</h5>
+                    <ul class="ml-lg-5 ml-xl-5 pl-lg-5 pl-xl-5">
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="policy.html">Privacy</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 footer-widget pl-lg-5 pl-3 mt-sm-5 mt-xs-5 mt-md-0">
+                    <h5 class="font-21 font-menu font-weight-bold widget-title">Get in Touch</h5>
+
+                    <ul class="mb-3">
+
+                        <li class="mb-3">
+                            <img src="../img/footer-sms-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">info@leasimple.com</a>
+                        </li>
+                        <li class="mb-3">
+                           <img src="../img/footer-location-icon.png" alt="">
+                            <a class="d-inline-block ml-2" href="#">Toronto, Canada</a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#" class="appicon mr-4"><img src="../img/icons/appstore.png" alt=""></a>
+                            <a href="#" class="appicon"><img src="../img/icons/playstore.png" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="footer-nav">
+                        <span class="font-15 font-weight-normal">
+                            Copyright 2021 - All Rights Reserved <a href="#" target="_blank">Huskarma.</a>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/bootstrap-input-spinner.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+
+    <script>
+        $("input[type='number']").inputSpinner()
+    </script>
+    <script>
+        function initMap() {
+            const uluru = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            const contentString =
+                "<div class='map-modal'>" +
+                '<img src="../img/map-modal-img.png" />' +
+                '<div id="bodyContent" class="pl-2 pr-2">' +
+                "<p class='font-21 font-weight-bold mb-1'>" +
+                "<strong class='font-14 theme-color-one'>$5,495 / </strong>" +
+                "<strong class='font-14 status-color-five'>$6,495</strong>" +
+                "<img class='ml-2 check-icon' src='../img/icons/touch.png' style='width:15px;'>" +
+                "<img class='check-icon' src='../img/icons/wishlist-yellow-icon.png' style='width:15px;'>" +
+                "</p>" +
+                '<p class="font-10 font-11 font-weight-1000 mb-2"><img class="mr-1" style="width: 15px;" src="../img/icons/location-vector.png">4140 Parker Rd. Allentown, New Mexico 31134</p>' +
+                 
+            "</div>";
+
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map,
+                title: "Uluru (Ayers Rock)",
+            });
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+
+
+
+    <script>
+        let suggestions = [
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "Channel",
+            "CodingLab",
+            "CodingNepal",
+            "YouTube",
+            "YouTuber",
+            "YouTube",
+            "Tobermory Terrace",
+            "Bollywood",
+            "Vlogger",
+            "Vechiles",
+            "Facebook",
+            "Freelancer",
+            "Facebook",
+            "Designer",
+            "Developer",
+            "Web Designer",
+            "Meerut",
+            "Lucnknow",
+            "Noida",
+        ];
+
+        // getting all required elements
+        const searchWrapper = document.querySelector(".search-input");
+        const inputBox = searchWrapper.querySelector("input");
+        const suggBox = searchWrapper.querySelector(".autocom-box");
+        const icon = searchWrapper.querySelector(".icon");
+        let linkTag = searchWrapper.querySelector("a");
+        let webLink;
+
+        // if user press any key and release
+        inputBox.onkeyup = (e) => {
+            let userData = e.target.value; //user enetered data
+            let emptyArray = [];
+            if (userData) {
+                icon.onclick = () => {
+                    webLink = "https://www.google.com/search?q=" + userData;
+                    linkTag.setAttribute("href", webLink);
+                    console.log(webLink);
+                    linkTag.click();
+                }
+                emptyArray = suggestions.filter((data) => {
+                    //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+                    return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+                });
+                emptyArray = emptyArray.map((data) => {
+                    // passing return data inside li tag
+                    return data = '<li>' + data + '</li>';
+                });
+                searchWrapper.classList.add("active"); //show autocomplete box
+                showSuggestions(emptyArray);
+                let allList = suggBox.querySelectorAll("li");
+                for (let i = 0; i < allList.length; i++) {
+                    //adding onclick attribute in all li tag
+                    allList[i].setAttribute("onclick", "select(this)");
+                }
+            } else {
+                searchWrapper.classList.remove("active"); //hide autocomplete box
+            }
+        }
+
+        function select(element) {
+            let selectData = element.textContent;
+            inputBox.value = selectData;
+            icon.onclick = () => {
+                webLink = "https://www.google.com/search?q=" + selectData;
+                linkTag.setAttribute("href", webLink);
+                linkTag.click();
+            }
+            searchWrapper.classList.remove("active");
+        }
+
+        function showSuggestions(list) {
+            let listData;
+            if (!list.length) {
+                userValue = inputBox.value;
+                listData = '<li>' + userValue + '</li>';
+            } else {
+                listData = list.join('');
+            }
+            suggBox.innerHTML = '<div class="card">' +
+                '<div class="bg-transparent card-header p-0"><div class="input-group"><div class="input-group-prepend"><span class="bg-transparent border-0 input-group-text" id="basic-addon1"><img src="../img/icons/current-location-icon.png"></span></div><input type="text" class="current-location-input border-0 font-13 form-control pb-3 pt-3 rounded-circle" placeholder="Current location" aria-label="Current location" aria-describedby="basic-addon1"></div></div>' +
+                '<div class="bg-white card-header p-0 pb-3 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="../img/icons/city-location-icon.png"></span></div><strong class="ml-2">Cities</strong></div><ul class="list-style-none pl-5 pr-5 pt-2 text-left"> <li onclick="select(this)">Toronto, ON</li><li onclick="select(this)">Toronto, ON</li> </ul></div>' +
+                '<div class="card-body p-0 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="../img/icons/building-location-icon.png"></span></div><strong class="ml-2">Buildings</strong></div><ul class="list-style-none pl-5 text-left">' + listData + '</ul></div></div>';
+        }
+    </script>
+</body>
+
+</html>

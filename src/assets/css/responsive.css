@@ -1,0 +1,1143 @@
+@media (max-width: 1425px) {
+  .page-info-section {
+    background-position: right 30% top;
+  }
+
+  .about-img {
+    left: -50px;
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .create-profile-section .CustomStepDesign .CustomStep.active span::before,
+  .create-profile-section .CustomStepDesign .CustomStep.finish span::before {
+    width: 10% !important;
+  }
+  .create-profile-section .CustomStepDesign .CustomStep span::before {
+    width: 10% !important;
+  }
+  .update-profile {
+    width: 50% !important;
+  }
+  section .search-from .search-select,
+  section .search-from .search-btn {
+    width: 167px;
+  }
+  .pricing-card .card.active {
+    transform: scale(0.9);
+  }
+  .pricing-card .card {
+    margin-bottom: 10px;
+  }
+  #HomePageCarousel .owl-nav {
+    display: none;
+  }
+  .similer-listing-carousel #HomePageCarousel .owl-nav {
+    display: block;
+  }
+  #HomePageCarousel .owl-dots {
+    display: flex;
+  }
+
+  .card.calendar .table-calendar {
+    border-spacing: 18px 18px !important;
+  }
+  .card.calendar .table-calendar #calendar-body td {
+    font-size: 12px !important;
+    min-width: 50px !important;
+    height: 50px !important;
+  }
+
+  .features-landlord-banner .right-content .banner-img img {
+    margin-top: 64px;
+    height: 350px;
+  }
+  .gallery-section .box .bide-widgets {
+    position: absolute;
+    top: 79%;
+    right: -15px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 345px;
+  }
+
+  .menu-list li a {
+    margin-right: 15px;
+  }
+
+  .page-info-section {
+    background-position: right 23% top;
+  }
+  .about-img {
+    left: 0px;
+    width: 480px;
+  }
+  .member {
+    width: calc(33.333333% - 25px);
+    margin-bottom: 30px;
+  }
+  .team-members {
+    text-align: center;
+  }
+  .fact h2 {
+    font-size: 45px;
+    margin-right: 10px;
+  }
+  .fact p {
+    padding-top: 7px;
+  }
+  .fact i {
+    font-size: 67px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  .header-section
+    .navbar-nav
+    .menu-list
+    .nav-item.dropdown
+    .dropdown-menu
+    .dropdown-item:focus,
+  .header-section
+    .navbar-nav
+    .menu-list
+    .nav-item.dropdown
+    .dropdown-menu
+    .dropdown-item:hover {
+    background-color: #fff;
+  }
+  .header-section
+    .navbar-nav
+    .menu-list
+    .nav-item.dropdown
+    .dropdown-menu
+    li
+    a {
+    margin: 0px;
+    padding: 16px 0px 16px 0px;
+  }
+  .header-section
+    .navbar-nav
+    .menu-list
+    .nav-item.dropdown
+    .dropdown-menu
+    li:first-child
+    a {
+    padding-bottom: 0px;
+  }
+  .header-section .navbar-nav .menu-list .nav-item.dropdown .dropdown-menu {
+    left: -100% !important;
+    right: 42px;
+    border-radius: 9px;
+    border-color: #ececec;
+    margin-top: 15px;
+    box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 5%);
+  }
+  .header-section
+    .navbar-nav
+    .menu-list
+    .nav-item.dropdown
+    .dropdown-menu:before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 100%;
+    right: 25px;
+    width: 15px;
+    border-top-left-radius: 6px;
+    height: 15px;
+    margin-bottom: -7px;
+    border-top: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all 0.4s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    width: 218px;
+  }
+  #mainNav .navbar-collapse {
+    overflow: visible;
+    max-height: none;
+  }
+  #mainNav .navbar-collapse .navbar-sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 95px;
+  }
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
+    padding: 0;
+  }
+  #mainNav
+    .navbar-collapse
+    .navbar-nav
+    > .nav-item.dropdown
+    .dropdown-menu
+    > .dropdown-item
+    > .dropdown-message {
+    max-width: 300px;
+  }
+  #mainNav.static-top .sidenav-toggler {
+    display: flex;
+  }
+  #mainNav.fixed-top .navbar-sidenav {
+    height: calc(100vh - 112px);
+    height: 100vh;
+  }
+  #mainNav.fixed-top .sidenav-toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: calc(100vh - 45px);
+  }
+  #mainNav.fixed-top .sidenav-toggler > .nav-item {
+    width: 250px;
+    padding: 0;
+  }
+  #mainNav.fixed-top .sidenav-toggler > .nav-item > .nav-link {
+    padding: 1em;
+  }
+
+  .content-wrapper {
+    margin-left: 279px;
+    transition: all 1s;
+  }
+  .profile-content-wrapper {
+    margin-left: 620px;
+    margin-right: 50px;
+  }
+  #BidderDetailsAnswerModalCenter .modal-lg {
+    max-width: 662px;
+  }
+  #BidderDetailsAnswerModalCenter .modal-content .modal-body {
+    padding: 50px 30px 50px 30px;
+  }
+  #CounterOfferModalCenter .modal-lg {
+    max-width: 1100px;
+  }
+  #CounterOfferModalCenter .modal-content .modal-body {
+    padding: 40px 40px 40px 40px !important;
+  }
+
+  #TenentsDetailsModalCenter .modal-lg {
+    max-width: 1100px;
+  }
+  #TenentsDetailsModalCenter .modal-content .modal-body {
+    padding: 40px 40px 40px 40px !important;
+  }
+
+  #BookModalCenter .modal-lg {
+    max-width: 600px;
+  }
+  #BookModalCenter .modal-content .modal-body {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+
+  #BookVisitModalCenter .modal-lg {
+    max-width: 550px;
+  }
+  #BidderDetailsModalCenter .modal-lg {
+    max-width: 662px;
+  }
+  #BidderDetailsModalCenter .modal-content .modal-body {
+    padding: 40px 40px 40px 40px;
+  }
+  #MediaUpoadModalCenter .modal-lg {
+    max-width: 650px;
+  }
+  #deleteConfirmModalCenter .modal-lg {
+    max-width: 700px;
+  }
+
+  #createprofileModalCenter .modal-lg {
+    max-width: 700px;
+  }
+  #BidderDetailsSelectModalCenter .modal-lg {
+    max-width: 750px;
+  }
+  #BidderDetailsSelectModalCenter .modal-content .modal-body {
+    padding: 40px 40px 40px 40px;
+  }
+  #FinancialDetailsFillModalCenter .modal-lg {
+    max-width: 990px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .create-profile-section .CustomStepDesign .CustomStep span::before {
+    background-color: unset;
+    content: "";
+    width: 0px !important;
+  }
+  .pricing-card .card.active {
+    transform: scale(0.9);
+  }
+  .pricing-card .card {
+    margin-bottom: 10px;
+  }
+  .hero-section {
+    padding-top: 100px;
+  }
+  #HomePageCarousel .owl-nav {
+    display: none;
+  }
+  .similer-listing-carousel #HomePageCarousel .owl-nav {
+    display: block;
+  }
+  #HomePageCarousel .owl-dots {
+    display: flex;
+  }
+
+  .hero-section .hero-text {
+    text-align: center;
+  }
+
+  .hero-section .hero-subscribe-from {
+    margin: 0px auto;
+    margin-bottom: 40px;
+  }
+  .renting-easy-video .video-corner-design-t {
+    left: -45px;
+    top: -45px;
+  }
+
+  .renting-easy-video .video-corner-design-b {
+    bottom: -50px;
+  }
+
+  .header-section .navbar-nav .menu-list .nav-item.dropdown .dropdown-menu {
+    position: relative !important;
+    border: 0px;
+    transform: none !important;
+    text-align: left !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-lg {
+    max-width: 100% !important;
+  }
+  /* .profile-left-sidebar.card {
+            position: unset !important;
+            overflow: unset !important;
+            height: unset !important;
+        } */
+
+  .search-result-map-section .search-on-map {
+    margin-top: 0px;
+  }
+  .search-left-sidebar {
+    float: none;
+    width: 100%;
+  }
+  .search-result-map-section {
+    margin-left: 0px;
+  }
+  .profile-left-sidebar {
+    margin-left: unset !important;
+  }
+  .header-section {
+    padding: 15px 0;
+    background: #fff;
+  }
+  .header-section .responsive-bar {
+    float: right;
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+  }
+  .header-section .user {
+    float: right;
+    font-size: 25px;
+    color: #333;
+    margin-right: 20px;
+    display: block;
+  }
+  .main-menu {
+    float: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    padding: 0 15px;
+    display: none;
+    -webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+    box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+  }
+  .menu-list {
+    list-style: none;
+  }
+  .menu-list li {
+    display: block;
+    border-top: 1px solid #e1e1e1;
+  }
+  .menu-list li a {
+    display: block;
+    padding: 10px 5px;
+    margin-right: 0;
+    color: #000;
+  }
+
+  .page-info-section {
+    background-position: right 56% top;
+    margin-top: 97px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .update-profile {
+    width: 50% !important;
+  }
+  .CustomShowHide {
+    display: none;
+  }
+  section.blog-banner .card .card-img-overlay .card-title {
+    font-size: 30px !important;
+  }
+  .card.calendar .table-calendar {
+    border-spacing: 18px 18px !important;
+  }
+  .card.calendar .table-calendar #calendar-body td {
+    font-size: 12px !important;
+    min-width: 50px !important;
+    height: 50px !important;
+  }
+  .features-landlord-banner .right-content .banner-img img {
+    height: 400px;
+    margin-top: 80px;
+  }
+
+  .gallery-section .box .bide-widgets {
+    position: absolute;
+    top: 79%;
+    right: -15px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 345px;
+  }
+
+  .faqs-nav .nav-link.active,
+  .faqs-nav .nav-link {
+    padding: 10px 40px 10px 40px;
+  }
+  .profile-content-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* .profile-left-sidebar.card {
+            width: 100% !important;
+        } */
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .liv-section .left-content img {
+    position: unset;
+  }
+  .liv-section .left-content {
+    text-align: center;
+  }
+
+  .menu-list li a {
+    margin-right: 6px;
+  }
+  .header-section .site-btn {
+    margin-left: 10px;
+  }
+
+  .page-info-section {
+    background-position: right 33% top;
+  }
+  .page-info-section h2 {
+    font-size: 40px;
+  }
+  .process-step:after {
+    width: 154px;
+    height: 35px;
+    top: -10px;
+    right: -44%;
+    background-size: contain;
+  }
+  .about-img {
+    position: relative;
+    display: block;
+    left: 0;
+    width: auto;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .create-profile-section .CustomStepDesign .CustomStep span,
+  .create-profile-section .CustomStepDesign .CustomStep.active span,
+  .create-profile-section .CustomStepDesign .CustomStep.finish span {
+    display: block;
+    margin-top: 6px;
+    font-size: 10px !important;
+  }
+  .create-profile-section .CustomStepDesign .CustomStep {
+    text-align: center;
+  }
+  .create-profile-section .CustomStepDesign {
+    justify-content: center;
+  }
+
+  .popover {
+    min-width: 300px !important;
+  }
+  .update-profile {
+    width: 100% !important;
+    margin-bottom: 50px;
+  }
+  .CustomShowHide {
+    display: none;
+  }
+  section.blog-banner .card .card-img-overlay .card-title {
+    font-size: 25px !important;
+  }
+  .features-landlord-btn-section .features-landlord-btn-box {
+    border-radius: 40px;
+    padding: 50px 0px 100px 0px;
+    background-image: url(../img/services.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+  }
+
+  .about-us-img-box .card {
+    position: relative;
+    width: 160px;
+    height: 115px;
+    background: #ffffff;
+    box-shadow: -2px 5px 20px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    left: 39px;
+    top: 69px;
+    border: 0;
+  }
+
+  .we-are-experienced .icon_box {
+    margin: 0px auto;
+  }
+  .we-are-experienced .content-box {
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .we-are-experienced .content-box span {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .card.calendar .table-calendar #calendar-body td {
+    font-size: 12px !important;
+    min-width: 50px !important;
+    height: 50px !important;
+  }
+  .card.calendar .table-calendar {
+    border-spacing: 15px 15px !important;
+  }
+  .card.landlord-view-profile {
+    padding: 50px !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-content {
+    padding: 50px !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-content .modal-body .card .card-body {
+    padding: 50px !important;
+  }
+  .features-landlord-banner .left-content h5 {
+    font-size: 18px !important;
+  }
+  .features-landlord-banner .right-content .banner-img img {
+    height: 200px;
+    margin-top: 56px;
+  }
+  .gallery-section .box .bide-widgets {
+    position: absolute;
+    top: 71%;
+    right: 0px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 345px;
+  }
+
+  .faqs-banner-content h5:first-child {
+    font-size: 22px !important;
+  }
+  .faqs-banner-content img {
+    width: 200px;
+  }
+  .faqs-nav .nav-link.active,
+  .faqs-nav .nav-link {
+    padding: 8px 28px 8px 28px;
+    font-size: 12px !important;
+  }
+
+  .about-us-banner .card-img-overlay {
+    top: 18%;
+    left: 3%;
+    width: unset;
+  }
+  .profile-content-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* .profile-left-sidebar.card {
+            width: 100% !important;
+        } */
+  #deleteConfirmModalCenter .modal-content .modal-body h3 {
+    font-size: 31px !important;
+  }
+
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    z-index: 1;
+  }
+  .liv-section .left-content img {
+    position: unset;
+  }
+  .liv-section .left-content {
+    text-align: center;
+  }
+  .real-stories-section .section-title {
+    margin-bottom: 55px;
+  }
+
+  .everything h2 {
+    font-size: 36px;
+  }
+
+  .renting-section,
+  .everything {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .liv-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .create-profile-section .CustomStepDesign .CustomStep span {
+    display: none;
+  }
+  .create-profile-section .CustomStepDesign .CustomStep {
+    text-align: center;
+  }
+  .create-profile-section .CustomStepDesign {
+    justify-content: center;
+  }
+  .popover {
+    min-width: 100% !important;
+  }
+  .form-group .verification-doc-upload-input span small {
+    font-size: 10px !important;
+  }
+  .form-group .verification-doc-upload-input span {
+    width: 85%;
+    padding-top: 10px !important;
+  }
+  .update-profile {
+    width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+  }
+  .CustomShowHide {
+    display: none;
+  }
+  .dashboard-brand img {
+    height: 30px;
+  }
+  section.blog-banner .card .card-img-overlay .card-title {
+    font-size: 20px !important;
+  }
+  .features-landlord-btn-section .features-landlord-btn-box {
+    border-radius: 40px;
+    padding: 50px 0px 100px 0px;
+    background-image: url(../img/services.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+  }
+  .search-from form {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .search-from form button.search-btn {
+    margin-left: 0px !important;
+  }
+  .about-us-img-box .card {
+    position: relative;
+    width: 160px;
+    height: 115px;
+    background: #ffffff;
+    box-shadow: -2px 5px 20px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    left: 39px;
+    top: 69px;
+    border: 0;
+  }
+  .we-are-experienced .icon_box {
+    margin: 0px auto;
+  }
+  .we-are-experienced .content-box {
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .we-are-experienced .content-box span {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .hero-subscribe-from {
+    width: 280px;
+  }
+
+  .hero-section .hero-subscribe-from input {
+    width: 280px;
+  }
+
+  .hero-section .hero-serach-btn {
+    left: 166px;
+  }
+
+  .pt-xs-4 {
+    padding-top: 1.5rem !important;
+  }
+  .pb-xs-4 {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .card.calendar .table-calendar {
+    border-spacing: 8px 8px !important;
+  }
+  .card.calendar .table-calendar #calendar-body td {
+    font-size: 12px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+  }
+  .card.landlord-view-profile {
+    padding: 20px !important;
+  }
+  .gallery-section header h2,
+  .we-are-experienced header h2,
+  .liv-section .right-content h2,
+  .everything.liv-section h2,
+  .renting-section h2,
+  .key-feature-section h2 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+  .everything h2 {
+    font-size: 30px;
+  }
+
+  #BookModalCenter .modal-content .modal-body h2 {
+    font-size: 35px !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-content {
+    padding: 20px !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-content .modal-body .card .card-body {
+    padding: 20px !important;
+  }
+  #petaddModalCenter .card {
+    width: 320px !important;
+  }
+  .basic-profile-info-btn {
+    padding: 11px 50px 11px 45px !important;
+  }
+  .create-profile-section
+    .card
+    #create-profile
+    .basic-details-first
+    .card-body
+    .card.profile-img-preview {
+    width: 150px;
+    height: 150px;
+    background: #f9fbff;
+    border: 1px solid #e9f0ff;
+    border-radius: 10px;
+  }
+  .create-profile-section
+    .card
+    #create-profile
+    .personal-details
+    .card-body
+    .card.profile-img-preview {
+    width: 320px;
+    height: 140px;
+    background: #f9fbff;
+    border: 1px solid #e9f0ff;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  .features-landlord-banner .left-content h5 {
+    font-size: 20px !important;
+  }
+  .features-landlord-banner .right-content .banner-img img {
+    height: 200px;
+    margin-top: 110px;
+  }
+  .gallery-section .box .bide-widgets {
+    position: absolute;
+    top: 73%;
+    right: -12px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 345px;
+  }
+
+  .hero-section .hero-text h2 {
+    font-size: 20px !important;
+  }
+  .hero-section .hero-text h4 {
+    font-size: 12px !important;
+  }
+  .hero-section .hero-text {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .faqs-banner-content h5 {
+    font-size: 22px !important;
+  }
+  .faqs-banner-content img {
+    width: 200px;
+  }
+  #general .card .card-header {
+    padding: 22px 3px 22px 3px;
+  }
+  .faqs-nav .nav-link.active,
+  .faqs-nav .nav-link {
+    padding: 8px 28px 8px 28px;
+    font-size: 12px !important;
+  }
+  .faqs-nav .nav-item {
+    margin-right: 10px;
+  }
+
+  .about-us-banner .card-img-overlay {
+    top: 18%;
+    left: 3%;
+    width: unset;
+    padding: 0px;
+  }
+  .about-us-banner .card-img-overlay .card-title {
+    font-size: 20px !important;
+  }
+  .about-us-banner .card-img-overlay p {
+    font-size: 12px;
+  }
+  .justify-content-xs-center {
+    justify-content: center !important;
+  }
+  .justify-content-xs-end {
+    justify-content: end !important;
+  }
+  .justify-content-xs-start {
+    justify-content: start !important;
+  }
+  .search-bar-on-map {
+    right: 90px;
+  }
+  .search-result-map-section .search-bar-on-map .hero-serach-btn {
+    left: 274px;
+  }
+  .search-result-map-section .search-bar-on-map input {
+    position: relative;
+    width: 325px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    height: 51px;
+    padding: 0 25px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  .mr-xs-2 {
+    margin-right: 0.5rem !important;
+  }
+  .mr-xs-3 {
+    margin-right: 1rem !important;
+  }
+  .ml-xs-3 {
+    margin-left: 1rem !important;
+  }
+  .p-xs-2 {
+    padding: 0.5rem !important;
+  }
+  .p-xs-0 {
+    padding: 0rem !important;
+  }
+  .next-btn {
+    padding: 6px 45px 6px 45px !important;
+  }
+  .profile-content-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .dashboard-brand {
+    font-size: 13px !important;
+  }
+  /* .profile-left-sidebar.card {
+            width: 100% !important;
+        } */
+  #deleteConfirmModalCenter .modal-content .modal-body {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 10px !important;
+  }
+  #deleteConfirmModalCenter .modal-content .modal-body h3 {
+    font-size: 25px !important;
+  }
+
+  .dashboard-title-section a {
+    float: none;
+    margin-top: 10px !important;
+  }
+  .dashboard-title-section {
+    text-align: center;
+  }
+
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .top-notification-bell .dropdown-menu {
+    /* position: absolute !important;
+            top: 50px !important;
+            right: -73px !important;
+            left: unset !important;
+            max-width: 304px !important;
+            box-shadow: 0px 0px 4px rgb(0 0 0 / 5%);
+            border-radius: 5px;
+            padding-bottom: 0px !important;
+            padding: 0px;
+            height: 400px !important;
+            overflow-y: scroll !important; */
+  }
+  .top-notification-bell .dropdown-menu .dropdown-item .content-span span {
+    font-size: 16px;
+  }
+  .top-notification-bell .dropdown-menu .dropdown-item .content-span p {
+    font-size: 10px;
+  }
+  .setting-section .setting-btn li {
+    margin-bottom: 10px;
+  }
+  .setting-section .setting-btn {
+    justify-content: flex-start;
+  }
+  .mb-sm-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  .mb-xs-0 {
+    margin-bottom: 0 !important;
+  }
+  .mb-xs-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  .mb-xs-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  .mb-xs-3 {
+    margin-bottom: 1rem !important;
+  }
+  .mb-xs-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  .mb-xs-5 {
+    margin-bottom: 3rem !important;
+  }
+  .mt-xs-0 {
+    margin-top: 0 !important;
+  }
+  .mt-sm-1 {
+    margin-top: 0.25rem !important;
+  }
+  .mt-xs-2 {
+    margin-top: 0.5rem !important;
+  }
+  .mt-xs-3 {
+    margin-top: 1rem !important;
+  }
+  .mt-xs-4 {
+    margin-top: 1.5rem !important;
+  }
+  .mt-xs-5 {
+    margin-top: 3rem !important;
+  }
+  .text-xs-center {
+    text-align: center !important;
+  }
+  .text-xs-right {
+    text-align: right !important;
+  }
+  .text-xs-left {
+    text-align: left !important;
+  }
+  .real-stories-section .section-title {
+    margin-bottom: 55px;
+  }
+  .renting-section,
+  .everything {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .d-xs-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .d-xs-none {
+    display: none !important;
+  }
+  .d-xs-block {
+    display: block !important;
+  }
+  .m-xs-auto {
+    margin: 0px auto !important;
+  }
+  .order-xs-first {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .order-xs-1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .liv-section .left-content img {
+    position: unset;
+  }
+  .liv-section .left-content {
+    text-align: center;
+  }
+  .liv-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+  .about-us-img-box .card {
+    position: relative;
+    width: 160px;
+    height: 115px;
+    background: #ffffff;
+    box-shadow: -2px 5px 20px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    left: 39px;
+    top: 69px;
+    border: 0;
+  }
+  .card.calendar .table-calendar #thead-month tr th {
+    font-size: 12px !important;
+  }
+  .card.calendar .table-calendar {
+    border-spacing: 5px 8px !important;
+  }
+  .card.calendar .table-calendar #calendar-body td {
+    font-size: 12px !important;
+    min-width: 30px !important;
+    height: 33px !important;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+  .card.landlord-view-profile {
+    padding: 5px !important;
+  }
+  #FinancialDetailsFillModalCenter .modal-content {
+    padding: 5px !important;
+  }
+  #petaddModalCenter .card {
+    width: 280px !important;
+  }
+  .create-profile-section
+    .card
+    #create-profile
+    .personal-details
+    .card-body
+    .card.profile-img-preview {
+    width: 220px;
+    height: 110px;
+    background: #f9fbff;
+    border: 1px solid #e9f0ff;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  .features-landlord-banner .left-content h5 {
+    font-size: 15px !important;
+  }
+  .features-landlord-banner .right-content .banner-img img {
+    height: 175px;
+    margin-top: 110px;
+  }
+  .gallery-section .box .bide-widgets {
+    position: absolute;
+    top: 60%;
+    right: -12px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 345px;
+  }
+  .faqs-nav .nav-link.active,
+  .faqs-nav .nav-link {
+    padding: 8px 20px 8px 20px;
+    font-size: 9px !important;
+  }
+  .faqs-nav .nav-item {
+    margin-right: 7px;
+  }
+
+  .search-bar-on-map {
+    right: 34px;
+    top: 174px;
+  }
+  .search-result-map-section .search-bar-on-map .hero-serach-btn {
+    left: 219px;
+  }
+  .search-result-map-section .search-bar-on-map input {
+    width: 270px;
+  }
+}
+
+@media (min-width: 576px) {
+  #editEmergencyContactModalCenter .modal-dialog,
+  #petaddModalCenter .modal-dialog {
+    max-width: 750px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}

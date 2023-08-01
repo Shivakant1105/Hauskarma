@@ -1,0 +1,288 @@
+<body>
+  <!-- Header section -->
+  <header class="header-section shadow-none clearfix bg-transparent">
+    <div class="container">
+      <div class="align-items-center row">
+        <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+          <a href="homepage" class="site-logo">
+            <img src="assets/img/logos/Hauskarma-header-logo.png" alt="" />
+          </a>
+        </div>
+
+        <!-- This Code Hidde On extera large and large Screen Start  -->
+        <!-- <div
+          class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none"
+        >
+          <a
+            href="assets/renter-login/login"
+            class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+            >LOGIN</a
+          >
+        </div> -->
+
+        <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+          <ul class="menu-list">
+            <li><a href="homepage">Rentals</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Features</a
+              >
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="frontend/features-landlord"
+                    >Landlord</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="frontend/features-renter"
+                    >Renter</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="frontend/pricing-renter">Pricing</a></li>
+            <li><a href="#">Rentals Resources</a></li>
+          </ul>
+        </nav>
+        <!-- This Code Hidde On extera large and large Screen End  -->
+
+        <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+          <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+          <!-- This Code Show On extera large and large Screen Start  -->
+          <nav
+            class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block"
+          >
+            <ul class="menu-list">
+              <li><a href="homepage">Rentals</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Features</a
+                >
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-landlord"
+                      >Landlord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-renter"
+                      >Renter</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="frontend/pricing-renter">Pricing</a></li>
+              <li><a href="#">Rentals Resources</a></li>
+            </ul>
+          </nav>
+          <!-- This Code Show On extera large and large Screen End  -->
+        </div>
+
+        <!-- This Code Show On extera large and large Screen Start  -->
+        <!-- <div
+          class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block"
+        >
+          <a
+            href="login"
+            class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+            >LOGIN</a
+          >
+        </div> -->
+        <!-- This Code Show On extera large and large Screen End  -->
+      </div>
+    </div>
+  </header>
+  <!-- Header section end -->
+
+  <!-- Login Section Code Start -->
+  <section class="login-section-wraper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-lg-6 m-auto">
+          <div class="card">
+            <div class="card-body p-md-5">
+              <h2 class="card-title text-center mb-5">Sign Up</h2>
+              <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+                <div class="border form-group radio-button-dropp">
+                  <div class="bg-transparent d-flex dropp-header pl-4 pr-3">
+                    <span class="dropp-header__title">
+                      <i class="fa fa-user mr-2" aria-hidden="true"></i>
+                      <small class="js-value">Renter or Landlord?</small></span
+                    >
+                    <a
+                      href="#"
+                      class="bg-transparent dropp-header__btn js-dropp-action"
+                    >
+                      <i class="icon"></i>
+                    </a>
+                  </div>
+
+                  <div class="dropp-body">
+                    <hr class="mb-0 ml-4 mr-4 mt-0" />
+                    <label for="optA" class="pl-4 pr-4 mb-0">
+                      <i class="fa fa-user mr-2" aria-hidden="true"></i>
+                      <small>Renter</small>
+                      <input
+                        type="radio"
+                        id="optA"
+                        name="dropp"
+                        value="Renter"
+                        formControlName="dropp"
+                      />
+                    </label>
+                    <label for="optB" class="pl-4 pr-4 mb-0">
+                      <i class="fa fa-user mr-2" aria-hidden="true"></i>
+                      <small>Landlord</small>
+                      <input
+                        type="radio"
+                        id="optB"
+                        name="dropp"
+                        value="Landlord"
+                        formControlName="dropp"
+                      />
+                    </label>
+                  </div>
+                  <!-- <div class="dropp-body">
+                    <hr class="mb-0 ml-4 mr-4 mt-0" />
+                    <label for="renterType" class="pl-4 pr-4 mb-0">
+                      <i class="fa fa-user mr-2" aria-hidden="true"></i>
+                      <small class="active">Renter</small>
+                      <input
+                        type="radio"
+                        id="renterType"
+                        name="userType"
+                        value="renter"
+                      />
+                    </label>
+                    <label for="landlordType" class="pl-4 pr-4 mb-0">
+                      <i class="fa fa-user mr-2" aria-hidden="true"></i>
+                      <small>Landlord</small>
+                      <input
+                        type="radio"
+                        name="userType"
+                        id="landlordType"
+                        value="landlord"
+                      />
+                    </label>
+                  </div> -->
+                </div>
+
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white pl-4">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    formControlName="username"
+                    class="bg-white border-left-0 border-md font-14 form-control"
+                  />
+                </div>
+
+                <div class="input-group form-group password-input">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white pl-4">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input
+                    id="password"
+                    [type]="passwordType"
+                    name="firstName"
+                    placeholder="Password"
+                    formControlName="password"
+                    class="form-control bg-white border-left-0 border-right-0 font-14"
+                  />
+
+                  <div class="input-group-prepend right-icon">
+                    <span class="input-group-text bg-white pr-4 border-left-0">
+                      <i
+                        #eyeChange
+                        (click)="onEyeClick()"
+                        class="fa"
+                        [ngClass]="{
+                          'fa-eye-slash': !toggle,
+                          'fa-eye': toggle
+                        }"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="input-group form-group password-input">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white pl-4">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input
+                    id="confirmPassword"
+                    [type]="passwordType"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    formControlName="confirmPassword"
+                    class="form-control bg-white border-left-0 border-right-0 font-14"
+                  />
+
+                  <div class="input-group-prepend right-icon">
+                    <span class="input-group-text bg-white pr-4 border-left-0">
+                      <i
+                        #eyeChange
+                        (click)="onEyeClick()"
+                        class="fa"
+                        [ngClass]="{
+                          'fa-eye-slash': !toggle,
+                          'fa-eye': toggle
+                        }"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-group text-center">
+                  <button
+                    [disabled]="signupForm.invalid || !confirmPasswordCheck"
+                    [ngClass]="{
+                      'disable-button-color': signupForm.invalid
+                    }"
+                    class="forsubmit"
+                    type="submit"
+                    class="btn btn-block btn-lg font-weight-bold pb-3 pt-3 secondary-bg-color-first site-btn text-white text-uppercase"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Login Section Code End -->
+</body>

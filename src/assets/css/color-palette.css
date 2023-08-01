@@ -1,0 +1,289 @@
+.line-height-1-4 {
+  line-height: 1.4;
+}
+.line-height-2 {
+  line-height: 2;
+}
+.border-radius-6 {
+  border-radius: 6px;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+/* =====================================================
+===================Theme Primary Colors Start ==========
+======================================================*/
+.primary-color-first {
+  color: #0e5f99 !important ;
+}
+
+.primary-bg-color-first {
+  background-color: #0e5f99 !important ;
+}
+
+.primary-color-second {
+  color: #e6f4ff !important ;
+}
+
+.primary-bg-color-second {
+  background-color: #e6f4ff !important ;
+}
+
+.primary-bg-color-third {
+  background-color: rgba(230, 244, 255, 0.35) !important ;
+}
+
+/* =====================================================
+===================Theme Primary Colors End ============
+===============================================*/
+
+/* =====================================================
+===================Theme Secondary Color Start =========
+======================================================*/
+.secondary-color-first {
+  color: #0e5f99 !important ;
+}
+
+.secondary-bg-color-first {
+  background-color: #89c33d !important ;
+}
+
+.secondary-color-second {
+  color: #edf8e0 !important ;
+}
+
+.secondary-bg-color-second {
+  background-color: #edf8e0 !important ;
+}
+
+.right-0 {
+  right: 0 !important;
+}
+.left-0 {
+  left: 0 !important;
+}
+.top-0 {
+  top: 0 !important;
+}
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.z-index-1024 {
+  z-index: 1024;
+}
+.border-status-success {
+  border: 1.5px solid #21d3a0 !important;
+}
+.chat-header-user-img-height {
+  height: 46px !important;
+}
+.chat-header-user-img-width {
+  width: 46px !important;
+}
+.h-40-px {
+  height: 40px !important;
+}
+.border-left-commit {
+  border-left: 3px solid #0e5f99 !important;
+}
+/* =====================================================
+===================Theme Secondary Color End ===========
+======================================================*/
+
+/* =====================================================
+===================Theme Dark Color Start ==============
+======================================================*/
+.dark-color-first {
+  color: #041c2d !important ;
+}
+
+.dark-bg-color-first {
+  background-color: #041c2d !important ;
+}
+
+.dark-color-second {
+  color: #2b4a60 !important ;
+}
+
+.dark-bg-color-second {
+  background-color: #2b4a60 !important ;
+}
+
+.dark-color-three {
+  color: #657987 !important ;
+}
+
+.dark-bg-color-three {
+  background-color: #657987 !important ;
+}
+
+.dark-color-four {
+  color: #afc0cb !important ;
+}
+
+.dark-bg-color-four {
+  background-color: #afc0cb !important ;
+}
+
+.dark-color-five {
+  color: #cfd7dc !important ;
+}
+
+.dark-bg-color-five {
+  background-color: #cfd7dc !important ;
+}
+
+.dark-color-five {
+  color: #e3eaee !important ;
+}
+
+.dark-bg-color-five {
+  background-color: #e3eaee !important ;
+}
+
+.dark-color-six {
+  color: #f4f9fc !important ;
+}
+
+.dark-bg-color-six {
+  background-color: #f4f9fc !important ;
+}
+.opacity-1 {
+  opacity: 1;
+}
+.opacity-0-5 {
+  opacity: 0.5;
+}
+
+.box-shadow-one {
+  box-shadow: 0px 5px 20px rgba(14, 95, 153, 0.04);
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.sup-0-3 {
+  top: -0.3em;
+}
+.border-2 {
+  border: 2px solid #cfd7dc;
+}
+.border-1-5 {
+  border: 1.5px solid #657987 !important;
+}
+
+.border-primary-2 {
+  border: 2px solid #0e5f99 !important;
+}
+.h-100vh {
+  min-height: 100vh !important;
+}
+/* =====================================================
+===================Theme Dark Color End ================
+======================================================*/
+
+/* =====================================================
+===================Theme Status Color Start ============
+======================================================*/
+.status-color-first {
+  color: #219fff !important ;
+}
+
+.status-bg-color-first {
+  background-color: #219fff !important ;
+}
+
+.status-color-second {
+  color: #e9f6ff !important ;
+}
+
+.status-bg-color-second {
+  background-color: #e9f6ff !important ;
+}
+
+.status-color-three {
+  color: #21d3a0 !important ;
+}
+.status-bg-color-three {
+  background-color: #21d3a0 !important ;
+}
+
+.status-color-four {
+  color: #e9fbf6 !important ;
+}
+.status-bg-color-four {
+  background-color: #e9fbf6 !important ;
+}
+
+.status-color-five {
+  color: #ffc233 !important ;
+}
+.status-bg-color-five {
+  background-color: #ffc233 !important ;
+}
+
+.status-color-six {
+  color: #fff9eb !important ;
+}
+.status-bg-color-six {
+  background-color: #fff9eb !important ;
+}
+
+.status-color-seven {
+  color: #f53d6b !important ;
+}
+.status-bg-color-seven {
+  background-color: #f53d6b !important ;
+}
+
+.status-color-eight {
+  color: #feecf1 !important ;
+}
+.status-bg-color-eight {
+  background-color: #feecf1 !important ;
+}
+.theme-border-one {
+  border: 1px solid #dddddd !important;
+}
+
+.theme-bg-one {
+  background-color: #3fb694 !important;
+}
+.theme-color-one {
+  color: #3fb694 !important;
+}
+.theme-color-two {
+  color: #4a6823;
+}
+
+.theme-color-three {
+  color: #503e13;
+}
+
+.theme-color-four {
+  color: #0c3a2d;
+}
+
+.theme-color-five {
+  background-color: #3e0b18;
+}
+/* =====================================================
+===================Theme Status Color End ==============
+======================================================*/
+
+/* =====================================================
+===================Blog Section Css  Start =============
+======================================================*/
+.blog-section {
+  background-color: #e6e6e6;
+}
+
+.blog-banner .card-img-overlay {
+  display: grid;
+  place-items: center;
+}
+
+/* =====================================================
+===================Blog Section Css  End ===============
+======================================================*/

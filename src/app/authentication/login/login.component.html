@@ -1,0 +1,183 @@
+<body>
+  <!-- Header section -->
+  <header class="header-section shadow-none clearfix bg-transparent">
+    <div class="container">
+      <div class="align-items-center row">
+        <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+          <a href="/frontend/homepage" class="site-logo">
+            <img src="assets/img/logos/Hauskarma-header-logo.png" alt="" />
+          </a>
+        </div>
+
+        <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+          <ul class="menu-list">
+            <li><a href="/frontend/homepage">Rentals</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Features</a
+              >
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li></li>
+                <li></li>
+                <li>
+                  <a class="dropdown-item" href="/frontend/features-landlord "
+                    >Landlord</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/frontend/features-renter"
+                    >Renter</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="frontend/pricing-renter">Pricing</a></li>
+            <li><a href="#">Rentals Resources</a></li>
+          </ul>
+        </nav>
+        <!-- This Code Hidde On extera large and large Screen End  -->
+
+        <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+          <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+          <!-- This Code Show On extera large and large Screen Start  -->
+          <nav
+            class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block"
+          >
+            <ul class="menu-list">
+              <li><a href="homepage">Rentals</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Features</a
+                >
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-landlord"
+                      >Landlord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-renter"
+                      >Renter</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="frontend/pricing-renter">Pricing</a></li>
+              <li><a href="#">Rentals Resources</a></li>
+            </ul>
+          </nav>
+        
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- Header section end -->
+
+  <!-- Login Section Code Start -->
+  <section class="login-section-wraper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-lg-6 m-auto">
+          <div class="card">
+            <div class="card-body p-md-5">
+              <h2 class="card-title text-center mb-5">Login</h2>
+              <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white pl-4">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input
+                    id="firstName"
+                    type="text"
+                    name="firstname"
+                    placeholder="Username"
+                    formControlName="Username"
+                    class="bg-white border-left-0 border-md font-14 form-control"
+                  />
+                </div>
+                <div class="input-group form-group password-input">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white pl-4">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input
+                    #hello
+                    autocomplete="off"
+                    id="password"
+                    [type]="passwordType"
+                    name="password"
+                    placeholder="Password"
+                    formControlName="password"
+                    class="form-control bg-white border-left-0 border-right-0 font-14"
+                  />
+
+                  <div class="input-group-prepend right-icon">
+                    <span class="input-group-text bg-white pr-4 border-left-0">
+                      <i
+                        #eyeChange
+                        (click)="onEyeClick()"
+                        class="fa"
+                        [ngClass]="{
+                          'fa-eye-slash': !toggle,
+                          'fa-eye': toggle
+                        }"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-group text-center">
+                  <button
+                    [disabled]="loginForm.invalid"
+                    [ngClass]="{
+                      'disable-button-color': loginForm.invalid
+                    }"
+                    type="submit"
+                    class="btn btn-block btn-lg font-weight-bold pb-3 pt-3 secondary-bg-color-first site-btn text-white"
+                  >
+                    LOGIN
+                  </button>
+                </div>
+              </form>
+              <div class="text-center mt-5">
+                <a href="auth/reset-password" class="font-14 text-dark"
+                  >Forgot Password?</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mb-5 mt-5 text-center">
+            <a href="auth/sign-up" class="font-14 text-dark"
+              >Don’t have an account? Sign up</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Login Section Code End -->
+</body>

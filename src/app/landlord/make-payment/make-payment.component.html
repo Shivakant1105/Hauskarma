@@ -1,0 +1,260 @@
+<body>
+  <!--=============================================  
+    ============ Book Visit Modal Start ==========-->
+  <div
+    class="modal fade"
+    id="BookVisitModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="BookVisitModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content dashboard-border-radius">
+        <div class="modal-body p-5">
+          <h2 class="font-30 primary-color-first">Book a Visit</h2>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h2 class="dark-color-first font-20 font-weight-600">Amit P.</h2>
+              <p class="mb-0">
+                <a class="dark-color-three font-16" href="mailto:amit@gmail.com"
+                  >amit@gmail.com</a
+                >
+              </p>
+              <div class="makepayment star-rating mt-2">
+                <input id="star-5" type="radio" name="rating" value="star-5" />
+                <label for="star-5" title="5 stars" class="mr-1">
+                  <i class="active fa fa-star" aria-hidden="true"></i>
+                </label>
+
+                <input id="star-4" type="radio" name="rating" value="star-4" />
+                <label for="star-4" title="4 stars" class="mr-1">
+                  <i class="active fa fa-star" aria-hidden="true"></i>
+                </label>
+
+                <input id="star-3" type="radio" name="rating" value="star-3" />
+                <label for="star-3" title="3 stars" class="mr-1">
+                  <i class="active fa fa-star" aria-hidden="true"></i>
+                </label>
+
+                <input id="star-2" type="radio" name="rating" value="star-2" />
+                <label for="star-2" title="2 stars" class="mr-1">
+                  <i class="active fa fa-star" aria-hidden="true"></i>
+                </label>
+
+                <input id="star-1" type="radio" name="rating" value="star-1" />
+                <label for="star-1" title="1 star" class="mr-1">
+                  <i class="active fa fa-star" aria-hidden="true"></i>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <p class="dark-color-second font-12 font-weight-600 mb-2 mt-1">
+                CREDIT RATING (<small
+                  class="progress-label-rating dark-color-second font-12 font-weight-600 mb-2 mt-1"
+                  >(0%)</small
+                >)
+              </p>
+              <div id="progressbar_rating"></div>
+            </div>
+
+            <div class="col-md-12">
+              <form action="#" method="POST">
+                <div class="row align-items-center add-payment-method">
+                  <div class="col-md-12 col-lg-9">
+                    <div class="form-group mb-0">
+                      <label>SELECT DATE &amp; TIME</label>
+                      <div class="custom-date-input">
+                        <input
+                          type="text"
+                          id="Book-Visit-Date"
+                          class="form-control pl-3 hasDatepicker"
+                          placeholder="Select"
+                        />
+                        <img
+                          class="ui-datepicker-trigger"
+                          src="assets/img/icons/datecalender.png"
+                          alt="Select date"
+                          title="Select date"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-3">
+                    <button
+                      type="button"
+                      onclick="modalclose();"
+                      data-toggle="modal"
+                      data-target="#BookModalCenter"
+                      class="book-btn btn dashboard-border-radius-second dashboard-btn-bg font-12 font-weight-bold mt-4 text-uppercase text-white"
+                    >
+                      Book
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--============================================= 
+    ============ Book Visit Modal End ============-->
+
+  <!--=============================================  
+    ============ Book Modal Start ==========-->
+  <div
+    class="modal fade"
+    id="BookModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="BookModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content dashboard-border-radius">
+        <div class="modal-body text-center">
+          <img src="assets/img/icons/success-modal-icon.png" alt="" />
+          <h5 class="font-28 font-weight-600 mt-3 primary-color-first">
+            Visit Booked
+          </h5>
+          <h5 class="dark-color-three font-16 mt-3">
+            Your visit has been booked successfully!
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--============================================= 
+    ============ Book Visit Modal End ============-->
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            class="card p-lg-3 p-md-3 p-sm-2 p-xl-4 p-xs-2 pb-4 border-radius-6 h-100vh"
+          >
+            <h5 class="dark-color-first font-weight-600 font-20 mb-4">
+              Payment
+            </h5>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <h2 class="dark-color-first font-20 font-weight-600">
+                  Amit P.
+                </h2>
+                <p class="mb-0">
+                  <a
+                    class="dark-color-three font-16"
+                    href="mailto:amit@gmail.com"
+                    >amit@gmail.com</a
+                  >
+                </p>
+                <div class="makepayment star-rating mt-2">
+                  <input
+                    id="sstar-5"
+                    type="radio"
+                    name="rating"
+                    value="star-5"
+                  />
+                  <label for="sstar-5" title="5 stars" class="mr-1">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+
+                  <input
+                    id="sstar-4"
+                    type="radio"
+                    name="rating"
+                    value="star-4"
+                  />
+                  <label for="sstar-4" title="4 stars" class="mr-1">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+
+                  <input
+                    id="sstar-3"
+                    type="radio"
+                    name="rating"
+                    value="star-3"
+                  />
+                  <label for="sstar-3" title="3 stars" class="mr-1">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+
+                  <input
+                    id="sstar-2"
+                    type="radio"
+                    name="rating"
+                    value="star-2"
+                  />
+                  <label for="sstar-2" title="2 stars" class="mr-1">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+
+                  <input
+                    id="sstar-1"
+                    type="radio"
+                    name="rating"
+                    value="star-1"
+                  />
+                  <label for="sstar-1" title="1 star" class="mr-1">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12 mt-2">
+                <div class="profile-rating-modal">
+                  <p class="mb-1">
+                    <small class="dark-color-second font-14 font-weight-600"
+                      >Credit Rating</small
+                    >
+                  </p>
+                  <div class="align-items-center d-flex mb-0">
+                    <fieldset class="single-satar-rating mr-2">
+                      <input type="radio" id="star6" name="rating1" value="5" />
+                      <label
+                        class="full mb-0"
+                        for="star6"
+                        title="Awesome - 5 stars"
+                      ></label>
+
+                      <input
+                        type="radio"
+                        id="star7half"
+                        name="rating1"
+                        value="4 and a half"
+                      />
+                      <label
+                        class="half mb-0"
+                        for="star7half"
+                        title="Pretty good - 4.5 stars"
+                      ></label>
+                    </fieldset>
+                    <b class="font-14 primary-color-first">675</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <p class="font-14 mb-4 mt-4">
+                  You need to make a payment of $120 to book this visit.
+                </p>
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#BookVisitModalCenter"
+                  class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-1000 pb-2 pl-4 pr-4 pt-2 text-uppercase text-white"
+                >
+                  <img class="mr-2" src="assets/img/icons/paypal-icon.png" />Pay
+                  With Paypal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

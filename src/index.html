@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hauskarma</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/dashboard-sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/color-palette.css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+  <!--====== Javascripts & Jquery ======-->
+  <script src="/assets/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/js/popper.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/owl.carousel.min.js"></script>
+  <script src="/assets/bootstrap-input-spinner.js"></script>
+  <script src="/assets/js/jquery-ui.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/jquery-ui.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <script>
+    /* ============================================== 
+    ======= Home video Section Css Start ========= */
+
+    setTimeout(() => {
+      const video = document.getElementById("video");
+      const circlePlayButton = document.getElementById("circle-play-b");
+      const Name = document.getElementById("name");
+      function togglePlay() {
+        if (video.paused || video.ended) {
+          video.play();
+          $("#video").attr("controls", "foo");
+        } else {
+          video.pause();
+        }
+      }
+
+      circlePlayButton.addEventListener("click", togglePlay);
+      video.addEventListener("playing", function () {
+        circlePlayButton.style.opacity = 0;
+        Name.style.opacity = 0;
+      });
+      video.addEventListener("pause", function () {
+        circlePlayButton.style.opacity = 1;
+        Name.style.opacity = 1;
+      });
+    }, 1000);
+    /* ============================================= 
+    ======= Home video Section Css End =========== */
+  </script>
+  <script>
+    setTimeout(() => {
+      function initMap() {
+        const uluru = {
+          lat: -25.363,
+          lng: 131.044,
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        const contentString =
+          "<div class='map-modal'>" +
+          '<img src="/assets/img/map-modal-img.png" />' +
+          '<div id="bodyContent" class="pl-2 pr-2">' +
+          "<p class='font-21 font-weight-bold mb-1'>" +
+          "<strong class='font-14 theme-color-one'>$5,495 / </strong>" +
+          "<strong class='font-14 status-color-five'>$6,495</strong>" +
+          "<img class='ml-2 check-icon' src='/assets/img/icons/touch.png' style='width:15px;'>" +
+          "<img class='check-icon' src='/assets/img/icons/wishlist-yellow-icon.png' style='width:15px;'>" +
+          "</p>" +
+          '<p class="font-10 font-11 font-weight-1000 mb-2"><img class="mr-1" style="width: 15px;" src="/assets/img/icons/location-vector.png">4140 Parker Rd. Allentown, New Mexico 31134</p>' +
+          "</div>";
+
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map,
+          title: "Uluru (Ayers Rock)",
+        });
+        marker.addListener("click", () => {
+          infowindow.open(map, marker);
+        });
+      }
+    }, 1000);
+  </script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script>
+    setTimeout(() => {
+      src = "https://maps.googleapis.com/maps/api/js?key=&callback=initMap";
+    }, 1000);
+  </script>
+
+  <script>
+    setTimeout(() => {
+      let suggestions = [
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "Channel",
+        "CodingLab",
+        "CodingNepal",
+        "YouTube",
+        "YouTuber",
+        "YouTube",
+        "Tobermory Terrace",
+        "Bollywood",
+        "Vlogger",
+        "Vechiles",
+        "Facebook",
+        "Freelancer",
+        "Facebook",
+        "Designer",
+        "Developer",
+        "Web Designer",
+        "Meerut",
+        "Lucnknow",
+        "Noida",
+      ];
+
+      // getting all required elements
+      const searchWrapper = document.querySelector(".search-input");
+      const inputBox = searchWrapper.querySelector("input");
+      const suggBox = searchWrapper.querySelector(".autocom-box");
+      const icon = searchWrapper.querySelector(".icon");
+      let linkTag = searchWrapper.querySelector("a");
+      let webLink;
+
+      // if user press any key and release
+      inputBox.onkeyup = (e) => {
+        let userData = e.target.value; //user enetered data
+        let emptyArray = [];
+        if (userData) {
+          icon.onclick = () => {
+            webLink = "https://www.google.com/search?q=" + userData;
+            linkTag.setAttribute("href", webLink);
+            console.log(webLink);
+            linkTag.click();
+          };
+          emptyArray = suggestions.filter((data) => {
+            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+            return data
+              .toLocaleLowerCase()
+              .startsWith(userData.toLocaleLowerCase());
+          });
+          emptyArray = emptyArray.map((data) => {
+            // passing return data inside li tag
+            return (data = "<li>" + data + "</li>");
+          });
+          searchWrapper.classList.add("active"); //show autocomplete box
+          showSuggestions(emptyArray);
+          let allList = suggBox.querySelectorAll("li");
+          for (let i = 0; i < allList.length; i++) {
+            //adding onclick attribute in all li tag
+            allList[i].setAttribute("onclick", "select(this)");
+          }
+        } else {
+          searchWrapper.classList.remove("active"); //hide autocomplete box
+        }
+      };
+
+      function select(element) {
+        let selectData = element.textContent;
+        inputBox.value = selectData;
+        icon.onclick = () => {
+          webLink = "https://www.google.com/search?q=" + selectData;
+          linkTag.setAttribute("href", webLink);
+          linkTag.click();
+        };
+        searchWrapper.classList.remove("active");
+      }
+
+      function showSuggestions(list) {
+        let listData;
+        if (!list.length) {
+          userValue = inputBox.value;
+          listData = "<li>" + userValue + "</li>";
+        } else {
+          listData = list.join("");
+        }
+        suggBox.innerHTML =
+          '<div class="card">' +
+          '<div class="bg-transparent card-header p-0"><div class="input-group"><div class="input-group-prepend"><span class="bg-transparent border-0 input-group-text" id="basic-addon1"><img src="/assets/img/icons/current-location-icon.png"></span></div><input type="text" class="current-location-input border-0 font-13 form-control pb-3 pt-3 rounded-circle" placeholder="Current location" aria-label="Current location" aria-describedby="basic-addon1"></div></div>' +
+          '<div class="bg-white card-header p-0 pb-3 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="/assets/img/icons/city-location-icon.png"></span></div><strong class="ml-2">Cities</strong></div><ul class="list-style-none pl-5 pr-5 pt-2 text-left"> <li onclick="select(this)">Toronto, ON</li><li onclick="select(this)">Toronto, ON</li> </ul></div>' +
+          '<div class="card-body p-0 pt-3"><div class="align-items-center input-group"><div class="bg-white input-group-prepend"><span class="bg-white border-0 input-group-text" id="basic-addon1"><img src="/assets/img/icons/building-location-icon.png"></span></div><strong class="ml-2">Buildings</strong></div><ul class="list-style-none pl-5 text-left">' +
+          listData +
+          "</ul></div></div>";
+      }
+    }, 100);
+  </script>
+
+  <script>
+    setTimeout(() => {
+      $(document).ready(function () {
+        // Default dropdown action to show/hide dropdown content
+
+        $(".js-dropp-action").click(function (e) {
+          $(".radio-button-dropp").css("border-radius", "30px");
+          e.preventDefault();
+          $(this).toggleClass("js-open");
+          $(this)
+            .parent()
+            .next(".dropp-body")
+            .toggleClass("js-open", 1000, "easeOutSine");
+        });
+
+        // Using as fake input select dropdown
+        $("label").click(function () {
+          $(this).addClass("js-open").siblings().removeClass("js-open");
+          $(".dropp-body,.js-dropp-action").removeClass("js-open");
+        });
+        // get the value of checked input radio and display as dropp title
+        $('input[name="dropp"]').change(function () {
+          var value = $("input[name='dropp']:checked").val();
+          $(".js-value").text(value);
+        });
+      });
+    }, 10);
+  </script>
+  <script>
+    var forEach = function (array, callback, scope) {
+      for (var i = 0; i < array.length; i++) {
+        callback.call(scope, i, array[i]);
+      }
+    };
+    window.onload = function () {
+      var max = -219.99078369140625;
+      forEach(document.querySelectorAll(".progress"), function (index, value) {
+        percent = value.getAttribute("data-progress");
+        value
+          .querySelector(".fill")
+          .setAttribute(
+            "style",
+            "stroke-dashoffset: " + ((100 - percent) / 100) * max
+          );
+        value.querySelector(".value").innerHTML = percent + "%";
+      });
+    };
+  </script>
+
+  <script>
+    setTimeout(() => {
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    }, 10);
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-popover-x@1.5.1/js/bootstrap-popover-x.min.js"
+    type="text/javascript"
+  ></script>
+  <script>
+    setTimeout(() => {
+      function secondpopover() {
+        $("#AdvancePopover").on("hidden.bs.modal", function (e) {
+          if (e.type === "hidden") {
+            $(".AdvancePopover").attr("data-target", "#BasicPopover");
+            $("#BasicPopover").popoverX("show");
+          }
+        });
+      }
+    }, 10);
+  </script>
+  <script>
+    setTimeout(() => {
+      (function ($) {
+        $(".responsive-bar").on("click", function (event) {
+          $(".main-menu").slideToggle(400);
+          event.preventDefault();
+        });
+      })(jQuery);
+    }, 50);
+  </script>
+  <script>
+    setTimeout(() => {
+      const checkbox = document.getElementById("checkbox");
+      const professional = document.getElementById("professional");
+      const master = document.getElementById("master");
+      const basic = document.getElementById("basic");
+
+      checkbox.addEventListener("click", () => {
+        basic.textContent =
+          basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+        professional.textContent =
+          professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
+        master.textContent =
+          master.textContent === "$399.99" ? "$39.99" : "$399.99";
+      });
+    }, 50);
+  </script>
+  <script>
+    setTimeout(() => {
+      // "use strict";
+
+      $(document).ready(function () {
+        $(".dashboard-sidebar").css(
+          "min-height",
+          $(".content-wrapper").height()
+        );
+      });
+
+      if ($(window).width() > 767) {
+        $(".CustomToogle").on("click", function () {
+          var check_class = $(this).hasClass("head-toggle");
+          if (check_class) {
+            $(this).removeClass("head-toggle");
+            $(".CustomShowHide").fadeOut("slow");
+            $(".content-wrapper").css("margin-left", "0");
+          } else {
+            $(this).addClass("head-toggle");
+            $(".content-wrapper").css("margin-left", "279px");
+            $(".CustomShowHide").fadeIn("slow");
+          }
+        });
+      } else {
+        $(".CustomToogle").on("click", function () {
+          var check_class = $(this).hasClass("head-toggle");
+          if (check_class) {
+            $(this).removeClass("head-toggle");
+            // $(".CustomShowHide").fadeOut("slow");
+            $(".CustomShowHide").css({
+              display: "none",
+            });
+            $(".content-wrapper").css("margin-left", "0px");
+          } else {
+            $(this).addClass("head-toggle");
+            $(".CustomShowHide").css({
+              top: "0",
+              left: "0",
+              width: "100%",
+              right: " 0px",
+              position: "relative",
+              margin: "0px",
+              border: "0px",
+              "box-shadow": "none",
+              display: "inline-block",
+            });
+            $(".CustomShowHide li").css(
+              "cssText",
+              "padding-left:0px !important;"
+            );
+            $(".CustomShowHide li a").css(
+              "cssText",
+              "padding-left:0px !important;"
+            );
+
+            $(".dashboard-custom-dropdown ul").css(
+              "cssText",
+              "margin-left:43px !important;"
+            );
+
+            $(".content-wrapper").css("margin-left", "0px");
+            // $(".CustomShowHide").fadeIn("slow")
+          }
+        });
+      }
+    }, 100);
+  </script>
+</html>

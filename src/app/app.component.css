@@ -1,0 +1,21 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* .bg-transparent .container {
+  background-color: white !important;
+}
+body {
+  background-color: #ffffff !important;
+} */
+
+body {
+  /* background-image: url('../img/White.png'); */
+  /* height: 100%; */
+  font-family: Montserrat !important;
+  -webkit-font-smoothing: Montserrat !important;
+}

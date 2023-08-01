@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <script>
+      // Function to validate the form
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var address = document.getElementById("address").value;
+        var age = document.getElementById("age").value;
+
+        // Validate name
+        if (name === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+
+        // Validate email
+        if (email === "") {
+          alert("Please enter your email.");
+          return false;
+        } else if (!validateEmail(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // Validate phone number
+        if (phone === "") {
+          alert("Please enter your phone number.");
+          return false;
+        } else if (!validatePhone(phone)) {
+          alert("Please enter a valid phone number.");
+          return false;
+        }
+
+        // Validate address
+        if (address === "") {
+          alert("Please enter your address.");
+          return false;
+        }
+
+        // Validate age
+        if (age === "") {
+          alert("Please enter your age.");
+          return false;
+        } else if (isNaN(age) || age < 1 || age > 150) {
+          alert("Please enter a valid age.");
+          return false;
+        }
+
+        return true;
+      }
+
+      // Function to validate email using a regular expression
+      function validateEmail(email) {
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+
+      // Function to validate phone number using a regular expression
+      function validatePhone(phone) {
+        var regex = /^\d{10}$/;
+        return regex.test(phone);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Form Example</h1>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required /><br /><br />
+
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

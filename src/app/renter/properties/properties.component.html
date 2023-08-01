@@ -1,0 +1,426 @@
+<body>
+  <!--============================================ 
+    =======  Dashboard Content Section Start =======
+    ===========================================  -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="create-profile-section">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="card pl-md-3 pl-sm-1 pr-md-3 pr-sm-1 pb-5 h-100vh border-radius-6"
+            >
+              <div class="container-fluid">
+                <div class="row mt-4">
+                  <div class="col-lg-2 col-md-3 mb-md-3 mb-sm-3 mb-xs-3">
+                    <div class="form-group mb-0">
+                      <select
+                        class="SelectArrowChange border-1-5 border-radius-6 font-15 font-weight-600 form-control"
+                      >
+                        <option value="Durable">Durable</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 mb-md-3 mb-sm-3 mb-xs-3">
+                    <div class="exploresearchbar input-group">
+                      <span class="input-group-append z-0">
+                        <button class="bg-white btn pl-4" type="button">
+                          <img
+                            src="assets/img/icons/explore-search-icon.png"
+                            alt=""
+                          />
+                        </button>
+                      </span>
+                      <input
+                        class="form-control border-radius-6 pl-0"
+                        type="text"
+                        placeholder="Search"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 col-md-3 mb-md-3 mb-sm-3 mb-xs-3">
+                    <button
+                      type="button"
+                      class="border-radius-6 btn btn-block font-weight-600 h-100 primary-bg-color-first text-white"
+                    >
+                      Search
+                    </button>
+                  </div>
+
+                  <div class="col-lg-2 col-md-12 mb-md-3 mb-sm-3 mb-xs-3">
+                    <button
+                      type="button"
+                      class="AdvancePopover bg-white border-1-5 btn btn-block font-weight-600 h-100 dark-color-second"
+                      data-toggle="popover-x"
+                      data-target="#AdvancePopover"
+                      data-placement="bottom bottom-right"
+                    >
+                      <img
+                        class="mr-xl-4"
+                        src="assets/img/icons/setting-filter.png"
+                        alt=""
+                      />
+                      Filter
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row mt-4 text-right">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-3 ml-auto">
+                    <a
+                      href="#"
+                      class="btn font-14 font-weight-600 pb-3 pl-4 pr-4 primary-bg-color-second pt-3"
+                    >
+                      <img
+                        class="mr-3"
+                        src="assets/img/icons/view-on-map.png"
+                        alt=""
+                      />
+                      View on Map
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+
+                  <div class="colsm-6 col-xl-4 col-lg-6 col-md-6 mt-4">
+                    <app-bid-card></app-bid-card>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--============================================ 
+    =======  Dashboard Content Section End =========
+    ===========================================  -->
+
+  <!--============================================ 
+    =======  Advance Filter Content Start ==========
+    ===========================================  -->
+  <!-- <div id="AdvancePopover" class="popover popover-x is-bs4 popover-default">
+    <div class="arrow"></div>
+    <div class="card border-0">
+      <div class="card-body">
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <h3 class="dark-color-second font-16 font-weight-600">Filter</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="dark-color-three font-weight-600">Bedroom</label>
+              <input class="form-control" type="number" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="dark-color-three font-weight-600">Bedroom</label>
+              <input class="form-control" type="number" />
+            </div>
+          </div>
+        </div>
+        <div class="row filter-popover lease-setting">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="dark-color-three font-weight-600 mb-0">Price</label>
+              <div class="slider-range-wrap mt-3">
+                <div id="set-bid-price-range-slider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <label class="dark-color-three font-weight-600">Room Type</label>
+              <select name="" id="" class="form-control">
+                <option value="Condo">Condo</option>
+                <option value="Condo">Condo</option>
+                <option value="Condo">Condo</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <label class="dark-color-three font-weight-600">Bedroom</label>
+              <button
+                type="button"
+                class="btn btn-block primary-bg-color-second primary-color-first"
+                data-toggle="popover-x"
+                data-target="#BasicPopover"
+                data-placement="bottom bottom-right"
+                onclick="secondpopover();"
+              >
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-between">
+              <a
+                href="#"
+                class="btn dashboard-border-radius-second pl-4 pr-4 primary-bg-color-first text-white"
+                >Apply</a
+              >
+              <a
+                href="#"
+                class="border border-primary-2 btn dashboard-border-radius-second pl-4 pr-4 primary-color-first text-white"
+                >Reset</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--============================================
+    =======  Advance Filter Content End ============
+    ===========================================  -->
+
+  <!--============================================
+    =======  Basic Filter Content Start ============
+    ===========================================  -->
+  <!-- <div id="BasicPopover" class="popover popover-x is-bs4 popover-default">
+    <div class="arrow"></div>
+
+    <div class="card border-0">
+      <div class="card-body">
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <h3 class="dark-color-second font-14 font-weight-600 d-inline">
+              Amenities
+            </h3>
+            <span class="close pull-right" data-dismiss="popover-x"
+              >&times;</span
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline11"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline11"
+                  >Air Conditioning
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline12"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline12"
+                  >Balcony
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline13"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline13"
+                  >Deck</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline14"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline14"
+                  >Garden</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline15"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline15"
+                  >Central Heat</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="align-items-center custom-control custom-control-inline CustomRadioBtn m-0"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline16"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="ml-1 custom-control-label d-inline-block font-14 form-check-label font-12"
+                  for="customRadioInline16"
+                  >Pool</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-6 mb-md-0 mb-sm-3">
+            <div class="d-flex justify-content-between">
+              <h3 class="dark-color-second font-12 font-weight-600">
+                Pets Allowed
+              </h3>
+              <span class="SmallCheckBoxComponent">
+                <label class="mb-0 ml-3 pull-right switch">
+                  <input type="checkbox" checked="" />
+                  <span class="notification-slider round"></span>
+                </label>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-md-0 mb-sm-3">
+            <div class="d-flex justify-content-between">
+              <h3 class="dark-color-second font-12 font-weight-600">
+                Furnished
+              </h3>
+              <span class="SmallCheckBoxComponent">
+                <label class="mb-0 ml-3 pull-right switch">
+                  <input type="checkbox" checked="" />
+                  <span class="notification-slider round"></span>
+                </label>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-6 mb-md-0 mb-sm-3">
+            <div class="d-flex justify-content-between">
+              <h3 class="dark-color-second font-12 font-weight-600">
+                Pets Allowed
+              </h3>
+              <span class="SmallCheckBoxComponent">
+                <label class="mb-0 ml-3 pull-right switch">
+                  <input type="checkbox" checked="" />
+                  <span class="notification-slider round"></span>
+                </label>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-md-0 mb-sm-3">
+            <div class="d-flex justify-content-between">
+              <h3 class="dark-color-second font-12 font-weight-600">
+                Furnished
+              </h3>
+              <span class="SmallCheckBoxComponent">
+                <label class="mb-0 ml-3 pull-right switch">
+                  <input type="checkbox" checked="" />
+                  <span class="notification-slider round"></span>
+                </label>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-between">
+              <a
+                href="#"
+                class="btn dashboard-border-radius-second pl-4 pr-4 primary-bg-color-first text-white"
+                >Apply</a
+              >
+              <a
+                href="#"
+                class="border btn dashboard-border-radius-second pl-4 pr-4 primary-color-first text-white"
+                >Reset</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!--============================================
+    =======  Basic Filter Content End ==============
+    ===========================================  -->
+</body>

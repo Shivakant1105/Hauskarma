@@ -1,0 +1,181 @@
+<body>
+  <!-- Page Preloder -->
+  <!-- <div id="preloder">
+    <div class="loader">
+      <app-loader></app-loader>
+    </div>
+  </div> -->
+
+  <!-- Header section -->
+  <header class="header-section shadow-none clearfix bg-transparent">
+    <div class="container">
+      <div class="align-items-center row">
+        <div class="col-6 col-lg-3 col-md-3 col-sm-6 text-xs-center">
+          <a href="homepage" class="site-logo">
+            <img src="assets/img/logos/Hauskarma-header-logo.png" alt="" />
+          </a>
+        </div>
+
+        <!-- This Code Hidde On extera large and large Screen Start  -->
+        <!-- <div
+          class="col-4 col-sm-5 col-md-8 col-lg-3 text-right text-xs-center align-self-center d-xl-none d-lg-none"
+        >
+          <a
+            href="assets/renter-login/login"
+            class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+            >LOGIN</a
+          >
+        </div> -->
+
+        <nav class="navbar-nav main-menu d-xl-none d-lg-none">
+          <ul class="menu-list">
+            <li><a href="homepage">Rentals</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Features</a
+              >
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="frontend/features-landlord"
+                    >Landlord</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="frontend/features-renter"
+                    >Renter</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="frontend/pricing-renter">Pricing</a></li>
+            <li><a href="#">Rentals Resources</a></li>
+          </ul>
+        </nav>
+        <!-- This Code Hidde On extera large and large Screen End  -->
+
+        <div class="col-2 col-sm-1 col-md-1 col-lg-7 text-center">
+          <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+          <!-- This Code Show On extera large and large Screen Start  -->
+          <nav
+            class="navbar-nav main-menu d-md-none d-sm-none d-xs-none d-lg-block"
+          >
+            <ul class="menu-list">
+              <li><a href="homepage">Rentals</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Features</a
+                >
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-landlord"
+                      >Landlord</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="frontend/features-renter"
+                      >Renter</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="frontend/pricing-renter">Pricing</a></li>
+              <li><a href="#">Rentals Resources</a></li>
+            </ul>
+          </nav>
+          <!-- This Code Show On extera large and large Screen End  -->
+        </div>
+
+        <!-- This Code Show On extera large and large Screen Start  -->
+        <!-- <div
+          class="col-12 col-sm-6 col-md-4 col-lg-2 text-right align-self-center d-md-none d-sm-none d-xs-none d-lg-block"
+        >
+          <a
+            href="login"
+            class="btn font-weight-bold pl-4 pr-4 secondary-bg-color-first site-btn"
+            >LOGIN</a
+          >
+        </div> -->
+        <!-- This Code Show On extera large and large Screen End  -->
+      </div>
+    </div>
+  </header>
+  <!-- Header section end -->
+
+  <!-- Login Section Code Start -->
+  <section class="login-section-wraper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-lg-6 m-auto">
+          <div class="card">
+            <div class="card-body p-md-5">
+              <h2 class="card-title text-center mb-5">Sign up</h2>
+              <p class="text-center font-14 mb-5">
+                Building trust and confidence is our priority. We ask for phone
+                number to ensure members identity.
+              </p>
+              <form [formGroup]="otpForm" (ngSubmit)="onSubmit()">
+                <div class="input-group form-group">
+                  <input
+                    id="otp"
+                    type="text"
+                    name="otp"
+                    formControlName="otpNumber"
+                    placeholder="OTP"
+                    class="otp-input pl-4 bg-white font-14 form-control"
+                  />
+                </div>
+
+                <div class="form-group text-center">
+                  <button
+                    [disabled]="otpForm.invalid"
+                    [ngClass]="{
+                      'disable-button-color': otpForm.invalid
+                    }"
+                    type="submit"
+                    class="btn btn-block btn-lg font-weight-bold pb-3 pt-3 secondary-bg-color-first site-btn text-white"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+              <p class="text-center font-13 mt-4 text-muted mb-0">
+                Please enter the code sent on your mobile number.
+              </p>
+              <p
+                class="dark-black font-13 font-weight-1000 mb-0 mt-2 text-center text-muted"
+              >
+                Didn’t receive OTP?<a href="#" class="dashboard-color">
+                  RESEND OTP
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="mb-5 mt-5 text-center">
+            <a href="login" class="font-14 text-dark">Back to login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Login Section Code End -->
+  <!-- <app-footer></app-footer> -->
+</body>

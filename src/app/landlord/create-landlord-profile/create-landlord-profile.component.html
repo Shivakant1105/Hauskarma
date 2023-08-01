@@ -1,0 +1,389 @@
+<body>
+  <!-- Page Preloder -->
+  <!-- <div id="preloder">
+    <div class="loader">
+      <app-loader></app-loader>
+    </div>
+  </div> -->
+
+  <!-- ==============================================================
+  ================= Profile created successfully Modal Start ======-->
+  <div
+    class="modal fade"
+    id="createprofileModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="createprofileModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="border-0 modal-header">
+          <button
+            type="button"
+            class="close mr-2 opacity-1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <img
+              src="assets/img/icons/modal-close-icon.png"
+              width="20"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/img/icons/success-modal-icon.png" alt="" />
+          <h5 class="font-28 font-weight-600 mt-3 primary-color-first">
+            Congratulation
+          </h5>
+          <h5 class="dark-color-three font-16 mt-3">
+            Yay! Your account is ready
+          </h5>
+          <a
+            href=" landlord/create-listing"
+            class="btn dashboard-border-radius-second font-weight-600 mt-4 pb-2 pl-4 pr-4 primary-bg-color-first pt-2 text-white"
+          >
+            Let's create a Listing
+            <img src="assets/img/icons/white-arrow.png" class="ml-2" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==============================================================
+  ================= Profile created successfully Modal End ========-->
+
+  <!--============================================ 
+  =======  Dashboard Content Section Start =======
+  ===========================================  -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="create-profile-section">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="card p-xs-2 pl-md-5 pl-sm-5 pr-md-5 pr-sm-5 border-radius-6 h-100vh"
+            >
+              <h5 class="dark-color-first font-weight-600 font-20 mt-3 pt-3">
+                Complete Your Landlord Profile
+              </h5>
+              <div class="CustomStepDesign d-flex mt-3 pt-3">
+                <div class="CustomStep active">
+                  <div class="d-inline-block bullet">
+                    <img
+                      src="assets/img/icons/create-profile-icon/basic-details-active.png"
+                      class="active"
+                    />
+                    <img
+                      src="assets/img/icons/create-profile-icon/finish.png"
+                      class="finish"
+                    />
+                  </div>
+                  <span>Basic Details</span>
+                </div>
+
+                <div class="CustomStep">
+                  <div class="d-inline-block bullet">
+                    <img
+                      src="assets/img/icons/create-profile-icon/contact-information-active.png"
+                      class="active"
+                    />
+                    <img
+                      src="assets/img/icons/create-profile-icon/contact-information-inactive.png"
+                      class="inactive"
+                    />
+                    <img
+                      src="assets/img/icons/create-profile-icon/finish.png"
+                      class="finish"
+                    />
+                  </div>
+                  <span>Contact Information</span>
+                </div>
+
+                <div class="CustomStep">
+                  <div class="d-inline-block bullet">
+                    <img
+                      src="assets/img/icons/create-profile-icon/address-information-active.png"
+                      class="active"
+                    />
+                    <img
+                      src="assets/img/icons/create-profile-icon/address-information-inactive.png"
+                      class="inactive"
+                    />
+                    <img
+                      src="assets/img/icons/create-profile-icon/finish.png"
+                      class="finish"
+                    />
+                  </div>
+                  <span>Address Information</span>
+                </div>
+              </div>
+
+              <form id="create-profile" novalidate="" class="mt-4">
+                <!--  Personal details Start -->
+                <fieldset class="personal-details">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">Personal details</h2>
+                  </div>
+
+                  <div class="card-body p-0">
+                    <div class="mt-4 row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>First Name <sup class="sup-0-3">*</sup></label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter your first name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Last Name <sup class="sup-0-3">*</sup></label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter your last name"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="d-block"
+                            >Upload Your photo
+                            <sup class="sup-0-3">*</sup></label
+                          >
+                          <div
+                            class="font-weight-1000 primary-bg-color-second profile-image-upload-btn"
+                          >
+                            <span class="dark-color-three font-13">
+                              <img
+                                class="mr-2"
+                                src="assets/img/icons/document-upload.png"
+                                alt=""
+                              />
+                              Drag and Drop files here or
+                              <span class="primary-color-first">
+                                Browse File</span
+                              >
+                            </span>
+                            <input name="Select File" type="file" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white border-2 btn dashboard-border-radius-second float-right dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--  Personal details End -->
+
+                <!--  Contact Information Start -->
+                <fieldset class="contact-information">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      Contact Information
+                    </h2>
+                  </div>
+
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label>Phone Number </label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter your Phone Number"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label>Email Address </label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter your Email Address"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mt-3">
+                        <div class="form-group CustomUploadComponent">
+                          <label class="d-block"
+                            >ID Proof <sup class="sup-0-3">*</sup></label
+                          >
+                          <div
+                            class="font-weight-1000 primary-bg-color-second profile-image-upload-btn"
+                          >
+                            <span class="dark-color-three font-13">
+                              <img
+                                class="mr-2"
+                                src="assets/img/icons/document-upload.png"
+                                alt=""
+                              />
+                              Upload scanned PDF of your ID Drag and Drop files
+                              here or
+                              <span class="primary-color-first">
+                                Browse File</span
+                              >
+                            </span>
+                            <input name="Select File" type="file" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="mt-4 btn dashboard-border-radius-second font-weight-600 previous primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white border-2 btn dashboard-border-radius-second float-right dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--  Contact Information End -->
+
+                <!--   Address Information Start -->
+                <fieldset>
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      Address Information
+                    </h2>
+                  </div>
+
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label>Unit </label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter Unit"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label>Street Address </label>
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter your Street Address"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label>State/Province</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter State/Province"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label class="d-block">Postal Code</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter your Postal Code"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mb-0">
+                          <label class="d-block">Country</label>
+
+                          <select name="" id="" class="form-control">
+                            <option value="USA">USA</option>
+                            <option value="USA">USA</option>
+                            <option value="USA">USA</option>
+                            <option value="USA">USA</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="previous mt-4 btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                    data-toggle="modal"
+                    data-target="#createprofileModalCenter"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white float-right border-2 btn dashboard-border-radius-second dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--   Address Information End -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--============================================ 
+  =======  Dashboard Content Section End =========
+  ===========================================  -->
+</body>

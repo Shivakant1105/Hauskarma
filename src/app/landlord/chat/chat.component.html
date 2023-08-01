@@ -1,0 +1,1056 @@
+<body>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <section class="chat-section">
+        <div class="row">
+          <div class="col-md-12 col-lg-5 border-right">
+            <div class="card h-100 border-radius-6 border-0">
+              <div class="card-body">
+                <h2 class="font-24 font-weight-600 dark-color-first">Chat</h2>
+                <hr class="mb-4 mt-0" />
+                <div class="chat-tabbable-line">
+                  <ul class="ml-4 mr-4 nav nav-tabs">
+                    <li class="text-center">
+                      <a href="#builder" data-toggle="tab">
+                        <b class="d-xs-none d-sm-inline-block"> Builder</b>
+                      </a>
+                    </li>
+
+                    <li class="text-center">
+                      <a href="#response" data-toggle="tab" class="active">
+                        <b class="d-xs-none d-sm-inline-block">Response</b>
+                      </a>
+                    </li>
+
+                    <li class="text-center">
+                      <a href="#setting" data-toggle="tab">
+                        <b class="d-xs-none d-sm-inline-block">Setting</b>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <h3
+                    class="font-20 font-weight-600 mb-4 mt-5 primary-color-first ml-4 mr-4"
+                  >
+                    People (06)
+                  </h3>
+
+                  <ul class="ml-4 mr-4 nav nav-tabs">
+                    <li class="text-center w-25">
+                      <a href="#all" data-toggle="tab" class="active">
+                        <b class="d-xs-none d-sm-inline-block"> All</b>
+                      </a>
+                    </li>
+
+                    <li class="text-center w-25">
+                      <a href="#unread" data-toggle="tab">
+                        <b class="d-xs-none d-sm-inline-block">Unread</b>
+                      </a>
+                    </li>
+
+                    <li class="text-center w-25">
+                      <a href="#replied" data-toggle="tab">
+                        <b class="d-xs-none d-sm-inline-block">Replied</b>
+                      </a>
+                    </li>
+
+                    <li class="text-center w-25">
+                      <a href="#archived" data-toggle="tab">
+                        <b class="d-xs-none d-sm-inline-block">Archived</b>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane p-2 active" id="all">
+                      <form action="#" class="ml-4 mr-4 mt-3">
+                        <div
+                          class="border dashboard-border-radius form-group has-search pb-2 pt-2"
+                        >
+                          <span class="form-control-feedback">
+                            <img
+                              src="assets/img/icons/search-light.png"
+                              alt=""
+                            />
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control pr-5 font-13 border-0"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </form>
+                      <div
+                        class="align-items-center border-bottom d-flex mt-3 pb-2 pl-4 pr-4 top-online-user d-lg-none d-md-flex d-xl-none"
+                      >
+                        <div class="user-img mr-3">
+                          <img
+                            class="profile-image chat-header-user-img-height chat-header-user-img-width"
+                            src="assets/img/notification-img.png"
+                            alt="Profile img"
+                          />
+                          <span class="online-icon"
+                            ><i class="fa fa-circle" aria-hidden="true"></i
+                          ></span>
+                        </div>
+                        <div class="content">
+                          <h5
+                            class="font-15 font-weight-bold primary-color-first"
+                          >
+                            Eleanor Pena
+                          </h5>
+                          <small class="dark-color-three font-13">Online</small>
+                        </div>
+                        <button
+                          class="bg-transparent btn collapsed ml-auto visible-xs"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#userlist"
+                          aria-expanded="false"
+                          aria-controls="userlist"
+                        >
+                          <i
+                            class="fa fa-bars text-dark"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                      <div
+                        class="user-list visible-sm collapse dont-collapse-sm"
+                        id="userlist"
+                      >
+                        <div
+                          class="bottom-online-user align-items-center d-flex pl-4 pr-4 mb-4 mt-4"
+                        >
+                          <div class="user-img mr-3">
+                            <img
+                              class="profile-image"
+                              src="assets/img/notification-img.png"
+                              alt=""
+                            />
+                            <span class="online-icon"
+                              ><i class="fa fa-circle" aria-hidden="true"></i
+                            ></span>
+                          </div>
+                          <div class="content">
+                            <h5
+                              class="font-14 font-weight-bold primary-color-first"
+                            >
+                              Eleanor Pena
+                            </h5>
+                            <small class="dark-color-three font-13"
+                              >Online</small
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="offline-users align-items-center d-flex pl-4 pr-4 mb-4 mt-4"
+                        >
+                          <div class="user-img mr-3">
+                            <img
+                              class="profile-image"
+                              src="assets/img/notification-img.png"
+                              alt=""
+                            />
+                            <span class="offline-icon"
+                              ><i class="fa fa-circle" aria-hidden="true"></i
+                            ></span>
+                          </div>
+                          <div class="content">
+                            <h5
+                              class="font-14 font-weight-bold primary-color-first"
+                            >
+                              Eleanor Pena
+                            </h5>
+                            <small class="dark-color-three font-13"
+                              >Offline</small
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="offline-users align-items-center d-flex pl-4 pr-4 mb-4 mt-4"
+                        >
+                          <div class="user-img mr-3">
+                            <img
+                              class="profile-image"
+                              src="assets/img/notification-img.png"
+                              alt=""
+                            />
+                            <span class="offline-icon"
+                              ><i class="fa fa-circle" aria-hidden="true"></i
+                            ></span>
+                          </div>
+                          <div class="content">
+                            <h5
+                              class="font-14 font-weight-bold primary-color-first"
+                            >
+                              Rose
+                            </h5>
+                            <small class="dark-color-three font-13"
+                              >Offline</small
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="offline-users align-items-center d-flex pl-4 pr-4 mb-4 mt-4"
+                        >
+                          <div class="user-img mr-3">
+                            <img
+                              class="profile-image"
+                              src="assets/img/notification-img.png"
+                              alt=""
+                            />
+                            <span class="offline-icon"
+                              ><i class="fa fa-circle" aria-hidden="true"></i
+                            ></span>
+                          </div>
+                          <div class="content">
+                            <h5
+                              class="font-14 font-weight-bold primary-color-first"
+                            >
+                              William
+                            </h5>
+                            <small class="dark-color-three font-13"
+                              >Offline</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane p-2" id="unread">
+                      <h5 class="mt-5 dark-color-second font-16 text-center">
+                        Unread Empty Section
+                      </h5>
+                    </div>
+
+                    <div class="tab-pane p-2" id="replied">
+                      <h5 class="mt-5 dark-color-second font-16 text-center">
+                        Replied Empty Section
+                      </h5>
+                    </div>
+
+                    <div class="tab-pane p-2" id="archived">
+                      <h5 class="mt-5 dark-color-second font-16 text-center">
+                        Archived Empty Section
+                      </h5>
+                    </div>
+
+                    <!-- <div class="tab-pane p-2" id="builder">
+                                            <h5 class="mt-5 dark-color-second font-16 text-center">Builder Empty Section</h5>
+                                        </div>
+
+                                        <div class="tab-pane p-2" id="response">
+                                            <h5 class="mt-5 dark-color-second font-16 text-center">Response Empty Section</h5>
+                                        </div>
+
+                                        <div class="tab-pane p-2" id="setting">
+                                            <h5 class="mt-5 dark-color-second font-16 text-center">Setting Empty Section</h5>
+                                        </div>   -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-7">
+            <div class="card h-100 border-radius-6 border-0">
+              <div
+                class="align-items-center border-bottom d-flex d-lg-flex d-md-none d-sm-none d-xs-none mt-3 pb-2 pl-4 pr-4 top-online-user"
+              >
+                <div class="user-img mr-3">
+                  <img
+                    class="profile-image chat-header-user-img-height chat-header-user-img-width"
+                    src="assets/img/notification-img.png"
+                    alt="Profile img"
+                  />
+                  <span class="online-icon"
+                    ><i class="fa fa-circle" aria-hidden="true"></i
+                  ></span>
+                </div>
+                <div class="content">
+                  <h5 class="font-15 font-weight-bold primary-color-first">
+                    Eleanor Pena
+                  </h5>
+                  <small class="dark-color-three font-13">Online</small>
+                </div>
+              </div>
+              <div class="chat-panel">
+                <div class="message-box">
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Hello I am new to this system can i get a
+                              breakdownon how it works?
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11 offset-md-1">
+                      <div class="media chat-bubble chat-bubble-right">
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="d-inline-block dark-color-first dark-color-second dashboard-border-radius float-right font-14 m-0 pb-2 pl-3 pr-3 primary-bg-color-second pt-2 secondary-bg-color-second"
+                            >
+                              Yes we current run both on our platfrom here
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first text-right"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                        <a class="d-flex ml-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters mt-4">
+                    <div class="col-md-11">
+                      <div class="media chat-bubble chat-bubble-left">
+                        <a class="d-flex mr-3" href="#">
+                          <img
+                            style="
+                              height: 30px;
+                              width: 30px;
+                              border-radius: 100px;
+                            "
+                            src="assets/img/notification-img.png"
+                          />
+                        </a>
+                        <div class="media-body">
+                          <div class="clearfix">
+                            <p
+                              class="dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second dark-color-second dashboard-border-radius font-14 m-0 pl-3 pr-3 pt-2 pb-2 primary-bg-color-second d-inline-block"
+                            >
+                              Please,can you go into details bout the service
+                            </p>
+                          </div>
+                          <div>
+                            <span
+                              class="d-block font-13 mt-2 primary-color-first"
+                              >12:45 PM</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="chat-input-box m-3">
+                      <span class="gallery-upload">
+                        <img src="assets/img/icons/gallery.png" alt="" />
+                      </span>
+                      <span class="media-attch">
+                        <img src="assets/img/icons/attch.png" alt="" />
+                      </span>
+                      <span class="voice">
+                        <img src="assets/img/icons/voice.png" alt="" />
+                      </span>
+                      <input
+                        class="border chat-input font-12 form-control pb-4 pt-4"
+                        type="text"
+                        placeholder="Type your message hereassets."
+                      />
+                      <span class="Emoji">
+                        <img src="assets/img/icons/chat-emoji.png" alt="" />
+                      </span>
+                      <button
+                        class="text-uppercase btn chat-submit-btn font-12 font-weight-bold pl-4 pr-4 text-white"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>

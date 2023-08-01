@@ -1,0 +1,1456 @@
+<body>
+  <!--================================================= 
+  ========== Video And Image Upload Modal  Start ===-->
+  <div
+    class="modal fade"
+    id="MediaUpoadModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="MediaUpoadModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content dashboard-border-radius">
+        <div class="modal-body pt-4">
+          <div class="content-media-modal">
+            <div class="tabbable-panel">
+              <div class="tabbable-line">
+                <ul class="nav nav-tabs">
+                  <li class="text-center">
+                    <a href="#uploadtab" data-toggle="tab" class="active">
+                      <img
+                        class="active m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/upload-active-icon.png"
+                        height="17px"
+                      />
+                      <img
+                        class="inactive m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/upload-inactive-icon.png"
+                        height="17px"
+                      />
+                      <b class="d-xs-none d-sm-inline-block"> UPLOAD</b>
+                    </a>
+                  </li>
+
+                  <li class="text-center">
+                    <a href="#linkonlinevideo" data-toggle="tab">
+                      <img
+                        class="active m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/attch-url-active-icon.png"
+                        height="13px"
+                      />
+                      <img
+                        class="inactive m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/attch-url-inactive-icon.png"
+                        height="13px"
+                      />
+                      <b class="d-xs-none d-sm-inline-block"
+                        >LINK ONLINE VIDEO</b
+                      >
+                    </a>
+                  </li>
+
+                  <li class="text-center">
+                    <a href="#link3dvideo" data-toggle="tab">
+                      <img
+                        class="active m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/3durl-active-icon.png"
+                        height="17px"
+                      />
+                      <img
+                        class="inactive m-xs-auto mr-sm-3"
+                        src="assets/img/icons/upload-video-image-tab-icon/3durl-inactive-icon.png"
+                        height="17px"
+                      />
+                      <b class="d-xs-none d-sm-inline-block">LINK 3D VIDEO</b>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="tab-pane p-2 active" id="uploadtab">
+                    <form action="">
+                      <div class="row mt-3">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              class="dark-color-second font-13 font-weight-600 mb-3"
+                              >Upload file</label
+                            >
+                            <div class="file-Drag-drop p-4">
+                              <img
+                                src="assets/img/icons/drag-and-drop.png"
+                                class="mb-2"
+                              />
+                              <p>
+                                Drag and drop the files here<br />
+                                or
+                              </p>
+                              <button
+                                type="button"
+                                class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-2 save-form-data-btn text-white w-25"
+                              >
+                                Browes here
+                              </button>
+                              <input
+                                type="file"
+                                class="border-0 form-control"
+                                multiple=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3 mt-3">
+                        <div class="col-6 col-sm-6 col-md-6">
+                          <div
+                            class="dark-color-second font-12 font-weight-600"
+                          >
+                            <img
+                              class="mr-2"
+                              src="assets/img/icons/upload-video-icon.png"
+                            />
+                            my-video.mp4
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6">
+                          <div
+                            class="progress-label text-right dark-color-second font-12 font-weight-600"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div id="progressbar"></div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <button
+                            type="button"
+                            class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-4 save-form-data-btn text-uppercase text-white"
+                          >
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="tab-pane p-2" id="linkonlinevideo">
+                    <form action="#">
+                      <div class="row mt-3">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              class="dark-color-second font-13 font-weight-600 mb-3"
+                              >Upload file</label
+                            >
+                            <div class="file-Drag-drop p-4">
+                              <img
+                                src="assets/img/icons/drag-and-drop.png"
+                                class="mb-2"
+                              />
+                              <p>
+                                Drag and drop the files here<br />
+                                or
+                              </p>
+                              <button
+                                type="button"
+                                class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-2 save-form-data-btn text-white w-25"
+                              >
+                                Browes here
+                              </button>
+                              <input
+                                type="file"
+                                class="border-0 form-control"
+                                multiple=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              class="dark-color-second font-12 font-weight-600"
+                              >ENTER URL</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="url"
+                                name="url"
+                                id="url"
+                                class="border border-radius-6 form-control p-2 pl-4 theme-border"
+                                placeholder="Url"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <button
+                            type="button"
+                            class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-4 save-form-data-btn text-uppercase text-white"
+                          >
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="tab-pane p-2" id="link3dvideo">
+                    <form action="#">
+                      <div class="row mt-3">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              class="dark-color-second font-13 font-weight-600 mb-3"
+                              >Upload file</label
+                            >
+                            <div class="file-Drag-drop p-4">
+                              <img
+                                src="assets/img/icons/drag-and-drop.png"
+                                class="mb-2"
+                              />
+                              <p>
+                                Drag and drop the files here<br />
+                                or
+                              </p>
+                              <button
+                                type="button"
+                                class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-2 save-form-data-btn text-white w-25"
+                              >
+                                Browes here
+                              </button>
+                              <input
+                                type="file"
+                                class="border-0 form-control"
+                                multiple=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              class="dark-color-second font-12 font-weight-600"
+                              >ENTER URL</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="url"
+                                name="url"
+                                id="url"
+                                class="border border-radius-6 form-control p-2 pl-4 theme-border"
+                                placeholder="Url"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <button
+                            type="button"
+                            class="btn dashboard-border-radius-second dashboard-btn-bg font-13 font-weight-600 mt-4 save-form-data-btn text-uppercase text-white"
+                          >
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================================================= 
+  ========== Video And Image Upload Modal  End =====-->
+
+  <!--============================================ 
+  =======  Dashboard Content Section Start =======
+  ===========================================  -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="create-profile-section">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="card p-xs-2 pl-md-5 pl-sm-5 pr-md-5 pr-sm-5 border-radius-6 h-100vh"
+            >
+              <h5 class="dark-color-first font-weight-600 font-20 mt-3 pt-3">
+                Create New Listing
+              </h5>
+
+              <form id="create-profile" novalidate="" class="mt-3 pt-3">
+                <!--  Personal details Start -->
+                <fieldset class="personal-details">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      What kind of place is your new listing
+                    </h2>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label
+                            >Number of Den/Flex
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter Number of Den/Flex"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label
+                            >Number of Bedrooms
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter Number of Bedrooms"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label
+                            >Number of Bathrooms
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter Number of Bathrooms"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label
+                            >House Size (ft)
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control pl-4"
+                            placeholder="Enter House Size"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 row">
+                      <div class="col-md-12 delete-radio-btn">
+                        <label class="font-13 font-weight-600 dark-color-second"
+                          >Is your house furnished ?</label
+                        >
+                        <div class="mt-2 ml-1">
+                          <div class="d-flex radio-button">
+                            <label
+                              class="align-items-center d-flex radio-button__label-wrapper"
+                              for="yes"
+                            >
+                              <b class="font-12">Yes</b>
+                              <input
+                                type="radio"
+                                name="sharing_preference"
+                                id="yes"
+                                value=""
+                                class="radio-button__input"
+                                checked="checked"
+                              />
+                              <div class="radio-button__custom-indicator"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex radio-button">
+                            <label
+                              class="align-items-center d-flex radio-button__label-wrapper"
+                              for="no"
+                            >
+                              <b class="font-12">No</b>
+                              <input
+                                type="radio"
+                                name="sharing_preference"
+                                id="no"
+                                value=""
+                                class="radio-button__input"
+                              />
+                              <div class="radio-button__custom-indicator"></div>
+                            </label>
+                          </div>
+
+                          <div class="d-flex radio-button">
+                            <label
+                              class="align-items-center d-flex radio-button__label-wrapper"
+                              for="Furnished"
+                            >
+                              <b class="font-12">Furnished</b>
+                              <input
+                                type="radio"
+                                name="sharing_preference"
+                                id="Furnished"
+                                value=""
+                                class="radio-button__input"
+                              />
+                              <div class="radio-button__custom-indicator"></div>
+                            </label>
+                          </div>
+                          <div class="d-flex radio-button">
+                            <label
+                              class="align-items-center d-flex radio-button__label-wrapper"
+                              for="Unfurnished"
+                            >
+                              <b class="font-12">Unfurnished</b>
+                              <input
+                                type="radio"
+                                name="sharing_preference"
+                                id="Unfurnished"
+                                value=""
+                                class="radio-button__input"
+                              />
+                              <div class="radio-button__custom-indicator"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white border-2 btn dashboard-border-radius-second float-right dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--  Personal details End -->
+
+                <!--  Contact Information Start -->
+                <fieldset class="contact-information">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      Do you cover any Utilities for your tenants?
+                    </h2>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="row utilities mt-4">
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/cable.png"
+                                    class="mr-2"
+                                  />
+                                  Cable
+                                </h5>
+                              </div>
+                              <div class="col-5 col-md-5 col-sm-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/electricity.png"
+                                    class="mr-2"
+                                  />
+                                  Electricity
+                                </h5>
+                              </div>
+                              <div class="col-5 col-sm-5 col-md-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/heat.png"
+                                    class="mr-2"
+                                  />
+                                  Heat
+                                </h5>
+                              </div>
+                              <div class="col-5 col-sm-5 col-md-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/natural-gas.png"
+                                    class="mr-2"
+                                  />
+                                  Natural Gas
+                                </h5>
+                              </div>
+                              <div class="col-5 col-sm-5 col-md-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/water.png"
+                                    class="mr-2"
+                                  />
+                                  Water
+                                </h5>
+                              </div>
+                              <div class="col-5 col-sm-5 col-md-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div
+                          class="border-0 border-radius-6 card pb-3 primary-bg-color-third pt-3"
+                        >
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-7 col-sm-7 col-md-7">
+                                <h5
+                                  class="font-16 font-weight-600 primary-color-first"
+                                >
+                                  <img
+                                    src="assets/img/icons/internet.png"
+                                    class="mr-2"
+                                  />
+                                  Internet
+                                </h5>
+                              </div>
+                              <div class="col-5 col-sm-5 col-md-5 text-right">
+                                <span class="CheckBoxComponent">
+                                  <label class="mb-0 switch">
+                                    <input type="checkbox" checked="" />
+                                    <span
+                                      class="notification-slider round"
+                                    ></span>
+                                  </label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mt-3">
+                        <div class="card">
+                          <div class="card-body p-0">
+                            <div class="row align-items-center">
+                              <div class="col-md-12">
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    class="form-control pb-3 pt-3"
+                                    placeholder="Type customassets."
+                                  />
+                                  <div class="input-group-append">
+                                    <span
+                                      class="border-0 dashboard-btn-bg input-group-text pl-4 pr-4 text-white"
+                                    >
+                                      <img src="assets/img/icons/add.png" />
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="mt-4 btn dashboard-border-radius-second font-weight-600 previous primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white border-2 btn dashboard-border-radius-second float-right dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--  Contact Information End -->
+
+                <!--   Address Information Start -->
+                <fieldset class="lease-terms">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      What are trems of your lease?
+                    </h2>
+                  </div>
+
+                  <div class="card-body p-0">
+                    <div class="row align-items-center mt-4">
+                      <div class="col-3 col-sm-6 col-md-6">
+                        <h2 class="font-14">Lease settings</h2>
+                      </div>
+                    </div>
+                    <div class="row lease-setting">
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                          <label
+                            >Min. Lease Duration
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <select class="lease-option form-control pl-4">
+                            <option value="Lease Duration">
+                              Lease Duration
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                          <label
+                            >Availability Date
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <div class="custom-date-input">
+                            <input
+                              type="text"
+                              id="lease-date-availability"
+                              class="lease-option form-control pl-4 hasDatepicker"
+                              placeholder="Enter Date"
+                            />
+                            <img
+                              class="ui-datepicker-trigger"
+                              src="assets/img/icons/datecalender.png"
+                              alt="Select date"
+                              title="Select date"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="font-14 mb-2 mt-2">Bid settings</h2>
+                      </div>
+                    </div>
+
+                    <div class="row lease-setting mb-5">
+                      <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group mb-2">
+                          <label
+                            >Set Minimum and Maximum Bid Price<sup
+                              class="sup-0-3 text-danger"
+                              >*</sup
+                            ></label
+                          >
+                        </div>
+                        <div class="slider-range-wrap mt-3">
+                          <div id="set-bid-price-range-slider"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="align-items-center row">
+                          <div
+                            class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 mt-2"
+                          >
+                            <div class="form-group mb-0">
+                              <label class="font-12"
+                                >Only Renters with Verified Profile Can
+                                Bid</label
+                              >
+                            </div>
+                          </div>
+                          <div
+                            class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-2"
+                          >
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" checked="" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row lease-setting">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label
+                            >Bid Expiry Date
+                            <sup class="sup-0-3 text-danger">*</sup></label
+                          >
+                          <div class="custom-date-input">
+                            <input
+                              type="text"
+                              id="bid-valid-till-date"
+                              class="lease-option form-control pl-4 hasDatepicker"
+                              placeholder="Enter Date"
+                            />
+                            <img
+                              class="ui-datepicker-trigger"
+                              src="assets/img/icons/datecalender.png"
+                              alt="Select date"
+                              title="Select date"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="previous mt-4 btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                    data-toggle="modal"
+                    data-target="#createprofileModalCenter"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white float-right border-2 btn dashboard-border-radius-second dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+                <!--   Address Information End -->
+
+                <fieldset class="lease-terms">
+                  <div class="bg-white card-header pb-2 pt-2 p-0">
+                    <h2 class="font-16 dark-color-first">
+                      Tell us about parking and storage
+                    </h2>
+                  </div>
+
+                  <div class="card-body p-0">
+                    <div class="row align-items-center mt-4">
+                      <div class="col-md-12">
+                        <h2 class="font-15 mb-2 dark-color-second">
+                          Does your home have a parking?
+                        </h2>
+                      </div>
+
+                      <div class="col-12 col-sm-4 col-md-4">
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >Yes</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >No</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" checked="" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                      <div class="col-md-12">
+                        <h2 class="font-15 mb-2 dark-color-second">
+                          Does your home have an additional storage locker?
+                        </h2>
+                      </div>
+                      <div class="col-12 col-sm-4 col-md-4">
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >Yes</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >No</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" checked="" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center mt-4">
+                      <div class="col-md-12">
+                        <h2 class="font-15 mb-2 dark-color-second">
+                          Is your home pet friendly?
+                        </h2>
+                      </div>
+
+                      <div class="col-12 col-sm-4 col-md-4">
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >Yes</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="row mt-3">
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <div class="form-group mb-0">
+                              <label
+                                class="font-13 mb-0 text-capitalize dark-color-second"
+                                >No</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-md-6">
+                            <span class="CheckBoxComponent">
+                              <label class="mb-0 switch">
+                                <input type="checkbox" checked="" />
+                                <span class="notification-slider round"></span>
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="previous mt-4 btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 next primary-bg-color-first text-white mb-5"
+                    data-toggle="modal"
+                    data-target="#createprofileModalCenter"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white float-right border-2 btn dashboard-border-radius-second dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+
+                <fieldset class="lease-terms">
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="font-15 dark-color-first">Upload Photos</h2>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <button
+                          type="button"
+                          href=""
+                          class="btn dashboard-border-radius-second font-13 font-weight-600 pb-2 pt-2 pl-4 pr-4 primary-bg-color-first save text-white"
+                          data-toggle="modal"
+                          data-target="#MediaUpoadModalCenter"
+                        >
+                          <img
+                            src="assets/img/icons/add.png"
+                            alt=""
+                            class="mr-1"
+                          />
+                          Add Photo
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+                            <img
+                              src="assets/img/blog-details-sections.png"
+                              width="100%"
+                              height="180px"
+                              class="dashboard-border-radius"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+                            <img
+                              src="assets/img/blog-details-sections.png"
+                              width="100%"
+                              height="180px"
+                              class="dashboard-border-radius"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+                            <img
+                              src="assets/img/blog-details-sections.png"
+                              width="100%"
+                              height="180px"
+                              class="dashboard-border-radius"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+                            <img
+                              src="assets/img/blog-details-sections.png"
+                              width="100%"
+                              height="180px"
+                              class="dashboard-border-radius"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h2 class="font-15 dark-color-first">Upload Video</h2>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <a
+                          type="button"
+                          href=""
+                          class="btn dashboard-border-radius-second font-13 font-weight-600 pb-2 pt-2 pl-4 pr-4 primary-bg-color-first save text-white"
+                          data-toggle="modal"
+                          data-target="#MediaUpoadModalCenter"
+                        >
+                          <img
+                            src="assets/img/icons/add.png"
+                            alt=""
+                            class="mr-1"
+                          />
+                          Add Video
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="position-relative renting-easy-video">
+                              <video
+                                id="video"
+                                width="100%"
+                                height="100%"
+                                class="dashboard-border-radius"
+                                preload="metadata"
+                                poster="assets/img/blog-details-sections.png"
+                              >
+                                <source
+                                  src="assets/img/3mb.mp4"
+                                  type="video/mp4"
+                                />
+                              </video>
+
+                              <div class="play-button-wrapper" id="name">
+                                <div id="circle-play-b">
+                                  <img
+                                    src="assets/img/icons/video-play-icon.png"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="position-relative renting-easy-video">
+                              <video
+                                id="video"
+                                width="100%"
+                                height="100%"
+                                class="dashboard-border-radius"
+                                preload="metadata"
+                                poster="assets/img/blog-details-sections.png"
+                              >
+                                <source
+                                  src="assets/img/3mb.mp4"
+                                  type="video/mp4"
+                                />
+                              </video>
+
+                              <div class="play-button-wrapper" id="name">
+                                <div id="circle-play-b">
+                                  <img
+                                    src="assets/img/icons/video-play-icon.png"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="position-relative renting-easy-video">
+                              <video
+                                id="video"
+                                width="100%"
+                                height="100%"
+                                class="dashboard-border-radius"
+                                preload="metadata"
+                                poster="assets/img/blog-details-sections.png"
+                              >
+                                <source
+                                  src="assets/img/3mb.mp4"
+                                  type="video/mp4"
+                                />
+                              </video>
+
+                              <div class="play-button-wrapper" id="name">
+                                <div id="circle-play-b">
+                                  <img
+                                    src="assets/img/icons/video-play-icon.png"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 mt-3 pl-2 pr-2">
+                        <div class="card">
+                          <div class="card-body pb-2 pl-2 pr-2 pt-2">
+                            <div class="d-flex justify-content-between mb-2">
+                              <div>
+                                <h6
+                                  class="font-12 font-weight-600 primary-color-first d-inline"
+                                >
+                                  Condominium Private
+                                </h6>
+                              </div>
+                              <div>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/eye-upload.png" />
+                                </button>
+                                <button class="bg-transparent border-0 p-0">
+                                  <img src="assets/img/icons/three-point.png" />
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="position-relative renting-easy-video">
+                              <video
+                                id="video"
+                                width="100%"
+                                height="100%"
+                                class="dashboard-border-radius"
+                                preload="metadata"
+                                poster="assets/img/blog-details-sections.png"
+                              >
+                                <source
+                                  src="assets/img/3mb.mp4"
+                                  type="video/mp4"
+                                />
+                              </video>
+                              <div class="play-button-wrapper" id="name">
+                                <div id="circle-play-b">
+                                  <img
+                                    src="assets/img/icons/video-play-icon.png"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 mt-4 row">
+                      <div class="col-md-12">
+                        <h2 class="font-15 dark-color-first">
+                          Let Renters know how lovely your home is
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="5"
+                            placeholder="Listing Description"
+                            class="form-control font-14"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="previous mt-4 btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    class="mt-4 ml-4 float-right btn dashboard-border-radius-second font-weight-600 save primary-bg-color-first text-white mb-5"
+                    data-toggle="modal"
+                    data-target="#createprofileModalCenter"
+                  >
+                    Next
+                    <img src="assets/img/icons/white-arrow.png" class="ml-2" />
+                  </button>
+
+                  <button
+                    type="button"
+                    class="mt-4 bg-white float-right border-2 btn dashboard-border-radius-second dark-color-three font-weight-600 previous text-white mb-5"
+                  >
+                    Save & Exits
+                    <img src="assets/img/icons/save-exit.png" class="ml-2" />
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--============================================ 
+  =======  Dashboard Content Section End =========
+  ===========================================  -->
+</body>
