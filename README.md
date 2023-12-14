@@ -19,6 +19,7 @@ If you are new to Markdown, please check out the [Markdown Guide](https://www.ma
 ## How do I get set up?
 
 ### Summary of set up
+<img width="925" alt="Hauskarma" src="https://github.com/Shivakant1105/Hauskarma/assets/71607627/6b006cc9-f3d0-44ae-a378-4a51f66bdc59">
 
 To set up the project locally, follow these steps:
 
