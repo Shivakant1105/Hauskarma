@@ -80,8 +80,8 @@ Feel free to suggest improvements, report bugs, or propose new features by creat
 
 For any questions, feedback, or inquiries related to this project, please reach out to:
 
-- **Repo Owner/Admin:** [Your Name](https://github.com/Shivakant1105)
-- **Other Community/Team Contact:** [Contact Name](Kantshiv1105@gmail.com)
+- **Repo Owner/Admin:** [Shiva Kant](https://github.com/Shivakant1105)
+- **Other Community/Team Contact:** [shivakant1105](Kantshiv1105@gmail.com)
 
 ---
 
